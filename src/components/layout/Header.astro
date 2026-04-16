@@ -1,0 +1,182 @@
+---
+import Navigation from "./Navigation.astro";
+import logo from '../../assets/brand/logo/logo-latento-horizontal.png';
+import email from '../../assets/images/ui/email.svg';
+import phone from '../../assets/images/ui/phone.svg';
+import instagram from '../../assets/brand/social/instagram-icon.svg';
+import facebook from '../../assets/brand/social/facebook-icon.svg';
+
+---
+
+<header class="site-header" data-header>
+  <div class="site-header__top">
+    <div class="site-header__top-inner">
+      <div class="site-header__top-contact">
+        <a href="tel:+34981577060"><img src={phone.src} alt="Icono de teléfono"> +34 981 577 060</a>
+        <span class="site-header__top-separator" aria-hidden="true">|</span>
+        <a href="mailto:info@latentoac.com"><img src={email.src} alt="Icono de correo electrónico">info@latentoac.com</a>
+        <span class="site-header__top-separator" aria-hidden="true">|</span>
+        <p class="site-header__top-claim">
+        Servicio Integral Altas Capacidades
+        </p>  
+    </div>
+    <div class="site-header__top-social">
+        <a class="site-header__top-social-a" href="https://www.instagram.com/latentoac/" target="_blank" rel="noopener noreferrer"><img src={instagram.src} alt="Icono de Instagram"></a>
+        <a class="site-header__top-social-a" href="https://www.facebook.com/latentoac/" target="_blank" rel="noopener noreferrer"><img src={facebook.src} alt="Icono de Facebook"></a>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="site-header__bar">
+    <div class="site-header__bar-inner">
+      <a
+        class="site-header__brand"
+        href="/"
+        aria-label="Ir a la página de inicio de Latento"
+      >
+        <img
+          src={logo.src}
+          alt="Latento Altas Capacidades"
+          width="180"
+          height="48"
+        />
+      </a>
+
+      <div class="site-header__nav site-header__nav--desktop">
+        <Navigation />
+      </div>
+
+      <div class="site-header__actions">
+        <button
+          class="site-header__search"
+          type="button"
+          aria-label="Abrir búsqueda"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+        </button>
+
+        <button
+          class="site-header__menu-toggle"
+          type="button"
+          aria-label="Abrir menú principal"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+          data-menu-toggle
+        >
+         <!--  <span class="sr-only">Abrir menú</span> -->
+          <svg
+            class="site-header__menu-icon site-header__menu-icon--open"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 6h18" />
+            <path d="M3 12h18" />
+            <path d="M3 18h18" />
+          </svg>
+
+          <svg
+            class="site-header__menu-icon site-header__menu-icon--close"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M18 6 6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="mobile-navigation"
+    class="site-header__mobile-panel"
+    hidden
+    data-menu-panel
+  >
+    <div class="site-header__mobile-panel-inner">
+      <Navigation isMobile={true} />
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector("[data-header]");
+  const toggle = header?.querySelector("[data-menu-toggle]");
+  const panel = header?.querySelector("[data-menu-panel]");
+
+  if (toggle && panel) {
+    const closeMenu = () => {
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Abrir menú principal");
+      panel.hidden = true;
+      header.removeAttribute("data-menu-open");
+      document.body.classList.remove("has-mobile-menu-open");
+    };
+
+    const openMenu = () => {
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Cerrar menú principal");
+      panel.hidden = false;
+      header.setAttribute("data-menu-open", "true");
+      document.body.classList.add("has-mobile-menu-open");
+    };
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 960) {
+        closeMenu();
+      }
+    });
+
+    panel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMenu();
+      });
+    });
+  }
+</script>

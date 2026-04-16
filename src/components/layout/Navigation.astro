@@ -1,0 +1,38 @@
+---
+interface Props {
+  isMobile?: boolean;
+}
+
+const { isMobile = false } = Astro.props;
+
+const navItems = [
+  { href: "/", label: "Inicio" },
+  { href: "/quienes-somos", label: "Quiénes somos" },
+  { href: "/que-hacemos", label: "Qué hacemos" },
+  { href: "/servicios", label: "Servicios" },
+  { href: "/talleres", label: "Talleres" },
+  { href: "/informate", label: "Infórmate" },
+  { href: "/rrhh", label: "RR.HH." },
+  { href: "/blog", label: "Blog" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav aria-label={isMobile ? "Principal móvil" : "Principal"}>
+  <ul class:list={["site-header__nav-list", isMobile && "site-header__nav-list--mobile"]}>
+    {
+      navItems.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class="site-header__nav-link"
+            aria-current={currentPath === item.href ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
