@@ -1,0 +1,458 @@
+---
+import logo from '../../assets/brand/logo/logo-latento-horizontal.png';
+import iebt1 from '../../assets/images/ui/IEBT-banner-1.webp';
+import iebt2 from '../../assets/images/ui/IEBT-banner-2.webp';
+import iebt from '../../assets/images/ui/IEBT-banner.webp';
+import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
+---
+<footer class="site-footer">
+  <div class="site-footer__main">
+    <div class="site-footer__container">
+      <div class="site-footer__grid">
+        <section class="site-footer__brand" aria-labelledby="site-footer-brand-title">
+          <a
+            class="site-footer__logo"
+            href="/"
+            aria-label="Ir a la página de inicio de Latento"
+          >
+            <img
+              src={logo.src}
+              alt="Latento Altas Capacidades"
+              width="180"
+              height="48"
+            />
+          </a>
+
+          <p class="site-footer__description">
+            Latento busca ser un acompañamiento a lo largo del ciclo vital y en cada
+            etapa del proceso educativo, contemplando las altas capacidades.
+          </p>
+
+          <div class="site-footer__actions">
+            <a class="site-footer__button site-footer__button--outline" href="tel:+34981577060">
+               +34 981 577 060
+            </a>
+            <a class="site-footer__button site-footer__button--primary" href="/contacto">
+              Contáctanos
+            </a>
+          </div>
+        </section>
+
+        <section class="site-footer__column" aria-labelledby="site-footer-location-title">
+          <h2 class="site-footer__heading" id="site-footer-location-title">Onde estamos</h2>
+
+          <address class="site-footer__address">
+            <p class="site-footer__address-line">
+              <strong>Sede Santiago</strong>
+              Calle Hórreo 23, 1º, 15701 Santiago de Compostela 
+            </p>
+            <p class="site-footer__address-line">
+                <strong>Sede A Coruña</strong>
+              C/ Carretera circunvalación, 7 bajo - 15002 A Coruña
+            </p>
+          </address>
+
+          <ul class="site-footer__contact-list" role="list">
+<!--             <li class="site-footer__contact-item">
+              <a href="tel:+34981530102">981 53 01 02</a>
+            </li> -->
+            <li class="site-footer__contact-item">
+              <a href="mailto:info@latentoac.com">info@latentoac.com</a>
+            </li>
+          </ul>
+        </section>
+
+        <nav class="site-footer__column" aria-labelledby="site-footer-nav-title">
+          <h2 class="site-footer__heading" id="site-footer-nav-title">Sobre nós</h2>
+
+          <ul class="site-footer__nav-list" role="list">
+            <li><a href="/quienes-somos">Empresa</a></li>
+            <li><a href="/que-hacemos">Proxectos</a></li>
+            <li><a href="/servicios">Obras suministradas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/rrhh">Traballa connosco</a></li>
+          </ul>
+        </nav>
+
+<!--         <section class="site-footer__column" aria-labelledby="site-footer-partners-title">
+          <h2 class="site-footer__heading" id="site-footer-partners-title">Entidades colaboradoras</h2>
+
+          <div class="site-footer__partners">
+            <div class="site-footer__partner">
+                <img src={iebt2.src} alt="Logo de IEBT">
+            </div>
+            <div class="site-footer__partner">
+                <img src={iebt1.src} alt="Logo de IEBT">
+            </div>
+          </div>
+        </section> -->
+      </div>
+
+
+    </div>
+  </div>
+      <div class="site-footer__support">
+        <img src={uexuntalogo.src} alt="Logos Europa y Xunta de Galicia">
+        <div class="site-footer__support-content">
+          <p class="site-footer__support-text">
+            Conoce las entidades que han brindado su apoyo a nuestra empresa.
+            Gracias a su colaboración, seguimos creciendo y innovando cada día.
+          </p>
+        </div>
+
+        <a class="site-footer__support-link" href="/colaboradores">Conocer más</a>
+      </div>
+  <div class="site-footer__bottom">
+    <div class="site-footer__container site-footer__bottom-inner">
+      <p class="site-footer__copyright">
+        ©2026 Latento Altas Capacidades. Todos los derechos reservados
+      </p>
+
+      <p class="site-footer__credit">
+        Diseñado y desarrollado por
+        <a href="https://rubenterre.me" target="_blank" rel="noopener noreferrer">
+          Rubén Terré
+        </a>
+      </p>
+
+      <nav class="site-footer__legal" aria-label="Enlaces legales">
+        <ul class="site-footer__legal-list" role="list">
+          <li><a href="/aviso-legal">Aviso legal</a></li>
+          <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+          <li><a href="/politica-de-cookies">Política de cookies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+    :root {
+  --footer-bg: var(--color-light);
+  --footer-surface: var(--color-light-dark);
+  --footer-border: color-mix(in srgb, var(--color-marino) 12%, var(--color-light) 88%);
+  --footer-border-strong: color-mix(in srgb, var(--color-marino) 18%, var(--color-light) 82%);
+  --footer-title: var(--color-texto-dark);
+  --footer-text: var(--color-texto-dark);
+  --footer-text-muted: var(--color-gray);
+  --footer-link: var(--color-texto-dark);
+  --footer-link-hover: var(--color-darktourquise);
+  --footer-accent: var(--color-darktourquise);
+  --footer-accent-soft: var(--color-yellow-poor);
+  --footer-button-primary-bg: var(--color-magenta);
+  --footer-button-primary-text: var(--color-light);
+}
+
+/* .site-footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--footer-border);
+} */
+ .site-footer {
+  position: relative;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  background-color: var(--color-light-dark);
+  border-top: 1px solid color-mix(in srgb, var(--color-marino) 10%, var(--color-light) 90%);
+} 
+
+.site-footer__container {
+  width: min(100% - 2rem, 1440px);
+  margin: 0 auto;
+}
+
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 0.9fr) /* minmax(0, 1fr) */;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.site-footer__brand,
+.site-footer__column {
+  min-width: 0;
+}
+
+.site-footer__logo {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.site-footer__logo img,
+.site-footer__logo svg {
+  display: block;
+  width: auto;
+  height: 3rem;
+}
+
+.site-footer__heading{
+  margin: 0 0 1rem;
+  color: var(--footer-title);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+.site-footer__heading {
+  font-size: 1rem;
+}
+
+.site-footer__description,
+.site-footer__address-line,
+.site-footer__contact-item a,
+.site-footer__nav-list a,
+.site-footer__support-text,
+.site-footer__copyright,
+.site-footer__credit,
+.site-footer__legal-list a {
+  color: var(--footer-text-muted);
+  font-family: var(--font-family-body);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  text-decoration: none;
+}
+
+.site-footer__description {
+  max-width: 31rem;
+  margin: 0 0 1.5rem;
+}
+
+.site-footer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+}
+
+.site-footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-family: var(--font-family-body);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.site-footer__button--outline {
+  color: var(--footer-link);
+  border: 1px solid var(--footer-border-strong);
+  background-color: transparent;
+}
+
+.site-footer__button--outline:hover,
+.site-footer__button--outline:focus-visible {
+  color: var(--footer-link-hover);
+  border-color: var(--footer-link-hover);
+}
+
+.site-footer__button--primary {
+  color: var(--footer-button-primary-text);
+  border: 1px solid var(--footer-button-primary-bg);
+  background-color: var(--footer-button-primary-bg);
+}
+
+.site-footer__button--primary:hover,
+.site-footer__button--primary:focus-visible {
+  background-color: color-mix(in srgb, var(--color-magenta) 88%, var(--color-light) 12%);
+}
+
+.site-footer__address {
+  margin: 0 0 1rem;
+  font-style: normal;
+}
+
+.site-footer__address-line {
+  margin: 0 0 0.35rem;
+}
+
+.site-footer__contact-list,
+.site-footer__nav-list,
+.site-footer__legal-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__contact-item + .site-footer__contact-item,
+.site-footer__nav-list li + li {
+  margin-top: 0.45rem;
+}
+
+.site-footer__contact-item a,
+.site-footer__nav-list a,
+.site-footer__legal-list a,
+.site-footer__credit a,
+.site-footer__support-link {
+  color: var(--footer-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer__contact-item a:hover,
+.site-footer__contact-item a:focus-visible,
+.site-footer__nav-list a:hover,
+.site-footer__nav-list a:focus-visible,
+.site-footer__legal-list a:hover,
+.site-footer__legal-list a:focus-visible,
+.site-footer__credit a:hover,
+.site-footer__credit a:focus-visible,
+.site-footer__support-link:hover,
+.site-footer__support-link:focus-visible {
+  color: var(--footer-link-hover);
+}
+
+.site-footer__partners {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.site-footer__partner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 1rem 1rem 0.9rem;
+}
+
+.site-footer__partner img{
+    max-width: 130px;
+}
+
+.site-footer__partner-subline {
+  color: var(--footer-text-muted);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.site-footer__support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 2.5rem;
+  border-top: 1px solid var(--footer-border);
+  background-color: var(--color-purple);
+}
+
+.site-footer__support-content {
+  max-width: 48rem;
+}
+
+.site-footer__support-text {
+  margin: 0;
+  color: var(--color-light);
+}
+
+.site-footer__support-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  background-color: var(--color-light);
+  color: var(--color-darktourquise);
+}
+
+.site-footer__bottom {
+  border-top: 1px solid var(--footer-border);
+  background-color: var(--color-light-dark);
+}
+
+.site-footer__bottom-inner {
+  display: grid;
+  grid-template-columns: 1.3fr auto auto;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding: 1rem 0;
+}
+
+.site-footer__copyright,
+.site-footer__credit {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.site-footer__legal {
+  justify-self: end;
+}
+
+.site-footer__legal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 1rem;
+}
+
+.site-footer__legal-list a {
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 1180px) {
+  .site-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__bottom-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__legal {
+    justify-self: start;
+  }
+
+  .site-footer__legal-list {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-footer__main {
+    padding-top: 3rem;
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .site-footer__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-footer__button {
+    width: 100%;
+  }
+
+  .site-footer__support {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.75rem 0 2rem;
+  }
+
+  .site-footer__support-link {
+    width: 100%;
+  }
+
+  .site-footer__legal-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
+
+</style>
