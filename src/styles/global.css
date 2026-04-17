@@ -308,9 +308,7 @@ button {
   .site-header__nav-link {
     font-size: 0.8125rem;
   }
-}
 
-@media (max-width: 960px) {
   .site-header__top {
     display: none;
   }
@@ -356,7 +354,7 @@ button {
   }
 }
 
-    .site-header__nav--desktop {
+.site-header__nav--desktop {
   display: flex;
 }
 
@@ -415,13 +413,13 @@ button {
   overflow: hidden;
 }
 
-@media (min-width: 961px) {
+@media (min-width: 1101px) {
   .site-header__mobile-panel {
     display: none !important;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .site-header__nav--desktop {
     display: none;
   }
