@@ -325,8 +325,8 @@ button {
     display: inline-flex;
   }
 
-
 }
+
 
 @media (max-width: 640px) {
   .site-header__top-inner,
