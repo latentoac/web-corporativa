@@ -1,0 +1,630 @@
+---
+// src/pages/politica-de-cookies.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSections from '../components/sections/HeroSections.astro';
+---
+
+<BaseLayout
+  title="Política de Cookies | Latento Altas Capacidades"
+  description="Información sobre el uso de cookies en el sitio web de Latento Altas Capacidades, SL. Tipos de cookies, finalidades y cómo gestionar su configuración."
+>
+  <main class="legal-page">
+
+    <HeroSections
+      titular="Política de Cookies"
+      subtitular="Este sitio web utiliza cookies propias y de terceros para optimizar su visita. Le informamos sobre su uso en cumplimiento del Real Decreto-Ley 13/2012 y la Ley 34/2002 de Servicios de la Sociedad de la Información."
+    />
+
+    <div class="legal-page__body">
+      <div class="legal-page__container">
+
+        <!-- Índice -->
+        <div class="legal-page__toc">
+          <p class="legal-page__toc-title">Contenido</p>
+          <ol class="legal-page__toc-list">
+            <li><a href="#que-son">¿Qué son las cookies?</a></li>
+            <li><a href="#tipos">Tipos de cookies</a></li>
+            <li><a href="#tabla">Cookies empleadas en este sitio web</a></li>
+            <li><a href="#aceptar">Aceptar las cookies</a></li>
+            <li><a href="#rechazar">Rechazar las cookies</a></li>
+            <li><a href="#configuracion">Modificar la configuración</a></li>
+            <li><a href="#mas-info">Más información y revocación</a></li>
+          </ol>
+        </div>
+
+        <div class="legal-page__sections">
+
+          <!-- 1. Qué son -->
+          <section id="que-son" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">01</span>
+              ¿Qué son las cookies?
+            </h2>
+            <div class="legal-section__content">
+              <p>Una cookie (o galleta informática) es una pequeña información enviada por un sitio web y almacenada en el navegador de la persona usuaria, de manera que el sitio web puede consultar la actividad previa de dicha persona: el lugar desde el que accede, el tiempo de conexión, el sistema operativo y navegador utilizados, las páginas más visitadas, el número de clics realizados o datos respecto al comportamiento en Internet.</p>
+              <p>Latento Altas Capacidades tiene la obligación, por el <strong>Real Decreto-Ley 13/2012</strong> que modifica la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, de informar y obtener el consentimiento de la persona usuaria acerca del uso de las cookies de este sitio web.</p>
+              <p>Si continúa navegando por este sitio web sin modificar la configuración, consideramos que acepta su uso. Puede revocar o cambiar su consentimiento en cualquier momento desde el <a href="#mas-info">apartado de revocación</a>.</p>
+            </div>
+          </section>
+
+          <!-- 2. Tipos de cookies -->
+          <section id="tipos" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">02</span>
+              Tipos de cookies
+            </h2>
+            <div class="legal-section__content">
+
+              <!-- Por origen -->
+              <h3 class="legal-subsection__title">Según su origen</h3>
+
+              <div class="cookie-type-grid">
+                <div class="cookie-type-card">
+                  <div class="cookie-type-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                    </svg>
+                  </div>
+                  <h4 class="cookie-type-card__title">Cookies propias</h4>
+                  <p>Se envían a tu equipo desde nuestros propios equipos o dominios y desde el que prestamos el servicio que solicitas.</p>
+                </div>
+                <div class="cookie-type-card">
+                  <div class="cookie-type-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                  </div>
+                  <h4 class="cookie-type-card__title">Cookies de terceros</h4>
+                  <p>Se envían desde un equipo o dominio no gestionado por nosotros, sino por otra entidad colaboradora, como redes sociales o Google Maps.</p>
+                </div>
+              </div>
+
+              <!-- Por duración -->
+              <h3 class="legal-subsection__title">Según su duración</h3>
+
+              <div class="cookie-type-grid">
+                <div class="cookie-type-card">
+                  <div class="cookie-type-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </div>
+                  <h4 class="cookie-type-card__title">Cookies de sesión</h4>
+                  <p>Permanecen en el navegador hasta que abandonas la página web. Sirven para analizar pautas de tráfico y mejorar la experiencia de navegación en tiempo real.</p>
+                </div>
+                <div class="cookie-type-card">
+                  <div class="cookie-type-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                  </div>
+                  <h4 class="cookie-type-card__title">Cookies persistentes</h4>
+                  <p>Se almacenan en el disco duro y el sitio web las lee cada vez que realizas una nueva visita, hasta su fecha de expiración definida.</p>
+                </div>
+              </div>
+
+              <!-- Por finalidad -->
+              <h3 class="legal-subsection__title">Según su finalidad</h3>
+
+              <div class="cookie-purpose-list">
+
+                <div class="cookie-purpose-item">
+                  <div class="cookie-purpose-item__badge cookie-purpose-item__badge--tecnica">Técnicas</div>
+                  <p>Necesarias para la navegación y el buen funcionamiento del sitio web. Controlan el tráfico, permiten acceder a zonas restringidas, almacenan contenidos o comparten información en redes sociales.</p>
+                </div>
+
+                <div class="cookie-purpose-item">
+                  <div class="cookie-purpose-item__badge cookie-purpose-item__badge--personalizacion">Personalización</div>
+                  <p>Permiten acceder al servicio con características predefinidas según criterios como el idioma, el tipo de navegador o la configuración regional desde donde se accede.</p>
+                </div>
+
+                <div class="cookie-purpose-item">
+                  <div class="cookie-purpose-item__badge cookie-purpose-item__badge--analisis">Análisis</div>
+                  <p>Permiten cuantificar el número de usuarios y realizar la medición y análisis estadístico de la utilización de los servicios prestados.</p>
+                </div>
+
+                <div class="cookie-purpose-item">
+                  <div class="cookie-purpose-item__badge cookie-purpose-item__badge--publicidad">Publicitarias</div>
+                  <p>Permiten gestionar los espacios publicitarios del sitio web de la forma más eficaz posible, como limitar el número de veces que se muestra un anuncio.</p>
+                </div>
+
+                <div class="cookie-purpose-item">
+                  <div class="cookie-purpose-item__badge cookie-purpose-item__badge--comportamental">Comportamental</div>
+                  <p>Almacenan información sobre el comportamiento de los usuarios obtenida mediante observación continuada, para mostrar publicidad relacionada con el perfil de navegación.</p>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+
+          <!-- 3. Tabla de cookies -->
+          <section id="tabla" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">03</span>
+              Cookies empleadas en este sitio web
+            </h2>
+            <div class="legal-section__content">
+              <p>A continuación se identifican las cookies empleadas en este sitio web:</p>
+              <div class="cookie-table-wrapper" role="region" aria-label="Tabla de cookies">
+                <table class="cookie-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Dominio</th>
+                      <th scope="col">Finalidad</th>
+                      <th scope="col">Vigencia</th>
+                      <th scope="col">Tipo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Nombre"><code>CONSENT</code></td>
+                      <td data-label="Dominio">google.com</td>
+                      <td data-label="Finalidad">Recoge información estadística</td>
+                      <td data-label="Vigencia">20 años</td>
+                      <td data-label="Tipo">
+                        <span class="cookie-badge cookie-badge--analisis">Analítica</span>
+                        <span class="cookie-badge cookie-badge--terceros">Terceros</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre"><code>NID</code></td>
+                      <td data-label="Dominio">google.com</td>
+                      <td data-label="Finalidad">Almacena preferencias y otra información</td>
+                      <td data-label="Vigencia">6 meses</td>
+                      <td data-label="Tipo">
+                        <span class="cookie-badge cookie-badge--personalizacion">Personalización</span>
+                        <span class="cookie-badge cookie-badge--terceros">Terceros</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Nombre"><code>cookie_notice_accepted</code></td>
+                      <td data-label="Dominio">Propia</td>
+                      <td data-label="Finalidad">Mostrar u ocultar el banner de cookies</td>
+                      <td data-label="Vigencia">1 mes</td>
+                      <td data-label="Tipo">
+                        <span class="cookie-badge cookie-badge--tecnica">Técnica</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Dadas las características de Internet, no siempre contamos con información de las cookies que colocan terceras partes a través de este sitio web. Si encuentra alguna cookie no descrita aquí, le rogamos que nos lo comunique en <a href="mailto:info@latentoac.com">info@latentoac.com</a> o se ponga en contacto directamente con el tercero para solicitar información sobre su finalidad, duración y garantías de privacidad.</p>
+            </div>
+          </section>
+
+          <!-- 4. Aceptar -->
+          <section id="aceptar" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">04</span>
+              Aceptar las cookies
+            </h2>
+            <div class="legal-section__content">
+              <p>Al aceptar nuestras cookies, recopilamos información que se almacena en su equipo con la finalidad descrita en la tabla para cada cookie. La instalación de una cookie en el equipo de la persona usuaria depende de su aceptación, la cual puede modificarse gratuitamente en cualquier momento.</p>
+              <p>Si ha aceptado en su navegador el uso de las cookies, éstas se almacenan temporalmente en su equipo de acuerdo con los plazos de vigencia indicados.</p>
+            </div>
+          </section>
+
+          <!-- 5. Rechazar -->
+          <section id="rechazar" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">05</span>
+              Rechazar las cookies
+            </h2>
+            <div class="legal-section__content">
+              <div class="legal-notice legal-notice--warning">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+                <p>Si rechaza la instalación de cookies o elimina las instaladas en accesos anteriores, tenga en cuenta que no podrá beneficiarse de una serie de utilidades necesarias para navegar en algunas zonas de este sitio web. La negativa o supresión de cookies puede suponer un funcionamiento incorrecto de la página.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 6. Configuración -->
+          <section id="configuracion" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">06</span>
+              Modificar la configuración
+            </h2>
+            <div class="legal-section__content">
+              <p>Puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración del navegador que utilice. Tenga en cuenta que si acepta cookies de terceros, deberá eliminarlas desde las opciones del propio navegador.</p>
+
+              <div class="browser-grid">
+                <a href="https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                  </svg>
+                  Internet Explorer
+                </a>
+                <a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                  </svg>
+                  Microsoft Edge
+                </a>
+                <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/>
+                  </svg>
+                  Firefox
+                </a>
+                <a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+                  </svg>
+                  Chrome
+                </a>
+                <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                  Safari (macOS)
+                </a>
+                <a href="https://support.apple.com/es-es/HT201265" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  </svg>
+                  Safari iOS
+                </a>
+                <a href="https://support.google.com/accounts/answer/32050?hl=es" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  </svg>
+                  Android
+                </a>
+                <a href="https://docs.blackberry.com/en/smartphones/blackberry-smartphones/blackberry-smartphones" target="_blank" rel="noopener noreferrer" class="browser-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  </svg>
+                  BlackBerry
+                </a>
+              </div>
+
+              <p>También puede configurar sus preferencias sobre cookies publicitarias de terceros a través de los portales <a href="https://www.youronlinechoices.com/es/" target="_blank" rel="noopener noreferrer">Your Online Choices</a> o <a href="https://www.ghostery.com/" target="_blank" rel="noopener noreferrer">Ghostery</a>, donde podrá hacerlo proveedor por proveedor.</p>
+            </div>
+          </section>
+
+          <!-- 7. Más info y revocación -->
+          <section id="mas-info" class="legal-section">
+            <h2 class="legal-section__title">
+              <span class="legal-section__num">07</span>
+              Más información y revocación
+            </h2>
+            <div class="legal-section__content">
+              <p>Puede obtener más información sobre el uso de las cookies en la <a href="https://www.aepd.es/es/areas-de-actuacion/internet-y-redes-sociales/cookies" target="_blank" rel="noopener noreferrer">guía elaborada por la Agencia Española de Protección de Datos (AEPD)</a>.</p>
+
+              <div class="legal-notice legal-notice--info">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+                <div>
+                  <p><strong>Revocación del consentimiento:</strong> puede revocar el consentimiento o cambiar la configuración de las cookies en cualquier momento pulsando el siguiente enlace:</p>
+                  <button
+                    type="button"
+                    class="cookie-revoke-btn"
+                    onclick="window.dispatchEvent(new CustomEvent('open-cookie-settings'))"
+                  >
+                    Gestionar mis preferencias de cookies
+                  </button>
+                </div>
+              </div>
+
+              <p>Para cualquier duda relacionada con el uso de cookies en este sitio web, puede contactar con nosotros en <a href="mailto:info@latentoac.com">info@latentoac.com</a> o con nuestro Delegado de Protección de Datos en <a href="mailto:dpo@protexdat.com">dpo@protexdat.com</a>.</p>
+            </div>
+          </section>
+
+        </div><!-- /.legal-page__sections -->
+      </div><!-- /.legal-page__container -->
+    </div><!-- /.legal-page__body -->
+
+  </main>
+</BaseLayout>
+
+<style>
+ 
+  /* ─── Cookie type cards ───────────────────────────────────── */
+  .cookie-type-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .cookie-type-card {
+    background: var(--color-light-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .cookie-type-card__icon {
+    color: var(--color-magenta);
+    width: 40px;
+    height: 40px;
+    background: color-mix(in srgb, var(--color-magenta) 10%, var(--color-light) 90%);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cookie-type-card__title {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-magenta);
+    line-height: 1.3;
+  }
+
+  .cookie-type-card p {
+    font-size: var(--text-sm);
+    color: var(--color-gray);
+    line-height: 1.65;
+  }
+
+  /* ─── Cookie purpose list ─────────────────────────────────── */
+  .cookie-purpose-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid color-mix(in srgb, var(--color-marino) 10%, var(--color-light) 90%);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .cookie-purpose-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-marino) 8%, var(--color-light) 92%);
+  }
+
+  .cookie-purpose-item:last-child { border-bottom: none; }
+  .cookie-purpose-item:nth-child(odd) { background: var(--color-light-dark); }
+
+  .cookie-purpose-item p {
+    font-size: var(--text-sm);
+    color: var(--color-gray);
+    line-height: 1.65;
+    margin: 0;
+    padding-top: 0.15rem;
+  }
+
+  .cookie-purpose-item__badge {
+    font-size: 0.7rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .cookie-purpose-item__badge--tecnica       { background: color-mix(in srgb, var(--color-darktourquise) 12%, var(--color-light) 88%); color: var(--color-darktourquise); }
+  .cookie-purpose-item__badge--personalizacion { background: color-mix(in srgb, var(--color-purple) 12%, var(--color-light) 88%); color: var(--color-purple); }
+  .cookie-purpose-item__badge--analisis      { background: color-mix(in srgb, var(--color-darkblue) 10%, var(--color-light) 90%); color: var(--color-darkblue); }
+  .cookie-purpose-item__badge--publicidad    { background: color-mix(in srgb, var(--color-orange) 12%, var(--color-light) 88%); color: var(--color-orange); }
+  .cookie-purpose-item__badge--comportamental { background: color-mix(in srgb, var(--color-magenta) 10%, var(--color-light) 90%); color: var(--color-magenta); }
+
+  /* ─── Cookie table ────────────────────────────────────────── */
+  .cookie-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid color-mix(in srgb, var(--color-marino) 10%, var(--color-light) 90%);
+  }
+
+  .cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+    min-width: 540px;
+  }
+
+  .cookie-table thead {
+    background: var(--color-magenta);
+  }
+
+  .cookie-table thead th {
+    padding: var(--space-3) var(--space-5);
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+
+  .cookie-table tbody tr {
+    border-bottom: 1px solid color-mix(in srgb, var(--color-marino) 8%, var(--color-light) 92%);
+  }
+
+  .cookie-table tbody tr:last-child { border-bottom: none; }
+  .cookie-table tbody tr:nth-child(even) { background: var(--color-light-dark); }
+
+  .cookie-table td {
+    padding: var(--space-3) var(--space-5);
+    color: var(--color-gray);
+    vertical-align: middle;
+    line-height: 1.5;
+  }
+
+  .cookie-table td code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    background: color-mix(in srgb, var(--color-darktourquise) 8%, var(--color-light) 92%);
+    color: var(--color-darktourquise);
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-sm);
+  }
+
+  /* ─── Cookie badges (tabla) ───────────────────────────────── */
+  .cookie-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-full);
+    margin: 0.1rem 0.2rem 0.1rem 0;
+    white-space: nowrap;
+  }
+
+  .cookie-badge--analisis       { background: color-mix(in srgb, var(--color-darkblue) 10%, var(--color-light) 90%); color: var(--color-darkblue); }
+  .cookie-badge--terceros       { background: color-mix(in srgb, var(--color-gray) 12%, var(--color-light) 88%); color: var(--color-gray); }
+  .cookie-badge--personalizacion { background: color-mix(in srgb, var(--color-purple) 12%, var(--color-light) 88%); color: var(--color-purple); }
+  .cookie-badge--tecnica        { background: color-mix(in srgb, var(--color-darktourquise) 12%, var(--color-light) 88%); color: var(--color-darktourquise); }
+
+  /* ─── Browser links ───────────────────────────────────────── */
+  .browser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .browser-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-light-dark);
+    border: 1px solid color-mix(in srgb, var(--color-marino) 10%, var(--color-light) 90%);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-texto-dark);
+    text-decoration: none;
+    transition:
+      background var(--transition-interactive),
+      border-color var(--transition-interactive),
+      color var(--transition-interactive);
+  }
+
+  .browser-link svg { color: var(--color-darktourquise); flex-shrink: 0; }
+
+  .browser-link:hover {
+    background: color-mix(in srgb, var(--color-darktourquise) 8%, var(--color-light) 92%);
+    border-color: var(--color-darktourquise);
+    color: var(--color-darkblue);
+  }
+
+  /* ─── Notices ─────────────────────────────────────────────── */
+  .legal-notice {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+    padding: var(--space-5) var(--space-6);
+    border-radius: var(--radius-lg);
+  }
+
+  .legal-notice svg { flex-shrink: 0; margin-top: 0.15rem; }
+
+  .legal-notice p {
+    margin: 0;
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+
+  .legal-notice--warning {
+    background: color-mix(in srgb, var(--color-yellow) 10%, var(--color-light) 90%);
+    border: 1px solid color-mix(in srgb, var(--color-yellow) 25%, var(--color-light) 75%);
+  }
+
+  .legal-notice--warning svg { color: var(--color-yellow); }
+  .legal-notice--warning p { color: var(--color-texto-dark); }
+
+  .legal-notice--info {
+    background: color-mix(in srgb, var(--color-magenta) 8%, var(--color-light) 92%);
+    border: 1px solid color-mix(in srgb, var(--color-magenta) 20%, var(--color-light) 80%);
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .legal-notice--info > svg { color: var(--color-magenta); }
+  .legal-notice--info p { color: var(--color-texto-dark); }
+
+  .legal-notice--info > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  /* Arreglamos layout del notice info para que el icono y el div vayan en fila */
+  .legal-notice--info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* ─── Revoke button ───────────────────────────────────────── */
+  .cookie-revoke-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-magenta);
+    color: var(--color-light);
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition:
+      background var(--transition-interactive),
+      transform var(--transition-interactive);
+    align-self: flex-start;
+        border: 1px solid transparent;
+  }
+
+  .cookie-revoke-btn:hover {
+    background: var(--color-light);
+    color: var(--color-magenta);
+    transform: translateY(-1px);
+    border: 1px solid var(--color-magenta);
+  }
+
+  .cookie-revoke-btn:active {
+    transform: translateY(0);
+  }
+
+  /* ─── Responsive ──────────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .legal-page__toc {
+      padding: var(--space-5);
+    }
+
+    .cookie-type-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cookie-purpose-item {
+      flex-direction: column;
+      gap: var(--space-2);
+      padding: var(--space-4);
+    }
+
+    .cookie-table-wrapper {
+      border-radius: var(--radius-md);
+    }
+
+    .browser-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .legal-notice {
+      padding: var(--space-4);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .browser-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

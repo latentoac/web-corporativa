@@ -1,0 +1,47 @@
+---
+const { titular, subtitular } = Astro.props;
+---
+<section class="hero-sections">
+<div class="hero-sections__header">
+  <h1 class="hero-sections__h1">{titular}</h1>
+  <p class="hero-sections__p">
+    {subtitular}
+  </p>
+</div>
+</section>
+
+<style>
+
+.hero-sections{
+    width: 100vw;
+    padding: 1rem .5rem;
+    background-color: var(--color-light-dark);
+}
+
+.hero-sections__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0.8rem;
+    max-width: 628px;
+    margin: 0 auto;
+  }
+
+  .hero-sections__h1 {
+    font-family: var(--font-family-heading);
+    color: var(--color-texto-dark);
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+  }
+
+  .hero-sections__p {
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-texto-dark);
+    text-align: center;
+    line-height: 1.7rem;
+  }
+</style>

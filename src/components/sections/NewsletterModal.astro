@@ -109,74 +109,49 @@
   </div>
 </div>
 
-<script>
-  const form = document.getElementById("mc-embedded-subscribe-form");
-  const modal = document.getElementById("newsletter-modal");
-  const backdrop = document.getElementById("nl-backdrop");
-  const closeBtn = document.getElementById("nl-close");
+<script is:inline>
+  window.openNewsletterModal = () => {
+    const form = document.getElementById("mc-embedded-subscribe-form");
+    const modal = document.getElementById("newsletter-modal");
+    const closeBtn = document.getElementById("nl-close");
 
-  const resetModal = () => {
-    form.reset();
     document.getElementById("nl-success").setAttribute("hidden", "");
     document.getElementById("nl-form-content").removeAttribute("hidden");
     const errorEl = document.getElementById("nl-error");
     errorEl.setAttribute("hidden", "");
     errorEl.textContent = "";
-  };
+    form.reset();
 
-  window.openNewsletterModal = () => {
-    resetModal(); // ✅ Siempre abre limpio
     modal.removeAttribute("hidden");
     document.body.style.overflow = "hidden";
     closeBtn.focus();
   };
 
-  const closeModal = () => {
+  document.addEventListener("click", (e) => {
+    if (e.target.id === "nl-backdrop" || e.target.id === "nl-close" || e.target.closest("#nl-close")) {
+      closeNewsletterModal();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeNewsletterModal();
+  });
+
+  window.closeNewsletterModal = () => {
+    const form = document.getElementById("mc-embedded-subscribe-form");
+    const modal = document.getElementById("newsletter-modal");
+
     modal.setAttribute("hidden", "");
     document.body.style.overflow = "";
-    resetModal();
+    document.getElementById("nl-success").setAttribute("hidden", "");
+    document.getElementById("nl-form-content").removeAttribute("hidden");
+    const errorEl = document.getElementById("nl-error");
+    errorEl.setAttribute("hidden", "");
+    errorEl.textContent = "";
+    form.reset();
   };
-
-  backdrop.addEventListener("click", closeModal);
-  closeBtn.addEventListener("click", closeModal);
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
-  });
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const submitBtn = form.querySelector(".nl-submit");
-    submitBtn.disabled = true;
-    submitBtn.value = "Enviando…";
-
-    const url =
-      form.action.replace("/post?", "/post-json?") +
-      "&c=handleMailchimpResponse";
-    const data = new FormData(form);
-    const params = new URLSearchParams(data).toString();
-
-    const script = document.createElement("script");
-    script.src = `${url}&${params}`;
-    document.body.appendChild(script);
-
-    window.handleMailchimpResponse = (response) => {
-      document.body.removeChild(script);
-      submitBtn.disabled = false;
-      submitBtn.value = "Suscribirme";
-
-      if (response.result === "success") {
-        document.getElementById("nl-form-content").setAttribute("hidden", "");
-        document.getElementById("nl-success").removeAttribute("hidden");
-      } else {
-        const errorEl = document.getElementById("nl-error");
-        errorEl.textContent = response.msg.includes("already subscribed")
-          ? "Este correo ya está suscrito 😊"
-          : "Ha ocurrido un error. Inténtalo de nuevo.";
-        errorEl.removeAttribute("hidden");
-      }
-    };
-  });
 </script>
+
 
 <style>
   /* ── Modal estructura ── */
@@ -191,6 +166,10 @@
   }
   .nl-modal[hidden] {
     display: none;
+  }
+
+  [hidden] {
+  display: none !important;
   }
 
   .nl-modal__backdrop {
