@@ -1,8 +1,3 @@
----
-// src/components/NewsletterModal.astro
-// No necesita props — la URL del form viene del código de MailChimp
----
-
 <div
   id="newsletter-modal"
   class="nl-modal"
@@ -15,14 +10,8 @@
 
   <div class="nl-modal__box">
     <button class="nl-modal__close" id="nl-close" aria-label="Cerrar">
-      <svg
-        viewBox="0 0 16 16"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        aria-hidden="true"
-      >
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" aria-hidden="true">
         <path d="M3 3l10 10M13 3L3 13"></path>
       </svg>
     </button>
@@ -30,265 +19,353 @@
     <p class="nl-modal__eyebrow">Latento AC</p>
     <h2 class="nl-modal__title">Boletín de novedades</h2>
     <p class="nl-modal__sub">
-      Recibe en tu correo las últimas novedades, talleres y recursos sobre altas
-      capacidades.
+      Recibe en tu correo las últimas novedades, talleres y recursos sobre
+      altas capacidades.
     </p>
 
-    <!-- ✅ PEGA AQUÍ EL FORMULARIO DE MAILCHIMP
-         ⚠️  Elimina la línea <link href="//cdn-images..."> que viene arriba
-         ⚠️  Elimina el <h2>Subscribe</h2> que viene dentro
-         ⚠️  Mantén el campo honeypot (el div con position:absolute)       -->
-    <div id="mc_embed_signup">
-    <form action="https://latentoac.us19.list-manage.com/subscribe/post?u=1e84dc563de5bb8edbbb5bdd0&amp;id=4284b03ae0&amp;f_id=00bbdce6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll"><h2>Suscríbete a nuestro boletín de novedades</h2>
-            <div class="indicates-required"><span class="asterisk">*</span> indica que es obligatorio</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text">Escribe tu correo electrónico aquí.</span></div>
-        <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-        <input type="text" name="b_1e84dc563de5bb8edbbb5bdd0_4284b03ae0" tabindex="-1" value="">
-    </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                <p style="margin: 0px auto;"><a href="http://eepurl.com/jD8Jrw" title="Mailchimp: marketing por correo electrónico fácil y divertido"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+    <div id="nl-form-content">
+      <div id="mc_embed_signup">
+        <form
+          action="https://latentoac.us19.list-manage.com/subscribe/post?u=1e84dc563de5bb8edbbb5bdd0&id=4284b03ae0&f_id=00bbdce6f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+        >
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">
+                Correo electrónico <span class="asterisk">*</span>
+              </label>
+              <input
+                type="email"
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
+                placeholder="tu@correo.com"
+                required
+                value=""
+              />
             </div>
-        </div>
-    </div>
-        <!-- <div id="mc_embed_signup_scroll">
-          <div class="mc-field-group">
-            <label for="mce-EMAIL"
-              >Correo electrónico <span class="asterisk">*</span></label
-            >
-            <input
-              type="email"
-              name="EMAIL"
-              class="required email"
-              id="mce-EMAIL"
-              placeholder="tu@correo.com"
-              required
-            />
-          </div>
- -->
-          <!-- Honeypot anti-spam — NO tocar -->
-          <div style="position:absolute;left:-5000px;" aria-hidden="true">
-            <input
-              type="text"
-              name="b_XXXXXXXX_YYYYYYYY"
-              tabindex="-1"
-              value=""
-            />
-          </div>
 
-<!--           <div class="nl-submit-wrap">
-            <input
-              type="submit"
-              value="Suscribirme"
-              name="subscribe"
-              id="mc-embedded-subscribe"
-              class="nl-submit"
-            />
-          </div> -->
-        </div>
-      </form>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+              <!-- real people should not fill this in -->
+              <input
+                type="text"
+                name="b_1e84dc563de5bb8edbbb5bdd0_4284b03ae0"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+
+            <div class="optionalParent">
+              <div class="clear foot">
+                <input
+                  type="submit"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button nl-submit"
+                  value="Suscribirme"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Error inline -->
+      <p id="nl-error" hidden class="nl-error-msg"></p>
+    </div>
+
+    <!-- Éxito — fuera del nl-form-content para que no se oculte junto al form -->
+    <div id="nl-success" hidden class="nl-success">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
+           stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <circle cx="24" cy="24" r="20"></circle>
+        <path d="M15 24l7 7 11-14"></path>
+      </svg>
+      <h3>¡Ya estás suscrita/o!</h3>
+      <p>Pronto recibirás las novedades de Latento AC en tu correo.</p>
+      <button
+        onclick="document.getElementById('nl-close').click()"
+        class="nl-submit"
+        style="margin-top:1rem"
+      >
+        Cerrar
+      </button>
     </div>
   </div>
 </div>
 
-<script>
-  const modal = document.getElementById("newsletter-modal");
-  const backdrop = document.getElementById("nl-backdrop");
-  const closeBtn = document.getElementById("nl-close");
 
-  window.openNewsletterModal = () => {
-    modal.removeAttribute("hidden");
-    document.body.style.overflow = "hidden";
-    closeBtn.focus();
-  };
+  <script>
+    const form = document.getElementById("mc-embedded-subscribe-form");
+    const modal = document.getElementById("newsletter-modal");
+    const backdrop = document.getElementById("nl-backdrop");
+    const closeBtn = document.getElementById("nl-close");
 
-  const closeModal = () => {
-    modal.setAttribute("hidden", "");
-    document.body.style.overflow = "";
-  };
+    // Abrir / cerrar modal
+    window.openNewsletterModal = () => {
+      modal.removeAttribute("hidden");
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+    };
+    const closeModal = () => {
+      modal.setAttribute("hidden", "");
+      document.body.style.overflow = "";
+      // Resetea el form al cerrar
+      form.reset();
+      document.getElementById("nl-success").setAttribute("hidden", "");
+      document.getElementById("nl-form-content").removeAttribute("hidden");
+    };
+    backdrop.addEventListener("click", closeModal);
+    closeBtn.addEventListener("click", closeModal);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
 
-  backdrop.addEventListener("click", closeModal);
-  closeBtn.addEventListener("click", closeModal);
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
-  });
-</script>
+    // Envío via fetch (JSONP) para no redirigir
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-<style>
-  /* ── Modal estructura ── */
-  .nl-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-4);
-  }
-  .nl-modal[hidden] {
-    display: none;
-  }
+      const submitBtn = form.querySelector(".nl-submit");
+      submitBtn.disabled = true;
+      submitBtn.value = "Enviando…";
 
-  .nl-modal__backdrop {
-    position: absolute;
-    inset: 0;
-    background: oklch(0.15 0.02 220 / 0.55);
-    backdrop-filter: blur(4px);
-    cursor: pointer;
-  }
+      // MailChimp no acepta fetch directo por CORS — usamos el truco JSONP
+      const url =
+        form.action.replace("/post?", "/post-json?") +
+        "&c=handleMailchimpResponse";
+      const data = new FormData(form);
+      const params = new URLSearchParams(data).toString();
 
-  .nl-modal__box {
-    position: relative;
-    background: var(--color-light);
-    border-radius: var(--radius-xl);
-    padding: var(--space-8);
-    width: 100%;
-    max-width: 460px;
-    box-shadow: 0 24px 64px oklch(0.1 0.02 220 / 0.22);
-  }
+      const script = document.createElement("script");
+      script.src = `${url}&${params}`;
+      document.body.appendChild(script);
 
-  /* ── Botón cerrar ── */
-  .nl-modal__close {
-    position: absolute;
-    top: var(--space-4);
-    right: var(--space-4);
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--radius-full);
-    color: var(--color-gray);
-    transition:
-      background var(--transition-interactive),
-      color var(--transition-interactive);
-  }
-  .nl-modal__close:hover {
-    background: var(--color-light-dark);
-    color: var(--color-texto-dark);
-  }
-  .nl-modal__close svg {
-    width: 16px;
-    height: 16px;
-  }
+      window.handleMailchimpResponse = (response) => {
+        document.body.removeChild(script);
+        submitBtn.disabled = false;
+        submitBtn.value = "Suscribirme";
 
-  /* ── Copy ── */
-  .nl-modal__eyebrow {
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-magenta);
-    margin-bottom: 0.25rem;
-  }
-  .nl-modal__title {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-texto-dark);
-    line-height: 1.15;
-    margin-bottom: 0.5rem;
-  }
-  .nl-modal__sub {
-    font-size: var(--text-sm);
-    color: var(--color-gray);
-    line-height: 1.6;
-    margin-bottom: var(--space-6);
-  }
+        if (response.result === "success") {
+          // Muestra mensaje de éxito dentro del modal
+          document.getElementById("nl-form-content").setAttribute("hidden", "");
+          document.getElementById("nl-success").removeAttribute("hidden");
+        } else {
+          // Muestra el error inline
+          const errorEl = document.getElementById("nl-error");
+          errorEl.textContent = response.msg.includes("already subscribed")
+            ? "Este correo ya está suscrito 😊"
+            : "Ha ocurrido un error. Inténtalo de nuevo.";
+          errorEl.removeAttribute("hidden");
+        }
+      };
+    });
+  </script>
 
-  /* ── Formulario MailChimp (override de estilos) ── */
-  #mc_embed_signup {
-    all: unset;
-    display: block;
-  }
-  #mc_embed_signup_scroll {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
-  }
+  <style>
+    /* ── Modal estructura ── */
+    .nl-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-4);
+    }
+    .nl-modal[hidden] {
+      display: none;
+    }
 
-  .mc-field-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.375rem;
-  }
-  .mc-field-group label {
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-texto-dark);
-  }
-  .mc-field-group .asterisk {
-    color: var(--color-magenta);
-    margin-left: 2px;
-  }
+    .nl-modal__backdrop {
+      position: absolute;
+      inset: 0;
+      background: oklch(0.15 0.02 220 / 0.55);
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+    }
 
-  .mc-field-group input[type="email"] {
-    width: 100%;
-    padding: 0.7rem 1rem;
-    border: 1.5px solid #ddd;
-    border-radius: var(--radius-md);
-    font-family: var(--font-family-body);
-    font-size: var(--text-base);
-    color: var(--color-texto-dark);
-    background: var(--color-light);
-    transition:
-      border-color var(--transition-interactive),
-      box-shadow var(--transition-interactive);
-  }
-  .mc-field-group input[type="email"]::placeholder {
-    color: #aaa;
-  }
-  .mc-field-group input[type="email"]:focus-visible {
-    outline: none;
-    border-color: var(--color-magenta);
-    box-shadow: 0 0 0 3px rgba(206, 48, 97, 0.15);
-  }
-
-  /* ── Botón submit ── */
-  .nl-submit-wrap {
-    margin-top: var(--space-2);
-  }
-  .nl-submit {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    background: var(--color-magenta);
-    color: var(--color-light);
-    font-family: var(--font-family-body);
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    border: none;
-    border-radius: var(--radius-full);
-    cursor: pointer;
-    transition:
-      background var(--transition-interactive),
-      transform var(--transition-interactive),
-      box-shadow var(--transition-interactive);
-  }
-  .nl-submit:hover {
-    background: #a82350;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(206, 48, 97, 0.3);
-  }
-  .nl-submit:active {
-    transform: translateY(0);
-    box-shadow: none;
-  }
-
-  /* ── Responsive ── */
-  @media (max-width: 480px) {
     .nl-modal__box {
-      padding: var(--space-6);
+      position: relative;
+      background: var(--color-light);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      width: 100%;
+      max-width: 460px;
+      box-shadow: 0 24px 64px oklch(0.1 0.02 220 / 0.22);
+    }
+
+    /* ── Botón cerrar ── */
+    .nl-modal__close {
+      position: absolute;
+      top: var(--space-4);
+      right: var(--space-4);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-full);
+      color: var(--color-gray);
+      transition:
+        background var(--transition-interactive),
+        color var(--transition-interactive);
+    }
+    .nl-modal__close:hover {
+      background: var(--color-light-dark);
+      color: var(--color-texto-dark);
+    }
+    .nl-modal__close svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ── Copy ── */
+    .nl-modal__eyebrow {
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-semibold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-magenta);
+      margin-bottom: 0.25rem;
     }
     .nl-modal__title {
-      font-size: var(--text-lg);
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-texto-dark);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
     }
-  }
-</style>
+    .nl-modal__sub {
+      font-size: var(--text-sm);
+      color: var(--color-gray);
+      line-height: 1.6;
+      margin-bottom: var(--space-6);
+    }
+
+    /* ── Formulario MailChimp (override de estilos) ── */
+    #mc_embed_signup {
+      all: unset;
+      display: block;
+    }
+    #mc_embed_signup_scroll {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+
+    .mc-field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.375rem;
+    }
+    .mc-field-group label {
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-texto-dark);
+    }
+    .mc-field-group .asterisk {
+      color: var(--color-magenta);
+      margin-left: 2px;
+    }
+
+    .mc-field-group input[type="email"] {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1.5px solid #ddd;
+      border-radius: var(--radius-md);
+      font-family: var(--font-family-body);
+      font-size: var(--text-base);
+      color: var(--color-texto-dark);
+      background: var(--color-light);
+      transition:
+        border-color var(--transition-interactive),
+        box-shadow var(--transition-interactive);
+    }
+    .mc-field-group input[type="email"]::placeholder {
+      color: #aaa;
+    }
+    .mc-field-group input[type="email"]:focus-visible {
+      outline: none;
+      border-color: var(--color-magenta);
+      box-shadow: 0 0 0 3px rgba(206, 48, 97, 0.15);
+    }
+
+    /* ── Botón submit ── */
+    .nl-submit-wrap {
+      margin-top: var(--space-2);
+    }
+    .nl-submit {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: var(--color-magenta);
+      color: var(--color-light);
+      font-family: var(--font-family-body);
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-bold);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition:
+        background var(--transition-interactive),
+        transform var(--transition-interactive),
+        box-shadow var(--transition-interactive);
+    }
+    .nl-submit:hover {
+      background: #a82350;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(206, 48, 97, 0.3);
+    }
+    .nl-submit:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .nl-modal__box {
+        padding: var(--space-6);
+      }
+      .nl-modal__title {
+        font-size: var(--text-lg);
+      }
+    }
+
+    .nl-success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: var(--space-4) 0;
+      gap: var(--space-3);
+    }
+    .nl-success svg {
+      width: 52px;
+      height: 52px;
+      color: var(--color-magenta);
+      stroke: var(--color-magenta);
+    }
+    .nl-success h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-texto-dark);
+    }
+    .nl-success p {
+      font-size: var(--text-sm);
+      color: var(--color-gray);
+      max-width: 30ch;
+    }
+    .nl-error-msg {
+      font-size: var(--text-sm);
+      color: var(--color-magenta);
+      margin-top: calc(-1 * var(--space-2));
+      padding: var(--space-2) var(--space-3);
+      background: rgba(206, 48, 97, 0.07);
+      border-radius: var(--radius-md);
+    }
+  </style>
+</div>
