@@ -1,0 +1,36 @@
+---
+const { icon, alt, workshop, alt2 } = Astro.props;
+
+---
+
+<div class="button-cta">
+    <img class="button-cta__icon" src={icon} alt={alt}>
+    <img class="button-cta__workshop" src={workshop} alt={alt2}>
+</div>
+
+<style>
+    .button-cta{
+        border: 1px solid var(--color-gray-poor);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--color-light);
+    }
+
+    .button-cta__icon{
+        width: 60px;
+        height: 60px;
+    }
+
+
+    @media (max-width:550px) {
+        
+        .button-cta{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+</style>
