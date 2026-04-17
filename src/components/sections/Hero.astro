@@ -1,0 +1,350 @@
+---
+import background from '../../assets/images/home/background-hero.avif'
+import { getImage } from 'astro:assets';
+
+const heroBg = await getImage({
+  src: background,
+  format: 'webp',
+  width: 1920,
+  quality: 85,
+});
+---
+
+<section class="hero" aria-label="Presentación principal">
+
+    <div class="hero__bg" aria-hidden="true">
+      <img
+        src={background.src}
+        alt="Fondo en vista cenital con manos de personas trabajando con materiales educativos"
+        width="1400"
+        height="700"
+        loading="eager"
+        decoding="async"
+        class="hero__bg-img"
+      />
+      <div class="hero__bg-overlay" aria-hidden="true"></div>
+    </div>
+
+    <!-- Contenido superpuesto -->
+    <div class="hero__inner" style={`--hero-bg: url('${heroBg.src}')`}>
+
+      <!-- Bloque de texto principal -->
+      <div class="hero__content">
+        <h1 class="hero__heading">
+          Somos un 
+          <mark class="hero__mark" >gabinete multidisciplinar</mark>
+          de expertas en
+          <mark class="hero__mark" >altas capacidades.</mark>
+        </h1>
+        
+
+        <p class="hero__description">
+        <mark class="hero__mark--description">
+          Identificación, evaluación y estimulación de altas capacidades en
+          niños, adolescentes y adultos en Galicia.</mark>
+        </p>
+
+        <!-- Acciones CTA -->
+        <div class="hero__actions">
+          <a href="/contacto" class="hero__btn hero__btn--primary">
+            Contáctanos
+          </a>
+          <a href="#quienes-somos" class="hero__btn hero__btn--ghost">
+            Conocer más
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /.hero__inner -->
+
+  </section>
+  <!-- /HERO -->
+
+
+<style>
+
+img { display: block; max-width: 100%; height: auto; }
+
+a {
+  transition:
+    color var(--transition-interactive),
+    background var(--transition-interactive),
+    border-color var(--transition-interactive),
+    box-shadow var(--transition-interactive),
+    opacity var(--transition-interactive);
+}
+
+
+
+/* ============================================================
+   .hero  —  Bloque raíz
+   ============================================================ */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(380px, 52vw, 600px);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+/* ── .hero__bg  — imagen de fondo + overlay ─────────────────── */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* Gradiente oscuro hacia la izquierda para garantizar legibilidad del texto */
+.hero__bg-overlay {
+  position: absolute;
+  inset: 0;
+/*   background: linear-gradient(
+    to right,
+    rgba(35, 42, 52, 0.82) 0%,
+    rgba(35, 42, 52, 0.55) 50%,
+    rgba(35, 42, 52, 0.10) 100%
+  ); */
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ── .hero__inner  — contenedor centrado ───────────────────── */
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(var(--space-6), 5vw, var(--space-16));
+  padding-block: clamp(var(--space-10), 8vw, var(--space-16));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── .hero__content  — columna de texto ────────────────────── */
+.hero__content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* ── .hero__heading  — h1 principal ────────────────────────── */
+.hero__heading {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-light);
+  text-wrap: balance;
+}
+.hero__mark{
+    background: var(--color-magenta);
+    color: var(--color-light);
+    padding-inline: 0.2em;
+    font-weight: var(--font-weight-bold);
+
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-radius: 0.15em;
+}
+/* ── .hero__description  — bajada ──────────────────────────── */
+.hero__description {
+  font-size: var(--text-base);
+  text-align: center;
+  font-weight: var(--font-weight-regular);
+  max-width: 50ch;
+  line-height: 1.55;
+}
+
+.hero__mark--description{
+  background-color: transparent;
+      color: var(--color-light);
+
+    padding-inline: 0.2em;
+    font-weight: var(--font-weight-bold);
+}
+
+/* ── .hero__actions  — grupo de botones ────────────────────── */
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  justify-content: center;
+}
+
+/* ── .hero__btn  — botón base ──────────────────────────────── */
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-family-body);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 44px; /* touch target */
+}
+
+/* Primario — magenta sólido */
+.hero__btn--primary {
+  background-color: var(--color-light);
+  color: var(--color-magenta);
+  border-color: var(--color-light);
+}
+
+.hero__btn--primary:hover,
+.hero__btn--primary:focus-visible {
+  background-color: var(--color-magenta);
+  border-color: var(--color-magenta);
+  color: var(--color-light);
+}
+
+.hero__btn--primary:active {
+  background-color: var(--color-magenta);
+  border-color: var(--color-magenta);
+  color: var(--color-light);
+}
+
+/* Ghost — contorno blanco */
+.hero__btn--ghost {
+  background-color: transparent;
+  color: var(--color-light);
+  border-color: rgba(255, 255, 255, 0.70);
+}
+
+.hero__btn--ghost:hover,
+.hero__btn--ghost:focus-visible {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--color-light);
+}
+
+.hero__btn--ghost:active {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+
+/* ============================================================
+   RESPONSIVE — max-width: 1100px (tablet landscape / iPad)
+   ============================================================ */
+@media (max-width: 1100px) {
+  .hero {
+    min-height: clamp(340px, 50vw, 520px);
+  }
+
+  .hero__bg-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(35, 42, 52, 0.86) 0%,
+      rgba(35, 42, 52, 0.65) 55%,
+      rgba(35, 42, 52, 0.20) 100%
+    );
+  }
+
+  .hero__inner {
+    padding-inline: clamp(var(--space-6), 4vw, var(--space-12));
+    padding-block: clamp(var(--space-8), 6vw, var(--space-12));
+  }
+
+  .hero__content {
+    max-width: 520px;
+    gap: var(--space-4);
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — max-width: 640px (móvil)
+   ============================================================ */
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+    /* En móvil el hero se apila en vertical */
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* La imagen en móvil ocupa el bloque superior con altura fija */
+  .hero__bg {
+    position: relative;  /* sale del flujo absoluto */
+    height: 220px;
+    flex-shrink: 0;
+    display: none;
+  }
+
+  /* Overlay más oscuro uniforme en móvil porque el texto va encima */
+  .hero__bg-overlay {
+    background: rgba(35, 42, 52, 0.50);
+  }
+
+  /* El bloque de texto se muestra debajo de la imagen con fondo oscuro */
+  .hero__inner {
+    position: static;
+    z-index: auto;
+    background-color: var(--color-marino);
+    padding-inline: var(--space-5);
+    padding-block: var(--space-8);
+    max-width: 100%;
+    background-image:
+      linear-gradient(
+        rgba(35, 42, 52, 0.72),
+        rgba(35, 42, 52, 0.72)
+      ),
+      var(--hero-bg);
+
+    background-size: cover, cover;
+    background-position: center 25%, center 25%;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    gap: var(--space-4);
+  }
+
+  .hero__tagline {
+    font-size: var(--text-sm);
+  }
+
+  .hero__heading {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.15;
+  }
+
+  .hero__description {
+    font-size: var(--text-base);
+    max-width: 100%;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .hero__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Respeta preferencias de movimiento reducido ──────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+</style>
