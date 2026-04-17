@@ -1,36 +1,39 @@
 ---
-const { icon, alt, workshop, alt2 } = Astro.props;
+const { icon, alt, workshop, alt2, color } = Astro.props;
 
 ---
 
 <div class="button-cta">
-    <img class="button-cta__icon" src={icon} alt={alt}>
-    <img class="button-cta__workshop" src={workshop} alt={alt2}>
+  <img class="button-cta__icon" src={icon} alt={alt} />
+  <img class="button-cta__workshop" src={workshop} alt={alt2} />
 </div>
 
-<style>
-    .button-cta{
-        border: 1px solid var(--color-gray-poor);
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        background-color: var(--color-light);
+<style define:vars={{ cardColor: color }}>
+  .button-cta {
+    border: 1px solid var(--color-gray-poor);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-light);
+  }
+
+  .button-cta:hover {
+    border-color: var(--cardColor);
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px oklch(0.2 0.01 80 / 0.08);
+  }
+
+  .button-cta__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 550px) {
+    .button-cta {
+      width: 100%;
+      justify-content: center;
     }
-
-    .button-cta__icon{
-        width: 60px;
-        height: 60px;
-    }
-
-
-    @media (max-width:550px) {
-        
-        .button-cta{
-            width: 100%;
-            justify-content: center;
-        }
-    }
-
+  }
 </style>

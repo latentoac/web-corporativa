@@ -1,0 +1,276 @@
+---
+import DescubreLogo from "../../assets/images/servicios/latento-descubre.svg";
+import PotenciaLogo from "../../assets/images/servicios/latento-potencia.svg";
+import AcompanaLogo from "../../assets/images/servicios/latento-acompana.svg";
+import OrientaLogo from "../../assets/images/servicios/latento-orienta.svg";
+import EmcionaLogo from "../../assets/images/servicios/latento-emociona.svg";
+import EnriqueceLogo from "../../assets/images/servicios/latento-enriquece.svg";
+import InspiraLogo from "../../assets/images/servicios/latento-inspira.svg";
+
+const servicios = [
+  {
+    logo: DescubreLogo,
+    nombre: "Descubre",
+    color: "var(--color-magenta)",
+    descripcion:
+      "<strong>Valoraciones psicoeducativas</strong> en niños, adolescentes y adultos con la participación de psicólogos/as expertos/as en altas capacidades para una aproximación fiel al potencial cognitivo.",
+  },
+  {
+    logo: PotenciaLogo,
+    nombre: "Potencia",
+    color: "var(--color-yellow)",
+    descripcion:
+      "Entrenamiento cognitivo en <strong>funciones ejecutivas</strong> e intervenciones psicoeducativas para casos de <strong>doble excepcionalidad,</strong> donde las altas capacidades se acompañan de dificultades de aprendizaje.",
+  },
+  {
+    logo: AcompanaLogo,
+    nombre: "Acompaña",
+    color: "var(--color-magenta)",
+    descripcion:
+      "Asesoramiento y apoyo a familias con hijos/as identificados/as con altas capacidades. <strong>Grupos de apoyo</strong> para preadolescentes y adolescentes para el desarrollo del pensamiento crítico y habilidades sociales.",
+  },
+  {
+    logo: OrientaLogo,
+    nombre: "Orienta",
+    color: "var(--color-orange)",
+    descripcion:
+      "Apoyo y acompañamiento académico para favorecer el <strong>enganche curricular,</strong> elaborar planes de estudios y orientar en la toma de decisiones con adolescentes y adultos emergentes con altas capacidades.",
+  },
+  {
+    logo: EmcionaLogo,
+    nombre: "Emociona",
+    color: "var(--color-purple)",
+    descripcion:
+      "Intervención en <strong>inteligencia emocional,</strong> afianzamiento de la autoestima y el autoconcepto, y desarrollo de habilidades sociales. Apoyo familiar y herramientas para la <strong>autorregulación</strong> emocional.",
+  },
+  {
+    logo: EnriqueceLogo,
+    nombre: "Enriquece",
+    color: "var(--color-darkblue)",
+    descripcion:
+      "<strong>Talleres de enriquecimiento extracurricular</strong> en pequeño grupo en ámbitos científico-tecnológico, artístico-creativo y lógico-matemático, donde el alumno/a es protagonista de su propio aprendizaje.",
+  },
+  {
+    logo: InspiraLogo,
+    nombre: "Inspira",
+    color: "var(--color-darktourquise)",
+    descripcion:
+      "Cursos y seminarios de <strong>formación para profesorado</strong> y grupos de profesores interesados en atender al alumnado con altas capacidades. Relatorios en AMPAS y asociaciones sobre detección y asesoramiento.",
+  },
+];
+---
+
+<section class="site-services">
+  <div class="site-services__header">
+    <h2 class="site-services__h2">
+      Nuestros <span class="site-services__h2--accent">servicios</span>
+    </h2>
+    <p class="site-services__intro">
+      En Latento ofrecemos un <strong
+        >servicio integral de atención a las altas capacidades: evaluamos,
+        acompañamos e intervenimos</strong
+      > a lo largo de todo el proceso educativo, desde la infancia hasta la edad adulta.
+    </p>
+  </div>
+
+  <ul class="site-services__grid" role="list">
+    {
+      servicios.map((servicio) => (
+        <li
+          class="site-services__card"
+          style={`--card-color: ${servicio.color}`}
+        >
+          <div class="site-services__card-logo">
+            <img
+              src={servicio.logo.src}
+              alt={servicio.descripcion}
+              width="200"
+              height="100"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p class="site-services__card-desc" set:html={servicio.descripcion}/>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  /* ── Sección ── */
+  .site-services {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 3rem);
+  }
+
+  /* ── Cabecera ── */
+  .site-services__header {
+    text-align: center;
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .site-services__h2 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .site-services__h2--accent {
+    color: var(--color-magenta);
+  }
+
+  .site-services__intro {
+    font-family: var(--font-family-body);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray);
+    max-width: 56ch;
+  }
+
+  /* ── Grid ── */
+  .site-services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  justify-items: center;
+  }
+
+  /* La 7ª tarjeta (única en su fila) queda centrada */
+/*   .site-services__card:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  } */
+
+  .site-services__card-desc strong {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-texto-dark);
+  }
+
+  @media (max-width: 768px) {
+    .site-services__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* En 2 columnas, la última tarjeta si es impar se centra */
+    .site-services__card:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      max-width: 280px;
+      justify-self: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .site-services__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .site-services__card:last-child:nth-child(3n + 1) {
+      grid-column: auto;
+    }
+
+    .site-services__card:last-child:nth-child(odd) {
+      grid-column: auto;
+      max-width: 100%;
+    }
+  }
+
+  /* ── Tarjeta ── */
+  .site-services__card {
+    width: 100%;
+    background: var(--color-light);
+    border: 1.5px solid #e8e8e8;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+    cursor: default;
+
+    /* Transición en borde y escala */
+    transition:
+      border-color 280ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 280ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .site-services__card:hover {
+    border-color: var(--card-color);
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px oklch(0.2 0.01 80 / 0.08);
+  }
+
+  /* ── Logo con zoom independiente del zoom de la tarjeta ── */
+  .site-services__card-logo {
+    width: 200px;
+    height: 100px;
+    flex-shrink: 0;
+    transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .site-services__card:hover .site-services__card-logo {
+    transform: scale(1.08);
+  }
+
+  .site-services__card-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* ── Nombre del servicio ── */
+  .site-services__card-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .site-services__card-latento {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-texto-dark);
+  }
+
+  .site-services__card-servicio {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--card-color);
+    transition: color 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* ── Descripción ── */
+  .site-services__card-desc {
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray);
+    line-height: 1.6;
+    max-width: 36ch;
+  }
+
+  /* ── Respeta prefers-reduced-motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .site-services__card,
+    .site-services__card-logo {
+      transition: border-color 180ms ease;
+    }
+
+    .site-services__card:hover {
+      transform: none;
+    }
+
+    .site-services__card:hover .site-services__card-logo {
+      transform: none;
+    }
+  }
+</style>

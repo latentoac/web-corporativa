@@ -8,9 +8,9 @@ import talleresCoruna from '../../assets/images/ui/talleres-coruna.svg';
 import talleresOnline from '../../assets/images/ui/talleres-online.svg';
 
 const workshopItems = [
-  { icon: catedral, alt: "Icono de talleres de Santiago de Compostela", workshop: talleresSantiago, alt2:"Talleres en Santiago de Compostela" },
-  { icon: hercules, alt: "Icono de talleres de A Coruña", workshop: talleresCoruna, alt2:"Talleres en A Coruña" },
-  { icon: portatil, alt: "Icono de formación online", workshop: talleresOnline, alt2:"Talleres en formación online" }
+  { icon: catedral, alt: "Icono de talleres de Santiago de Compostela", workshop: talleresSantiago, alt2:"Talleres en Santiago de Compostela", color:"var(--color-magenta)" },
+  { icon: hercules, alt: "Icono de talleres de A Coruña", workshop: talleresCoruna, alt2:"Talleres en A Coruña",color:"var(--color-yellow)" },
+  { icon: portatil, alt: "Icono de formación online", workshop: talleresOnline, alt2:"Talleres en formación online", color:"var(--color-purple)" }
 ]
 
 
@@ -29,7 +29,7 @@ const workshopItems = [
     <div class="site-cta__container">
         {
       workshopItems.map((item) => (
-            <ButtonCTA icon={item.icon.src} alt={item.alt} workshop={item.workshop.src} alt2={item.alt2}/>
+            <ButtonCTA icon={item.icon.src} alt={item.alt} workshop={item.workshop.src} alt2={item.alt2} color={item.color}/>
             ))
     }
     </div>
@@ -81,5 +81,10 @@ const workshopItems = [
 }
 
 
+  @media (max-width: 550px) {
+    .site-cta__container {
+      padding: 0px .8rem;
+    }
+  }
 </style>
 
