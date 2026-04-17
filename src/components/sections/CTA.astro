@@ -1,0 +1,85 @@
+---
+import catedral from '../../assets/images/ui/catedral-santiago-icon.svg';
+import hercules from '../../assets/images/ui/torre-hercules-icon.svg';
+import portatil from '../../assets/images/ui/portatil-icon.svg';
+import ButtonCTA from '../../components/ui/ButtonCTA.astro';
+import talleresSantiago from '../../assets/images/ui/talleres-santiago.svg';
+import talleresCoruna from '../../assets/images/ui/talleres-coruna.svg';
+import talleresOnline from '../../assets/images/ui/talleres-online.svg';
+
+const workshopItems = [
+  { icon: catedral, alt: "Icono de talleres de Santiago de Compostela", workshop: talleresSantiago, alt2:"Talleres en Santiago de Compostela" },
+  { icon: hercules, alt: "Icono de talleres de A Coruña", workshop: talleresCoruna, alt2:"Talleres en A Coruña" },
+  { icon: portatil, alt: "Icono de formación online", workshop: talleresOnline, alt2:"Talleres en formación online" }
+]
+
+
+---
+
+<section class="site-cta">
+
+    <div class="site-cta__header">
+        <h2 class="site-cta__h2">
+            Accesos directos a nuestros talleres
+        </h2>
+        <p class="site-cta__p">
+            Encuentra los talleres que buscas en un abrir y cerrar de ojos.
+        </p>
+    </div>
+    <div class="site-cta__container">
+        {
+      workshopItems.map((item) => (
+            <ButtonCTA icon={item.icon.src} alt={item.alt} workshop={item.workshop.src} alt2={item.alt2}/>
+            ))
+    }
+    </div>
+
+</section>
+
+<style>
+
+.site-cta{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem .5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-cta__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-cta__h2{
+    font-family: var(--font-family-heading);
+    font-size: var(--text-lg);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-marino);
+    text-align: center;
+}
+
+.site-cta__p{
+    font-family: var(--font-family-body);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+}
+
+.site-cta__container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+</style>
+
