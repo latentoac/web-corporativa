@@ -1,6 +1,6 @@
 ---
 import logo from '../../assets/brand/logo/logo-latento-horizontal.png';
-import iebt1 from '../../assets/images/ui/IEBT-banner-1.webp';
+import iebt1 from '../../assets/brand/logo/iebt-logotipo.svg';
 import iebt2 from '../../assets/images/ui/IEBT-banner-2.webp';
 import iebt from '../../assets/images/ui/IEBT-banner.webp';
 import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
@@ -74,24 +74,25 @@ import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
           </ul>
         </nav>
 
-<!--         <section class="site-footer__column" aria-labelledby="site-footer-partners-title">
+      <section class="site-footer__column" aria-labelledby="site-footer-partners-title">
           <h2 class="site-footer__heading" id="site-footer-partners-title">Entidades colaboradoras</h2>
 
-          <div class="site-footer__partners">
+<!--           <div class="site-footer__partners">
             <div class="site-footer__partner">
                 <img src={iebt2.src} alt="Logo de IEBT">
-            </div>
+            </div> -->
             <div class="site-footer__partner">
                 <img src={iebt1.src} alt="Logo de IEBT">
             </div>
           </div>
-        </section> -->
+        </section>
       </div>
 
 
     </div>
   </div>
       <div class="site-footer__support">
+        <div class="site-footer__support--container">
         <img src={uexuntalogo.src} alt="Logos Europa y Xunta de Galicia">
         <div class="site-footer__support-content">
           <p class="site-footer__support-text">
@@ -99,8 +100,9 @@ import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
             Gracias a su colaboración, seguimos creciendo y innovando cada día.
           </p>
         </div>
-
         <a class="site-footer__support-link" href="/colaboradores">Conocer más</a>
+        </div>
+        
       </div>
   <div class="site-footer__bottom">
     <div class="site-footer__container site-footer__bottom-inner">
@@ -162,7 +164,7 @@ import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
 
 .site-footer__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 0.9fr) /* minmax(0, 1fr) */;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 0.9fr) minmax(0, 1fr);
   gap: 2rem;
   padding-bottom: 3rem;
 }
@@ -318,11 +320,11 @@ import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
-  padding: 1rem 1rem 0.9rem;
+/*   padding: 1rem 1rem 0.9rem; */
 }
 
 .site-footer__partner img{
-    max-width: 130px;
+    max-width: 230px;
 }
 
 .site-footer__partner-subline {
@@ -332,13 +334,19 @@ import uexuntalogo from '../../assets/brand/logo/ue-xunta-logos.webp';
 }
 
 .site-footer__support {
+  border-top: 1px solid var(--footer-border);
+  background-color: var(--color-purple);
+}
+
+.site-footer__support--container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 2rem 2.5rem;
-  border-top: 1px solid var(--footer-border);
-  background-color: var(--color-purple);
+  flex-wrap: wrap;
+  padding: 2rem .5rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .site-footer__support-content {
