@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
-  branch: main # Asegúrate de que coincide con tu rama principal
+  name: github
+  repo: latentoac/web-corporativa  # Tu repositorio de GitHub
+  branch: main
+  base_url: https://latentoac.netlify.app  # Tu dominio en producción
+  auth_endpoint: /.netlify/functions/auth                  # Apunta a tu Netlify Function
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
@@ -10,21 +13,17 @@ collections:
     label: "Blog"
     folder: "src/content/blog"
     create: true
-    extension: "md" # Obliga a crear archivos .md
-    format: "frontmatter" # Asegura que use YAML arriba y Markdown abajo
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Imagen destacada", name: "image", widget: "image", required: false }
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
 
   - name: "talleres"
     label: "Talleres"
     folder: "src/content/talleres"
     create: true
-    extension: "md"
-    format: "frontmatter"
     fields:
       - { label: "Nombre del taller", name: "title", widget: "string" }
       - { label: "Descripción", name: "description", widget: "text" }
@@ -35,5 +34,5 @@ collections:
         widget: "string"
         required: false
         hint: "Enlace al formulario para inscribirse al taller"
-        pattern: ['^https?://.+', "Debe ser una URL válida"]
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
+        pattern: ['^https?://.+', "Debe ser una URL válida (https://...)"]
+      - { label: "Contenido", name: "body", widget: "markdown" }
