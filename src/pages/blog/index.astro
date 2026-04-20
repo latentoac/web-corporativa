@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroSections from "../../components/sections/HeroSections.astro";
-import "../../styles/blog-index.css";
 
 const posts = await getCollection("blog");
 const sorted = posts.sort(
