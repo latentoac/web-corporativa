@@ -1,0 +1,51 @@
+---
+import HeroSections from "../components/sections/HeroSections.astro";
+import bannerIebt from "../assets/brand/partners/cartel_iebt.avif";
+import bannerBono from "../assets/brand/partners/cartel-programa-bono.avif";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const partners = [
+  { nombre: "Xunta de Galicia", banner: bannerIebt },
+  { nombre: "Xunta de Galicia", banner: bannerBono },
+];
+---
+<BaseLayout>
+<section class="colaboradores">
+  <HeroSections
+    titular="Colaboradores"
+    subtitular="Conoce las entidades que han brindado su apoyo a nuestra empresa. Gracias a su colaboración, seguimos creciendo y innovando cada día."
+  />
+
+  <div class="colaboradores__container">
+    {
+      partners.map((partner) => (
+        <img
+          class="colaboradores__img"
+          src={partner.banner.src}
+          alt={partner.nombre}
+          width="600"
+          height="450"
+          loading="lazy"
+          decoding="async"
+        />
+      ))
+    }
+  </div>
+</section>
+</BaseLayout>
+
+<style>
+    .colaboradores__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .colaboradores__img{
+        width: 100%;
+        max-width: 600px;
+    }
+
+</style>

@@ -1,0 +1,103 @@
+---
+const { title, description, link, icon } = Astro.props;
+---
+
+<div class="card-rrhh">
+  <div class="card-rrhh__container">
+    <div class="card-rrhh__icon-wrap">
+      <Fragment set:html={icon} />
+    </div>
+    <h3 class="card-rrhh__h3">{title}</h3>
+    <p class="card-rrhh__p">{description}</p>
+  </div>
+  <a href={link} class="card-rrhh__a">Inscríbete aquí</a>
+</div>
+
+
+<style>
+  .card-rrhh {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-8) var(--space-6);
+    background-color: var(--color-light-dark);
+    color: var(--color-texto-dark);
+    border-radius: var(--radius-lg);
+    gap: var(--space-6);
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px oklch(0.2 0.01 80 / 0.06);
+    transition: box-shadow var(--transition-interactive);
+  }
+
+  .card-rrhh:hover {
+    box-shadow: 0 8px 24px oklch(0.2 0.01 80 / 0.10);
+  }
+
+  .card-rrhh__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .card-rrhh__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-md);
+  background-color: color-mix(in srgb, var(--color-magenta) 10%, var(--color-light));
+  color: var(--color-magenta);
+  flex-shrink: 0;
+}
+
+
+  .card-rrhh__h3 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-semibold);
+    text-wrap: balance;
+    color: var(--color-texto-dark);
+  }
+
+  .card-rrhh__p {
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray);
+    max-width: 72ch;
+    line-height: 1.65;
+  }
+
+  .card-rrhh__a {
+    border: 1px solid var(--color-magenta);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    color: var(--color-light);
+    background-color: var(--color-magenta);
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.04em;
+    transition: color var(--transition-interactive),
+                background-color var(--transition-interactive),
+                box-shadow var(--transition-interactive);
+  }
+
+  .card-rrhh__a:hover {
+    background-color: var(--color-light);
+    color: var(--color-magenta);
+    box-shadow: 0 4px 16px oklch(0.2 0.01 80 / 0.10);
+  }
+
+  .card-rrhh__a:focus-visible {
+    outline: 2px solid var(--color-magenta);
+    outline-offset: 3px;
+  }
+</style>

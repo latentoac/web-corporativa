@@ -1,0 +1,76 @@
+---
+
+---
+
+<section class="contacto" id="contact">
+
+    <div class="contacto__header">
+        <h2 class="contacto__h2">Formulario de<br><span>contacto</span></h2>
+        <p class="contacto__p">Envíanos un mensaje y nos pondremos en contacto contigo.</p>
+    </div>
+
+  <iframe
+    data-tally-src="https://tally.so/embed/ja9Exx?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+    loading="lazy"
+    width="100%"
+    height="100"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    title="Contacto"></iframe>
+  <script>
+    var d = document,
+      w = "https://tally.so/widgets/embed.js",
+      v = function () {
+        "undefined" != typeof Tally
+          ? Tally.loadEmbeds()
+          : d
+              .querySelectorAll("iframe[data-tally-src]:not([src])")
+              .forEach(function (e) {
+                e.src = e.dataset.tallySrc;
+              });
+      };
+    if ("undefined" != typeof Tally) v();
+    else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script");
+      ((s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s));
+    }
+  </script>
+</section>
+
+<style>
+  .contacto {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .contacto__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem .8rem;
+    flex-direction: column;
+  }
+
+  /* ── Tipografía ── */
+  .contacto__h2 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-bold);
+    text-wrap: balance;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  .contacto__p {
+    font-family: var(--font-family-body);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-regular);
+    max-width: 72ch;
+  }
+
+  .contacto__h2 span{
+    color: var(--color-magenta);
+  }
+</style>

@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSections from "../components/sections/HeroSections.astro";
+---
+
+<BaseLayout>
+  <HeroSections
+    titular="Programa de becas NEAE"
+    subtitular="En Latento creemos que ningún talento debería quedarse sin acompañamiento por razones económicas. Si tu hijo o hija tiene reconocidas necesidades específicas de apoyo educativo, rellena el formulario y nuestro equipo se pondrá en contacto contigo."
+  />
+
+  <section class="becas">
+    <iframe
+      data-tally-src="https://tally.so/embed/vGxgdQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy"
+      width="100%"
+      height="100"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      title="Becas"></iframe>
+    <script>
+      var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d
+                .querySelectorAll("iframe[data-tally-src]:not([src])")
+                .forEach(function (e) {
+                  e.src = e.dataset.tallySrc;
+                });
+        };
+      if ("undefined" != typeof Tally) v();
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script");
+        ((s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s));
+      }
+    </script>
+  </section>
+</BaseLayout>

@@ -1,0 +1,127 @@
+---
+import HeroSections from "../components/sections/HeroSections.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HumanResourcesCard from "../components/cards/HumanResourcesCard.astro";
+import banner from "../assets/images/pages/rrhh/rrhhlatento.avif";
+
+const jobs = [
+  {
+    title: "Vacante para psicóloga/ psicopedagoga/ pedagoga",
+    description:
+      "Vacante para psicóloga/ psicopedagoga/ pedagoga con experiencia en tratamiento educativo y emocional tanto individual como grupal. Se valorará formación en inteligencia emocional, terapia familiar e inclusión educativa. Buscamos una persona dinámica, con ilusión de formar parte de un equipo en aprendizaje continuo. Residentes en A Coruña. Modalidad: contrato con condiciones según convenio laboral.",
+    link: "/rrhh/vacante",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
+  },
+  {
+    title: "Talleres de enriquecimiento extracurricular ",
+    description:
+      "¿Tienes algún conocimiento particular o interés  sobre algún tema específico que quieras compartir con nuestros/as alumnos/as impartiendo talleres de enriquecimiento extracurricular en Latento? Modalidad: colaboración externa como autónomo/a-profesional independiente.",
+    link: "/rrhh/enriquecimiento",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+  },
+];
+---
+
+<BaseLayout>
+  <HeroSections
+    titular="Recursos Humanos"
+    subtitular="En Latento buscamos profesionales con mirada educativa, sensibilidad por las altas capacidades y ganas de crecer en un equipo multidisciplinar comprometido con el desarrollo integral de niños, adolescentes y adultos."
+  />
+  <section class="rrhh">
+    <div class="rrhh__container">
+      <img
+        class="rrhh__img"
+        src={banner.src}
+        alt="Imagen de unas manos explicando algo y el logo y colores de Latento degradando paulatinamente la imagen"
+        width="1440"
+        height="129"
+        loading="lazy"
+      />
+      <h2 class="rrhh__h2">El equipo de Latento aumenta...</h2>
+      <p class="rrhh__p">
+        ¿Quieres crecer como profesional en tu ámbito de experticia? ¿Te
+        apasiona ayudar a niños/as, adolescentes a que potencien sus cualidades
+        cognitivas y logren así un desarrollo integral y óptimo? ¿Te gustaría
+        seguir aprendiendo y formar parte de un equipo de profesionales
+        educativas?
+      </p>
+      <div class="rrhh__cards">
+        {
+          jobs.map((job) => (
+            <HumanResourcesCard
+              title={job.title}
+              description={job.description}
+              link={job.link}
+              icon={job.icon}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .rrhh__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* Padding fluido: 1rem en móvil → 4rem en escritorio */
+    padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2.5rem);
+  }
+
+  .rrhh__img {
+    width: 100%;
+    max-height: 129px;
+    aspect-ratio: 16 / 7; /* Evita CLS y mantiene proporción en todos los tamaños */
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .rrhh__h2 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-texto-dark);
+    margin-bottom: 1rem;
+  }
+
+  .rrhh__p {
+    font-family: var(--font-family-body);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-texto-dark);
+    margin-bottom: 1.5rem;
+    /* Limita el ancho en pantallas muy grandes para mejorar legibilidad */
+    max-width: 75ch;
+  }
+
+  .rrhh__cards {
+    display: grid;
+    /* En móvil: 1 columna. En tablet+: 2 columnas. Se adapta automáticamente */
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+    gap: 1.25rem;
+    padding: 1rem 0;
+    align-items: stretch;
+  }
+
+  /* Breakpoint de seguridad: en pantallas muy pequeñas siempre 1 columna */
+  @media (max-width: 480px) {
+    .rrhh__cards {
+      grid-template-columns: 1fr;
+    }
+
+    .rrhh__img {
+      aspect-ratio: 4 / 3; /* Más cuadrada en móvil para no ocupar demasiada altura */
+      border-radius: 12px;
+    }
+  }
+
+  /* Tablet: 2 columnas explícitas */
+  @media (min-width: 640px) {
+    .rrhh__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
