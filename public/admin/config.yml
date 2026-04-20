@@ -1,36 +1,38 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: latentoac/web-corporativa  # Tu repositorio de GitHub
   branch: main
+  base_url: https://latentoac.netlify.app  # Tu dominio en producción
+  auth_endpoint: /api/auth                  # Apunta a tu Netlify Function
 
-publish_mode: editorial_workflow
-
-media_folder: \"public/images\"
-public_folder: \"/images\"
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: \"blog\"
-    label: \"Blog\"
-    folder: \"src/content/blog\"
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
     create: true
-    slug: \"{{slug}}\"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: \"Title\", name: \"title\", widget: \"string\" }
-      - { label: \"Description\", name: \"description\", widget: \"text\" }
-      - { label: \"Publish Date\", name: \"pubDate\", widget: \"datetime\" }
-      - { label: \"Draft\", name: \"draft\", widget: \"boolean\" }
-      - { label: \"Cover Image\", name: \"cover\", widget: \"image\" }
-  - name: \"talleres\"
-    label: \"Talleres\"
-    folder: \"src/content/talleres\"
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Imagen destacada", name: "image", widget: "image", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "talleres"
+    label: "Talleres"
+    folder: "src/content/talleres"
     create: true
-    slug: \"{{slug}}\"
     fields:
-      - { label: \"Title\", name: \"title\", widget: \"string\" }
-      - { label: \"Description\", name: \"description\", widget: \"text\" }
-      - { label: \"Category\", name: \"category\", widget: \"string\" }
-      - { label: \"Date\", name: \"date\", widget: \"datetime\" }
-      - { label: \"City\", name: \"city\", widget: \"string\" }
-      - { label: \"Price\", name: \"price\", widget: \"number\" }
-      - { label: \"CTA Label\", name: \"ctaLabel\", widget: \"string\" }
-      - { label: \"CTA URL\", name: \"ctaUrl\", widget: \"string\" }
-      - { label: \"Draft\", name: \"draft\", widget: \"boolean\" }
+      - { label: "Nombre del taller", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Imagen", name: "image", widget: "image", required: false }
+      - label: "URL de inscripción"
+        name: "inscription_url"
+        widget: "string"
+        required: false
+        hint: "Enlace al formulario para inscribirse al taller"
+        pattern: ['^https?://.+', "Debe ser una URL válida (https://...)"]
+      - { label: "Contenido", name: "body", widget: "markdown" }
