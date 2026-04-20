@@ -1,4 +1,3 @@
-// netlify/functions/callback.js
 exports.handler = async (event) => {
   const { code } = event.queryStringParameters;
   const { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET } = process.env;
@@ -38,11 +37,13 @@ exports.handler = async (event) => {
 <body>
 <script>
   (function() {
-    window.opener.postMessage(
-      'authorization:github:success:${content}',
-      window.location.origin
-    );
-    window.close();
+    window.addEventListener("message", function(e) {
+      console.log("message received", e);
+    });
+    var msg = 'authorization:github:success:${content}';
+    console.log("Sending message:", msg);
+    window.opener.postMessage(msg, '*');
+    setTimeout(function() { window.close(); }, 1000);
   })();
 <\/script>
 </body>
@@ -50,19 +51,9 @@ exports.handler = async (event) => {
       };
     }
 
-    return {
-      statusCode: 200,
-      headers: { "Content-Type": "text/html" },
-      body: `<!doctype html><html><body><script>
-  window.opener.postMessage('authorization:github:error:{"message":"Token error"}', window.location.origin);
-  window.close();
-<\/script></body></html>`,
-    };
+    return { statusCode: 401, body: "No access token received" };
 
   } catch (err) {
-    return {
-      statusCode: 500,
-      body: `Error: ${err.message}`,
-    };
+    return { statusCode: 500, body: `Error: ${err.message}` };
   }
 };
