@@ -1,0 +1,627 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroSections from "../../components/sections/HeroSections.astro";
+import "../../styles/taller-article.css";
+
+export async function getStaticPaths() {
+  const talleres = await getCollection("talleres");
+  return talleres.map((taller) => ({
+    params: { id: taller.id },
+    props: { taller },
+  }));
+}
+
+const { taller } = Astro.props;
+const { Content } = await render(taller);
+---
+
+<BaseLayout>
+  <HeroSections titular="Talleres" subtitular="Formación práctica en el espacio Latento" />
+
+  <article class="taller">
+    <header class="taller__header">
+      <span class="taller__eyebrow">Taller</span>
+      <h1 class="taller__title">{taller.data.title}</h1>
+      <div class="taller__meta">
+        <time datetime={taller.data.date.toISOString()}>
+          {taller.data.date.toLocaleDateString("es-ES")}
+        </time>
+      </div>
+    </header>
+
+    {taller.data.image && (
+      <div class="taller__image-wrap">
+        <img src={taller.data.image} alt={taller.data.title} loading="lazy" />
+      </div>
+    )}
+
+    <div class="taller__layout">
+      <div class="taller__content">
+        <Content />
+      </div>
+
+      <aside class="taller__aside">
+        <div class="taller__card">
+          <div class="taller__card-row">
+            <span class="taller__card-label">Fecha</span>
+            <span class="taller__card-value">
+              {taller.data.date.toLocaleDateString("es-ES", {
+                weekday: "long", day: "numeric",
+                month: "long", year: "numeric"
+              })}
+            </span>
+          </div>
+          <div class="taller__card-divider"></div>
+
+          {taller.data.inscription_url && (
+            <div class="taller__cta">
+              <a
+                href={taller.data.inscription_url}
+                class="taller__cta-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Inscríbete al taller
+              </a>
+              <p class="taller__cta-note">
+                Plazas limitadas · Inscripción externa
+              </p>
+            </div>
+          )}
+        </div>
+      </aside>
+    </div>
+
+    <footer class="taller__footer">
+      <a href="/talleres" class="taller__back-link">Volver a talleres</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+    /* ============================================================
+   TALLER INDIVIDUAL — Estilos de la ficha de taller
+   Compatible con global.css de Latento
+   Diferenciado visualmente del blog:
+   - Acento magenta (vs. turquesa del blog)
+   - Layout de ficha con sidebar de inscripción
+   - CTA de inscripción prominente
+   Componentes: .taller, .taller__header, .taller__meta,
+                .taller__image, .taller__layout,
+                .taller__content, .taller__aside, .taller__cta
+   ============================================================ */
+
+/* ─── Variables de alias para talleres ─── */
+:root {
+  --taller-content-width:  740px;
+  --taller-layout-width:   1100px;
+  --taller-accent:         var(--color-magenta);
+  --taller-accent-hover:   color-mix(in srgb, var(--color-magenta) 80%, var(--color-marino) 20%);
+  --taller-accent-subtle:  color-mix(in srgb, var(--color-magenta) 8%, var(--color-light) 92%);
+  --taller-surface:        var(--color-light-dark);
+  --taller-border:         color-mix(in srgb, var(--color-marino) 12%, var(--color-light) 88%);
+  --taller-text:           var(--color-texto-dark);
+  --taller-text-muted:     var(--color-gray);
+  --taller-radius:         var(--radius-lg);
+  --taller-aside-width:    300px;
+}
+
+/* ─────────────────────────────────────────
+   WRAPPER PRINCIPAL
+───────────────────────────────────────── */
+.taller {
+  padding-block: clamp(var(--space-8), 6vw, var(--space-16));
+  padding-inline: var(--space-4);
+}
+
+/* ─────────────────────────────────────────
+   CABECERA
+───────────────────────────────────────── */
+.taller__header {
+  max-width: var(--taller-layout-width);
+  margin-inline: auto;
+  margin-bottom: var(--space-8);
+}
+
+/* Eyebrow / etiqueta superior */
+.taller__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding: 0.3em var(--space-4);
+  background-color: var(--taller-accent-subtle);
+  border: 1px solid color-mix(in srgb, var(--color-magenta) 20%, transparent 80%);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--taller-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.taller__eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--taller-accent);
+  flex-shrink: 0;
+}
+
+.taller__title {
+  font-family: var(--font-family-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.12;
+  color: var(--color-marino);
+  text-wrap: balance;
+  margin-bottom: var(--space-5);
+}
+
+/* ─────────────────────────────────────────
+   META — fecha, aforo, duración, etc.
+───────────────────────────────────────── */
+.taller__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  font-family: var(--font-family-body);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--taller-text-muted);
+}
+
+/* Ítem genérico de meta */
+.taller__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Separador visual */
+.taller__meta-sep {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--taller-border);
+  flex-shrink: 0;
+}
+
+/* Fecha con icono */
+.taller__meta time {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.taller__meta time::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2365646A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'/%3E%3Cline x1='16' y1='2' x2='16' y2='6'/%3E%3Cline x1='8' y1='2' x2='8' y2='6'/%3E%3Cline x1='3' y1='10' x2='21' y2='10'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────
+   IMAGEN DESTACADA
+───────────────────────────────────────── */
+.taller__image-wrap {
+  max-width: var(--taller-layout-width);
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+  border-radius: var(--taller-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 24px color-mix(in srgb, var(--color-magenta) 10%, var(--color-marino) 10%);
+}
+
+.taller__image-wrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.taller__image-wrap:hover img {
+  transform: scale(1.02);
+}
+
+/* ─────────────────────────────────────────
+   LAYOUT PRINCIPAL: contenido + aside
+   En desktop: 2 columnas (prose | sidebar)
+   En móvil:   1 columna (aside sube al top)
+───────────────────────────────────────── */
+.taller__layout {
+  max-width: var(--taller-layout-width);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr var(--taller-aside-width);
+  grid-template-areas: "content aside";
+  gap: var(--space-10);
+  align-items: start;
+}
+
+/* ─────────────────────────────────────────
+   CUERPO DEL TALLER — PROSE
+───────────────────────────────────────── */
+.taller__content {
+  grid-area: content;
+  font-family: var(--font-family-body);
+  font-size: var(--text-base);
+  color: var(--taller-text);
+  line-height: 1.75;
+  min-width: 0; /* fix overflow en grid */
+}
+
+/* — Párrafos — */
+.taller__content p {
+  margin-bottom: var(--space-6);
+  text-wrap: pretty;
+  max-width: 70ch;
+}
+
+/* — Encabezados — */
+.taller__content h2,
+.taller__content h3,
+.taller__content h4 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-marino);
+  text-wrap: balance;
+  line-height: 1.2;
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+}
+
+.taller__content h2 {
+  font-size: var(--text-xl);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--taller-border);
+}
+
+.taller__content h3 {
+  font-size: var(--text-lg);
+}
+
+.taller__content h4 {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--taller-text-muted);
+}
+
+/* — Listas — */
+.taller__content ul,
+.taller__content ol {
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.taller__content li {
+  margin-bottom: var(--space-2);
+  text-wrap: pretty;
+}
+
+.taller__content ul li::marker {
+  color: var(--taller-accent);
+}
+
+.taller__content ol li::marker {
+  color: var(--taller-accent);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* — Énfasis — */
+.taller__content strong {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-marino);
+}
+
+.taller__content em {
+  font-style: italic;
+  color: var(--taller-text-muted);
+}
+
+/* — Links — */
+.taller__content a {
+  color: var(--color-darktourquise);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-interactive);
+}
+
+.taller__content a:hover,
+.taller__content a:focus-visible {
+  color: var(--color-darkblue);
+  text-decoration-thickness: 2px;
+}
+
+/* — Blockquote — */
+.taller__content blockquote {
+  margin-block: var(--space-8);
+  padding: var(--space-6) var(--space-8);
+  background-color: var(--taller-accent-subtle);
+  border-left: 3px solid var(--taller-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--taller-text-muted);
+}
+
+.taller__content blockquote p {
+  margin-bottom: 0;
+  font-size: var(--text-lg);
+  line-height: 1.6;
+}
+
+/* — Código inline — */
+.taller__content code:not(pre > code) {
+  padding: 0.15em 0.4em;
+  background-color: color-mix(in srgb, var(--color-marino) 6%, var(--color-light) 94%);
+  border: 1px solid var(--taller-border);
+  border-radius: var(--radius-sm);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.875em;
+  color: var(--color-magenta);
+}
+
+/* — Imágenes dentro del contenido — */
+.taller__content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--taller-radius);
+  margin-block: var(--space-8);
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--color-marino) 10%, transparent 90%);
+}
+
+/* — Separador — */
+.taller__content hr {
+  border: none;
+  border-top: 1px solid var(--taller-border);
+  margin-block: var(--space-10);
+}
+
+/* ─────────────────────────────────────────
+   ASIDE — Ficha de inscripción (sidebar)
+───────────────────────────────────────── */
+.taller__aside {
+  grid-area: aside;
+  position: sticky;
+  top: calc(var(--space-16) + var(--space-4)); /* compensa el header fijo */
+}
+
+.taller__card {
+  background-color: var(--taller-surface);
+  border: 1px solid var(--taller-border);
+  border-radius: var(--taller-radius);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  box-shadow: 0 2px 16px color-mix(in srgb, var(--color-marino) 8%, transparent 92%);
+}
+
+/* Fila de dato dentro de la card */
+.taller__card-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.taller__card-label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--taller-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.taller__card-value {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--taller-text);
+}
+
+/* Separador dentro de la card */
+.taller__card-divider {
+  height: 1px;
+  background-color: var(--taller-border);
+  margin-block: var(--space-1);
+}
+
+/* ─────────────────────────────────────────
+   CTA — Botón de inscripción
+───────────────────────────────────────── */
+.taller__cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.taller__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  background-color: var(--taller-accent);
+  color: var(--color-light);
+  border: 2px solid var(--taller-accent);
+  border-radius: var(--radius-full);
+  font-family: var(--font-family-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-interactive),
+    border-color var(--transition-interactive),
+    transform var(--transition-interactive),
+    box-shadow var(--transition-interactive);
+}
+
+.taller__cta-btn:hover,
+.taller__cta-btn:focus-visible {
+  background-color: var(--taller-accent-hover);
+  border-color: var(--taller-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--color-magenta) 30%, transparent 70%);
+}
+
+.taller__cta-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Flecha animada dentro del botón */
+.taller__cta-btn::after {
+  content: "→";
+  display: inline-block;
+  transition: transform var(--transition-interactive);
+}
+
+.taller__cta-btn:hover::after {
+  transform: translateX(4px);
+}
+
+/* Nota debajo del botón */
+.taller__cta-note {
+  font-size: var(--text-sm);
+  color: var(--taller-text-muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ─────────────────────────────────────────
+   PIE DEL ARTÍCULO
+───────────────────────────────────────── */
+.taller__footer {
+  max-width: var(--taller-layout-width);
+  margin-inline: auto;
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--taller-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+/* Botón volver */
+.taller__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-darktourquise);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: color var(--transition-interactive), gap var(--transition-interactive);
+}
+
+.taller__back-link::before {
+  content: "←";
+  transition: transform var(--transition-interactive);
+}
+
+.taller__back-link:hover,
+.taller__back-link:focus-visible {
+  color: var(--color-darkblue);
+  gap: var(--space-3);
+}
+
+.taller__back-link:hover::before {
+  transform: translateX(-3px);
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+
+/* Tablet: el aside se mueve encima del contenido */
+@media (max-width: 900px) {
+  .taller__layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "aside"
+      "content";
+    gap: var(--space-8);
+  }
+
+  .taller__aside {
+    position: static;
+  }
+
+  .taller__card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  .taller__card-row {
+    flex: 1 1 160px;
+  }
+
+  .taller__card-divider {
+    display: none;
+  }
+
+  .taller__cta {
+    flex: 1 1 100%;
+  }
+}
+
+/* Móvil */
+@media (max-width: 640px) {
+  .taller {
+    padding-inline: var(--space-4);
+  }
+
+  .taller__title {
+    font-size: var(--text-xl);
+  }
+
+  .taller__card {
+    flex-direction: column;
+  }
+
+  .taller__card-row {
+    flex: unset;
+  }
+
+  .taller__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .taller__meta {
+    gap: var(--space-3);
+  }
+
+  .taller__content h2 {
+    font-size: var(--text-lg);
+  }
+}
+
+</style>

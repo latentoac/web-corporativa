@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+
+const talleres = await getCollection("talleres");
+const sorted = talleres.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroSections from "../../components/sections/HeroSections.astro";
+---
+
+<BaseLayout>
+    <HeroSections />
+    <h1>Talleres</h1>
+    <ul>
+      {sorted.map((taller) => (
+        <li>
+          <a href={`/talleres/${taller.id}`}>{taller.data.title}</a>
+          {taller.data.inscription_url && (
+            <a href={taller.data.inscription_url} target="_blank">Inscríbete</a>
+          )}
+        </li>
+      ))}
+    </ul>
+</BaseLayout>
