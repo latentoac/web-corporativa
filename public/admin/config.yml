@@ -3,7 +3,7 @@ backend:
   repo: latentoac/web-corporativa  # Tu repositorio de GitHub
   branch: main
   base_url: https://latentoac.netlify.app  # Tu dominio en producción
-  auth_endpoint: /api/auth                  # Apunta a tu Netlify Function
+
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
