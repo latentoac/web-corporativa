@@ -2,8 +2,6 @@ backend:
   name: github
   repo: latentoac/web-corporativa
   branch: main
-  base_url: https://latentoac.netlify.app
-  auth_endpoint: /.netlify/functions/auth
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
