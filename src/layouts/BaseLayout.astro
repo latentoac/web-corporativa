@@ -68,7 +68,7 @@ const {
   <NewsletterModal/>
 
 <script>
-  const btnsFiltro = document.querySelectorAll<HTMLButtonElement>('.filtro-btn');
+ const btnsFiltro = document.querySelectorAll<HTMLButtonElement>('.filtro-btn');
   const cards = document.querySelectorAll<HTMLElement>('.taller-card');
 
   btnsFiltro.forEach((btn) => {
@@ -90,7 +90,18 @@ const {
     });
   });
 
-  document.querySelector<HTMLButtonElement>('[data-filtro="todos"]')?.click();
+/* Lee la URL del parámetro de modalidad al pulsar un ButtonCTA */
+  const params = new URLSearchParams(window.location.search);
+  const modalidadParam = params.get('modalidad');
+
+  if (modalidadParam) {
+    const btnObjetivo = document.querySelector<HTMLButtonElement>(
+      `[data-filtro="${modalidadParam}"]`
+    );
+    btnObjetivo?.click();
+  } else {
+    document.querySelector<HTMLButtonElement>('[data-filtro="todos"]')?.click();
+  }
 </script>
   </body>
 </html>
