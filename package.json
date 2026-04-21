@@ -7,11 +7,14 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "predev": "npm run build && rm -rf public/pagefind && cp -R dist/pagefind public/pagefind",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.7"
+    "astro": "^6.1.7",
+    "astro-pagefind": "^1.8.6",
+    "pagefind": "^1.5.2"
   }
 }
