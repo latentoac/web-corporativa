@@ -1,5 +1,6 @@
 ---
-title: PREGUNTAS FRECUENTES – BECAS Y AYUDAS MEC DE NECESIDADES ESPECÍFICAS DE APOYO EDUCATIVO 2025/2026
+title: PREGUNTAS FRECUENTES – BECAS Y AYUDAS MEC DE NECESIDADES ESPECÍFICAS DE
+  APOYO EDUCATIVO 2025/2026
 date: 2025-05-02
 image: /src/assets/uploads/pasos-a-seguir-y-preguntas-frecuentes.png
 tags:
@@ -20,12 +21,11 @@ Este curso 2025/2026, el MEC también contempla un SUBSIDIO de 400 euros adicion
 
 Al igual que el curso pasado, todas las familias beneficiarias, al cumplir los umbrales de renta indicados en la convocatoria de la AYUDA, recibirán de forma adicional los 400 euros del SUBSIDIO. Una vez presentada y concedida la BECA MEC por defecto se recibirá la AYUDA y el SUBSIDIO.
 
-
 **¿Qué requisitos económicos hay que tener en cuenta para solicitar la AYUDA?**
 
 Como cualquier beca lo principal son los **umbrales de renta y patrimonio** en función de la unidad familiar, por lo que debéis comprobarlo en la convocatoria de cada año, para que podáis comprobar todo en la convocatoria os dejamos el enlace del curso 2025/2026: [enlace a la página del Ministerio.](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2286)
 
-![Umbrales económicos NEAE](/src/assets/uploads/umbrales-economicos-becas-neae-2025-2026.png)
+![Umbrales económicos NEAE](/src/assets/uploads/umbrales-economicos-becas-neae-2025-2026.png "Umbrales económicos NEAE")
 
 **¿Dónde se cubre el formulario online para PRESENTAR el PDF de mi solicitud?**
 
