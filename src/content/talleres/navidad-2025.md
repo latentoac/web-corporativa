@@ -7,7 +7,9 @@ hora_inicio: 10:30h
 hora_fin: 13:30h
 precio: 35
 image: /src/assets/uploads/navidad.png
-modalidad: santiago
+modalidad:
+  - santiago
+  - coruna
 fecha_limite_inscripcion: 2025-12-13
 publicado: true
 ---
