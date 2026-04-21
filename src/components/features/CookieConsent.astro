@@ -1,0 +1,226 @@
+---
+// src/components/CookieConsent.astro
+// ─────────────────────────────────────────────────────────────────────────────
+// Banner de cookies para Latento AC
+// Contexto: web estática en Astro + Netlify, sin analytics ni rastreadores.
+// Solo se usan cookies técnicas propias (sesión, preferencias), que no
+// requieren consentimiento previo según el RGPD/LSSI, pero sí notificación.
+// La meta tag google-site-verification NO instala cookies → se ignora aquí.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Puedes pasar la ruta de tu política de cookies si cambia en el futuro.
+interface Props {
+  cookiePolicyPath?: string;
+}
+const { cookiePolicyPath = '/politica-de-cookies' } = Astro.props;
+---
+
+<!-- 
+  El banner permanece oculto (aria-hidden="true") hasta que el JS comprueba
+  si el usuario ya respondió. Se hace en el <script> de abajo para evitar
+  el "flash" del banner en visitas repetidas.
+-->
+<div
+  id="cookie-banner"
+  class="cookie-banner"
+  role="dialog"
+  aria-modal="false"
+  aria-label="Aviso de cookies"
+  aria-hidden="true"
+>
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <p>
+        Esta web utiliza únicamente <strong>cookies técnicas propias</strong>,
+        necesarias para su correcto funcionamiento. No empleamos cookies de
+        analítica ni de publicidad. Puedes consultar nuestra
+        <a href={cookiePolicyPath}>Política de Cookies</a>
+        para más información.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button id="cookie-btn-accept" class="btn-accept" type="button">
+        Entendido
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* ── Variables locales (se integran con el sistema de diseño de Latento) ── */
+  .cookie-banner {
+    --_shadow:    0 -2px 16px rgba(0, 0, 0, 0.08), 0 -1px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  /* ── Posicionamiento y transición de entrada/salida ── */
+  .cookie-banner {
+    position:   fixed;
+    bottom:     0;
+    left:       0;
+    width:      100%;
+    z-index:    9999;
+    background: var(--color-light);
+    box-shadow: var(--_shadow);
+    font-family: var(--font-family-body);
+
+    /* Estado inicial: fuera de la pantalla (se muestra vía JS) */
+    transform:   translateY(100%);
+    visibility:  hidden;
+    transition:  transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                 visibility 0.35s;
+  }
+
+  /* Clase que añade el JS para mostrar el banner */
+  .cookie-banner.is-visible {
+    transform:  translateY(0);
+    visibility: visible;
+  }
+
+  /* ── Layout interno ── */
+  .cookie-inner {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    gap:             1.5rem;
+    max-width:       1200px;
+    margin-inline:   auto;
+    padding:         1rem 1.5rem;
+  }
+
+  /* ── Texto ── */
+  .cookie-text {
+    flex: 1;
+  }
+
+  .cookie-text p {
+    margin:       0;
+    font-size:    0.875rem;   /* 14px */
+    line-height:  1.55;
+    color:        var(--color-texto-dark);
+  }
+
+  .cookie-text strong {
+    color:       var(--color-texto-dark);
+    font-weight: 600;
+  }
+
+  .cookie-text a {
+    color:           var(--color-magenta);
+    text-decoration: underline;
+    font-weight:     500;
+    white-space:     nowrap;
+  }
+
+  .cookie-text a:hover,
+  .cookie-text a:focus-visible {
+    text-decoration: none;
+    opacity:         0.85;
+  }
+
+  /* ── Botón único: "Entendido" ── */
+  .btn-accept {
+    flex-shrink:     0;
+    font-family:     var(--font-family-body);
+    font-weight:     600;
+    font-size:       0.875rem;
+    padding:         0.625rem 1.5rem;
+    border-radius:   var(--radius-md);
+    border:          2px solid var(--color-magenta);
+    background:      var(--color-magenta);
+    color:           #ffffff;
+    cursor:          pointer;
+    white-space:     nowrap;
+    transition:      filter 0.2s ease, transform 0.15s ease;
+
+    /* Touch target mínimo 44px de alto */
+    min-height: 44px;
+  }
+
+  .btn-accept:hover {
+    filter: brightness(1.08);
+  }
+
+  .btn-accept:active {
+    transform: scale(0.97);
+  }
+
+  .btn-accept:focus-visible {
+    outline:        2px solid var(--color-magenta);
+    outline-offset: 3px;
+  }
+
+  /* ── Responsive: apilado en pantallas pequeñas ── */
+  @media (max-width: 600px) {
+    .cookie-inner {
+      flex-direction: column;
+      align-items:    flex-start;
+      padding:        1rem 1.25rem 1.25rem;
+    }
+
+    .btn-accept {
+      align-self: stretch;
+      text-align: center;
+    }
+  }
+
+  /* ── Accesibilidad: respeta preferencia de movimiento reducido ── */
+  @media (prefers-reduced-motion: reduce) {
+    .cookie-banner {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  // ── Clave en localStorage para recordar la respuesta del usuario ──────────
+  const CONSENT_KEY = 'latento_cookies_noticed';
+
+  function initCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    const btnAccept = document.getElementById('cookie-btn-accept');
+
+    if (!banner || !btnAccept) return;
+
+    // Si el usuario ya aceptó en una visita anterior, no mostramos nada.
+    if (localStorage.getItem(CONSENT_KEY) === 'true') {
+      return;
+    }
+
+    // Pequeño delay para que el banner no compita con el primer render
+    // (mejora la experiencia sin afectar al cumplimiento legal).
+    setTimeout(() => {
+      banner.setAttribute('aria-hidden', 'false');
+      banner.classList.add('is-visible');
+    }, 800);
+
+    // Clic en "Entendido": guarda preferencia y oculta el banner.
+    btnAccept.addEventListener('click', () => {
+      localStorage.setItem(CONSENT_KEY, 'true');
+      banner.classList.remove('is-visible');
+
+      // Después de la transición, lo quitamos del flujo de accesibilidad.
+      banner.addEventListener(
+        'transitionend',
+        () => {
+          banner.setAttribute('aria-hidden', 'true');
+        },
+        { once: true }
+      );
+    });
+  }
+
+  function setup() {
+  initCookieBanner();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setup);
+} else {
+  setup();
+}
+
+  // Compatible con View Transitions de Astro.
+  // 'astro:page-load' se dispara tanto en la carga inicial
+  // como tras cada navegación con transiciones activadas.
+  document.addEventListener('astro:page-load', initCookieBanner);
+</script>
