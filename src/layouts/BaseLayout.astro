@@ -112,6 +112,19 @@ const {
     document.querySelector<HTMLButtonElement>('[data-filtro="todos"]')?.click();
   }
 </script>
+<script>
+      import { registerSW } from "virtual:pwa-register";
+
+      registerSW({
+        immediate: true,
+        onOfflineReady() {
+          console.log("La PWA está lista para funcionar offline");
+        },
+        onNeedRefresh() {
+          console.log("Hay una nueva versión disponible");
+        }
+      });
+    </script>
 <GoToUp/>
 <CookieConsent/>
   </body>
