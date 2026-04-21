@@ -1,12 +1,23 @@
 ---
-const { icon, alt, workshop, alt2, color } = Astro.props;
 
+interface Props {
+  href: string;
+  label: string;
+  icon: string;
+  alt: string;
+  workshop: string;
+  alt2: string;
+  color: string;
+}
+
+
+const { href, label, icon, alt, workshop, alt2, color } = Astro.props;
 ---
 
-<div class="button-cta">
-  <img class="button-cta__icon" src={icon} alt={alt} />
-  <img class="button-cta__workshop" src={workshop} alt={alt2} />
-</div>
+<a class="button-cta" href={href} aria-label={label}>
+  <img class="button-cta__icon" src={icon} alt={alt} width="60" height="60" loading="lazy" />
+  <img class="button-cta__workshop" src={workshop} alt={alt2} loading="lazy" />
+</a>
 
 <style define:vars={{ cardColor: color }}>
   .button-cta {
@@ -17,9 +28,15 @@ const { icon, alt, workshop, alt2, color } = Astro.props;
     gap: 1rem;
     padding: 1rem;
     background-color: var(--color-light);
+    text-decoration: none;
+    transition:
+      border-color var(--transition-interactive),
+      transform var(--transition-interactive),
+      box-shadow var(--transition-interactive);
   }
 
-  .button-cta:hover {
+  .button-cta:hover,
+  .button-cta:focus-visible {
     border-color: var(--cardColor);
     transform: scale(1.03);
     box-shadow: 0 8px 24px oklch(0.2 0.01 80 / 0.08);
@@ -28,6 +45,7 @@ const { icon, alt, workshop, alt2, color } = Astro.props;
   .button-cta__icon {
     width: 60px;
     height: 60px;
+    flex-shrink: 0;
   }
 
   @media (max-width: 550px) {

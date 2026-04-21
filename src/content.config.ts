@@ -17,7 +17,9 @@ const talleres = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     image: z.string().optional(),
+    modalidad: z.enum(['santiago', 'coruna', 'online']),
     inscription_url: z.string().url().optional(),
+    publicado: z.boolean().default(true),
   }),
 });
 

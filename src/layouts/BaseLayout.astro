@@ -65,5 +65,54 @@ const {
 	</main>
 	<Footer/>
   <NewsletterModal/>
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const modalidadInicial = params.get("modalidad") ?? "todos";
+
+  const botones = document.querySelectorAll<HTMLButtonElement>(".filtro-btn");
+  const tarjetas = document.querySelectorAll<HTMLLIElement>(".taller-card");
+  const mensajeVacio = document.getElementById("filtro-vacio");
+
+  function aplicarFiltro(modalidad: string) {
+    let visibles = 0;
+
+    tarjetas.forEach((card) => {
+      const coincide =
+        modalidad === "todos" || card.dataset.modalidad === modalidad;
+      card.hidden = !coincide;
+      if (coincide) visibles++;
+    });
+
+    // Mostrar mensaje vacío si no hay resultados para ese filtro
+    if (mensajeVacio) mensajeVacio.hidden = visibles > 0;
+
+    // Actualizar aria-pressed y clase activa
+    botones.forEach((btn) => {
+      const activo = btn.dataset.filtro === modalidad;
+      btn.setAttribute("aria-pressed", String(activo));
+      btn.classList.toggle("filtro-btn--activo", activo);
+    });
+
+    // Actualizar la URL sin recargar la página
+    const url = new URL(window.location.href);
+    if (modalidad === "todos") {
+      url.searchParams.delete("modalidad");
+    } else {
+      url.searchParams.set("modalidad", modalidad);
+    }
+    history.replaceState(null, "", url.toString());
+  }
+
+  // Activar filtro inicial (viene de la home o de un enlace directo)
+  aplicarFiltro(modalidadInicial);
+
+  // Click en cada botón
+  botones.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      aplicarFiltro(btn.dataset.filtro ?? "todos");
+    });
+  });
+</script>
   </body>
 </html>

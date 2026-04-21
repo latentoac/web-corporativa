@@ -15,9 +15,21 @@
     "image": {
       "type": "string"
     },
+    "modalidad": {
+      "type": "string",
+      "enum": [
+        "santiago",
+        "coruna",
+        "online"
+      ]
+    },
     "inscription_url": {
       "type": "string",
       "format": "uri"
+    },
+    "publicado": {
+      "default": true,
+      "type": "boolean"
     },
     "$schema": {
       "type": "string"
@@ -26,6 +38,7 @@
   "required": [
     "title",
     "description",
-    "date"
+    "date",
+    "modalidad"
   ]
 }
