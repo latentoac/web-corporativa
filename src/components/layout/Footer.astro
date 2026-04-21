@@ -57,11 +57,25 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
 
           <address class="site-footer__address">
             <p class="site-footer__address-line">
-              <strong>Sede Santiago</strong>
+              <strong
+                ><a
+                  href="https://www.google.com/maps/dir/42.8825519,-8.5276466/R%C3%BAa+do+H%C3%B3rreo,+23,+1%C2%BA+PISO,+15701+Santiago+de+Compostela,+La+Coru%C3%B1a/@42.8768997,-8.5456478,15z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0xd2efe47571bc451:0x7d6805664afe3ee3!2m2!1d-8.5440924!2d42.8753278!3e0?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  class="site-footer__a"
+                  rel="noopener noreferrer">Sede Santiago</a
+                ></strong
+              >
               Calle Hórreo 23, 1º, 15701 Santiago de Compostela
             </p>
             <p class="site-footer__address-line">
-              <strong>Sede A Coruña</strong>
+              <strong
+                ><a
+                  href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0xd2e7de9bfc299f5:0x93fd7a800bfec6ea!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA"
+                  target="_blank"
+                  class="site-footer__a"
+                  rel="noopener noreferrer">Sede A Coruña</a
+                >
+              </strong>
               C/ Carretera circunvalación, 7 bajo - 15002 A Coruña
             </p>
           </address>
@@ -131,8 +145,7 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
       ©2026 Latento Altas Capacidades. Todos los derechos reservados - Hecho con <a
         href="https://astro.build/"
         target="_blank"
-        rel="noopener noreferrer"
-        >Astro</a
+        rel="noopener noreferrer">Astro</a
       >
     </p>
 
@@ -198,10 +211,9 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
 
   .site-footer__grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(
-        0,
-        0.9fr
-      ) minmax(0, 1fr);
+    grid-template-columns:
+      minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 0.9fr)
+      minmax(0, 1fr);
     gap: 2rem;
     padding-bottom: 3rem;
   }
@@ -240,6 +252,7 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
   .site-footer__address-line,
   .site-footer__contact-item a,
   .site-footer__nav-list a,
+  .site-footer__a,
   .site-footer__support-text,
   .site-footer__copyright,
   .site-footer__credit,
@@ -249,6 +262,13 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
     font-size: 0.9375rem;
     line-height: 1.65;
     text-decoration: none;
+  }
+
+  .site-footer__a,
+  .site-footer__contact-item a,
+  .site-footer__nav-list a,
+  .site-footer__legal-list a {
+    text-decoration: underline;
   }
 
   .site-footer__description {
