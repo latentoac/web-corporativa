@@ -1,18 +1,18 @@
 ---
 import { getCollection, render } from "astro:content";
+import { Image } from "astro:assets";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroSections from "../../components/sections/HeroSections.astro";
-import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const talleres = await getCollection("talleres");
   return talleres.map((taller) => ({
     params: { id: taller.id },
-    props: { taller },
+    props: taller,
   }));
 }
 
-const { taller } = Astro.props;
+const taller = Astro.props;
 const { Content } = await render(taller);
 ---
 
@@ -23,26 +23,51 @@ const { Content } = await render(taller);
     <header class="taller__header">
       <span class="taller__eyebrow">Taller</span>
       <h1 class="taller__title">{taller.data.title}</h1>
+
       <div class="taller__meta">
-        <time datetime={taller.data.date.toISOString()}>
-          {taller.data.date.toLocaleDateString("es-ES")}
+        <time
+          class="taller__meta-item"
+          datetime={taller.data.date.toISOString()}
+        >
+          {taller.data.date.toLocaleDateString("es-ES", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
         </time>
+
+        {(taller.data.hora_inicio || taller.data.hora_fin) && (
+          <span class="taller__meta-sep"></span>
+          <span class="taller__meta-item taller__meta-hora">
+            {taller.data.hora_inicio}
+            {taller.data.hora_inicio && taller.data.hora_fin && " – "}
+            {taller.data.hora_fin}
+          </span>
+        )}
+
+        {taller.data.precio !== undefined && (
+          <span class="taller__meta-sep"></span>
+          <span class="taller__meta-item taller__meta-precio">
+            {taller.data.precio === 0 ? "Gratuito" : `${taller.data.precio} €`}
+          </span>
+        )}
       </div>
     </header>
 
-{taller.data.image && (
-  <div class="taller__image-wrap">
-    <Image
-      src={taller.data.image}
-      alt={taller.data.title}
-      width={1100}
-      height={413}
-      format="webp"
-      quality={82}
-      loading="eager"
-    />
-  </div>
-)}
+    {taller.data.image && (
+      <div class="taller__image-wrap">
+        <Image
+          src={taller.data.image}
+          alt={taller.data.title}
+          width={1100}
+          height={413}
+          format="webp"
+          quality={82}
+          loading="eager"
+        />
+      </div>
+    )}
 
     <div class="taller__layout">
       <div class="taller__content">
@@ -51,15 +76,60 @@ const { Content } = await render(taller);
 
       <aside class="taller__aside">
         <div class="taller__card">
+
+          <!-- Fecha -->
           <div class="taller__card-row">
             <span class="taller__card-label">Fecha</span>
             <span class="taller__card-value">
               {taller.data.date.toLocaleDateString("es-ES", {
-                weekday: "long", day: "numeric",
-                month: "long", year: "numeric"
+                weekday: "long",
+                day: "numeric",
+                month: "long",
+                year: "numeric",
               })}
             </span>
           </div>
+
+          <!-- Horario -->
+          {(taller.data.hora_inicio || taller.data.hora_fin) && (
+            <div class="taller__card-row">
+              <span class="taller__card-label">Horario</span>
+              <span class="taller__card-value">
+                {taller.data.hora_inicio}
+                {taller.data.hora_inicio && taller.data.hora_fin && " – "}
+                {taller.data.hora_fin} h
+              </span>
+            </div>
+          )}
+
+          <!-- Precio -->
+          {taller.data.precio !== undefined && (
+            <div class="taller__card-row">
+              <span class="taller__card-label">Precio</span>
+              <span class="taller__card-value taller__card-value--precio">
+                {taller.data.precio === 0 ? "Gratuito" : `${taller.data.precio} €`}
+              </span>
+            </div>
+          )}
+
+          <!-- Dirigido a -->
+          {taller.data.dirigido_a && (
+            <div class="taller__card-row">
+              <span class="taller__card-label">Dirigido a</span>
+              <span class="taller__card-value">{taller.data.dirigido_a}</span>
+            </div>
+          )}
+
+          <!-- Modalidad -->
+          <div class="taller__card-row">
+            <span class="taller__card-label">Modalidad</span>
+            <span class="taller__card-value">
+              {taller.data.modalidad === "santiago" && "Presencial · Santiago"}
+              {taller.data.modalidad === "coruna" && "Presencial · A Coruña"}
+              {taller.data.modalidad === "online" && "Online"}
+            </span>
+          </div>
+
           <div class="taller__card-divider"></div>
 
           {taller.data.inscription_url && (
@@ -72,9 +142,7 @@ const { Content } = await render(taller);
               >
                 Inscríbete al taller
               </a>
-              <p class="taller__cta-note">
-                Plazas limitadas · Inscripción externa
-              </p>
+              <p class="taller__cta-note">Plazas limitadas · Inscripción externa</p>
             </div>
           )}
         </div>

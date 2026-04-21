@@ -17,8 +17,12 @@ const talleres = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
+    dirigido_a: z.string().optional(),
     date: z.coerce.date(),
-    image: image().optional(), 
+    hora_inicio: z.string().optional(),
+    hora_fin: z.string().optional(),
+    precio: z.number().optional(),
+    image: image().optional(),
     modalidad: z.enum(['santiago', 'coruna', 'online']),
     inscription_url: z.string().url().optional(),
     publicado: z.boolean().default(true),

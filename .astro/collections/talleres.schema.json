@@ -8,9 +8,21 @@
     "description": {
       "type": "string"
     },
+    "dirigido_a": {
+      "type": "string"
+    },
     "date": {
       "type": "string",
       "format": "date-time"
+    },
+    "hora_inicio": {
+      "type": "string"
+    },
+    "hora_fin": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "number"
     },
     "image": {
       "type": "string"
