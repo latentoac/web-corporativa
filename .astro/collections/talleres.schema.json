@@ -28,16 +28,23 @@
       "type": "string"
     },
     "modalidad": {
-      "type": "string",
-      "enum": [
-        "santiago",
-        "coruna",
-        "online"
-      ]
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "santiago",
+          "coruna",
+          "online"
+        ]
+      }
     },
     "inscription_url": {
       "type": "string",
       "format": "uri"
+    },
+    "fecha_limite_inscripcion": {
+      "type": "string",
+      "format": "date-time"
     },
     "publicado": {
       "default": true,

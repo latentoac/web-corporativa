@@ -14,6 +14,22 @@ export async function getStaticPaths() {
 
 const taller = Astro.props;
 const { Content } = await render(taller);
+
+// Modalidad
+const modalidadTexto = taller.data.modalidad.map((m) => {
+    if (m === "santiago") return "Presencial · Santiago";
+    if (m === "coruna") return "Presencial · A Coruña";
+    if (m === "online") return "Online";
+    return m;
+  })
+  .join(" · ");
+
+// Fecha límite de inscripción
+const fechaLimite = taller.data.fecha_limite_inscripcion ?? null;
+const inscripcionAbierta = fechaLimite ? new Date() <= fechaLimite : null;
+const fechaLimiteFormateada = fechaLimite
+  ? fechaLimite.toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" })
+  : null;
 ---
 
 <BaseLayout>
@@ -123,12 +139,22 @@ const { Content } = await render(taller);
           <!-- Modalidad -->
           <div class="taller__card-row">
             <span class="taller__card-label">Modalidad</span>
-            <span class="taller__card-value">
-              {taller.data.modalidad === "santiago" && "Presencial · Santiago"}
-              {taller.data.modalidad === "coruna" && "Presencial · A Coruña"}
-              {taller.data.modalidad === "online" && "Online"}
-            </span>
+            <span class="taller__card-value">{modalidadTexto}</span>
           </div>
+
+/* Fecha límite de inscripción */
+{fechaLimite && (
+  <div class="taller__card-row">
+    <span class="taller__card-label">Inscripción</span>
+    <span class={`taller__card-value taller__card-value--inscripcion ${inscripcionAbierta ? "abierta" : "cerrada"}`}>
+      {inscripcionAbierta
+        ? `Abierta · hasta el ${fechaLimiteFormateada}`
+        : "Inscripción cerrada"}
+    </span>
+  </div>
+)}
+
+
 
           <div class="taller__card-divider"></div>
 
@@ -628,6 +654,19 @@ const { Content } = await render(taller);
 .taller__back-link:hover::before {
   transform: translateX(-3px);
 }
+
+/* Fecha límite de inscripción */
+.taller__card-value--inscripcion {
+  font-weight: var(--font-weight-bold);
+}
+.taller__card-value--inscripcion.abierta {
+  color: var(--color-verde, #2d6a2d);
+}
+.taller__card-value--inscripcion.cerrada {
+  color: var(--taller-text-muted);
+  font-style: italic;
+}
+
 
 /* ─────────────────────────────────────────
    RESPONSIVE

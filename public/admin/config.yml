@@ -54,10 +54,13 @@ collections:
       - label: "Modalidad"
         name: "modalidad"
         widget: "select"
+        multiple: true
+        min: 1
         options:
           - { label: "Talleres en Santiago", value: "santiago" }
           - { label: "Talleres en A Coruña", value: "coruna" }
           - { label: "Formación Online", value: "online" }
       - { label: "URL de inscripción", name: "inscription_url", widget: "string", required: false, hint: "URL completa, ej: https://tally.so/r/xxxxx" }
+      - { label: "Fecha límite de inscripción", name: "fecha_limite_inscripcion", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Fecha límite para inscribirse en el taller" }
       - { label: "Publicado", name: "publicado", widget: "boolean", default: true }
       - { label: "Contenido", name: "body", widget: "markdown" }

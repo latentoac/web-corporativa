@@ -10,6 +10,7 @@ hora_fin: 13:30h
 precio: 35
 image: /src/assets/uploads/post-de-instagram-fiesta-de-carnaval-alegre-multicolor-1.png
 modalidad: santiago
+fecha_limite_inscripcion: 2026-02-13
 publicado: true
 ---
 O Entroido é unha festa centenaria, profundamente galega e moi nosa. É celebración, é identidade, é vínculo e comunidade. É lembrar quen somos, de onde vimos e tamén cara onde queremos camiñar.
