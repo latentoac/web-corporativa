@@ -3,20 +3,22 @@ import { glob } from "astro/loaders";
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     date: z.coerce.date(),
-    image: z.string().optional(),
+    image: image().optional(),
+    tags: z.array(z.string()).optional(),
+    publicado: z.boolean().default(true),
   }),
 });
 
 const talleres = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/talleres" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),
-    image: z.string().optional(),
+    image: image().optional(), 
     modalidad: z.enum(['santiago', 'coruna', 'online']),
     inscription_url: z.string().url().optional(),
     publicado: z.boolean().default(true),

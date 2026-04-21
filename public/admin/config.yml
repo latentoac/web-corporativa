@@ -1,36 +1,58 @@
 backend:
-  name: github
-  repo: latentoac/web-corporativa
+  name: git-gateway
   branch: main
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "src/assets/uploads"
+public_folder: "/src/assets/uploads"
 
 collections:
+
   - name: "blog"
     label: "Blog"
     folder: "src/content/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Imagen destacada", name: "image", widget: "image", required: false }
+      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - label: "Imagen destacada"
+        name: "image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            max_file_size: 2000000
+      - label: "Etiquetas"
+        name: "tags"
+        widget: "list"
+        required: false
+        field: { label: "Etiqueta", name: "tag", widget: "string" }
+      - { label: "Publicado", name: "publicado", widget: "boolean", default: true }
       - { label: "Contenido", name: "body", widget: "markdown" }
 
   - name: "talleres"
     label: "Talleres"
     folder: "src/content/talleres"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "Nombre del taller", name: "title", widget: "string" }
+      - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Imagen", name: "image", widget: "image", required: false }
-      - label: "URL de inscripción"
-        name: "inscription_url"
-        widget: "string"
+      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - label: "Imagen destacada"
+        name: "image"
+        widget: "image"
         required: false
-        hint: "Enlace al formulario para inscribirse al taller"
-        pattern: ['^https?://.+', "Debe ser una URL válida (https://...)"]
+        media_library:
+          config:
+            max_file_size: 2000000
+      - label: "Modalidad"
+        name: "modalidad"
+        widget: "select"
+        options:
+          - { label: "Talleres en Santiago", value: "santiago" }
+          - { label: "Talleres en A Coruña", value: "coruna" }
+          - { label: "Formación Online", value: "online" }
+      - { label: "URL de inscripción", name: "inscription_url", widget: "string", required: false, hint: "URL completa, ej: https://tally.so/r/xxxxx" }
+      - { label: "Publicado", name: "publicado", widget: "boolean", default: true }
       - { label: "Contenido", name: "body", widget: "markdown" }

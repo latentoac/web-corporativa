@@ -12,6 +12,16 @@
     "image": {
       "type": "string"
     },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publicado": {
+      "default": true,
+      "type": "boolean"
+    },
     "$schema": {
       "type": "string"
     }

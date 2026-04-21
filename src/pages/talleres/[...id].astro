@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroSections from "../../components/sections/HeroSections.astro";
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const talleres = await getCollection("talleres");
@@ -29,11 +30,19 @@ const { Content } = await render(taller);
       </div>
     </header>
 
-    {taller.data.image && (
-      <div class="taller__image-wrap">
-        <img src={taller.data.image} alt={taller.data.title} loading="lazy" />
-      </div>
-    )}
+{taller.data.image && (
+  <div class="taller__image-wrap">
+    <Image
+      src={taller.data.image}
+      alt={taller.data.title}
+      width={1100}
+      height={413}
+      format="webp"
+      quality={82}
+      loading="eager"
+    />
+  </div>
+)}
 
     <div class="taller__layout">
       <div class="taller__content">
