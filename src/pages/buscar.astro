@@ -1,0 +1,225 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Search from "astro-pagefind/components/Search";
+
+const query = Astro.url.searchParams.get("q") ?? "";
+---
+
+<BaseLayout
+  title="Buscar | Latento"
+  description="Busca contenidos, recursos y páginas dentro de la web de Latento."
+>
+  <section class="search-page">
+    <div class="search-page__inner">
+      <header class="search-page__hero">
+        <p class="search-page__eyebrow">Búsqueda</p>
+        <h1>Encuentra talleres, recursos y contenidos de Latento</h1>
+        <p class="search-page__intro">
+          Busca información dentro de la web y accede más rápido a páginas,
+          publicaciones y recursos relevantes.
+        </p>
+      </header>
+
+      <div class="search-shell">
+        <Search
+          id="search"
+          className="search-ui"
+          query={query}
+          uiOptions={{
+            showSubResults: true,
+            showImages: false,
+            pageSize: 8,
+            resetStyles: false,
+            translations: {
+              placeholder: "Buscar en la web…",
+              clear_search: "Borrar búsqueda",
+              load_more: "Ver más resultados",
+              search_label: "Buscar en la web",
+              zero_results:
+                "No se han encontrado resultados para [SEARCH_TERM]",
+              many_results: "[COUNT] resultados para [SEARCH_TERM]",
+              one_result: "[COUNT] resultado para [SEARCH_TERM]",
+              searching: "Buscando [SEARCH_TERM]...",
+            },
+          }}
+        />
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .search-page {
+      padding-block: clamp(3rem, 7vw, 6rem);
+    }
+
+    .search-page__inner {
+      width: min(100% - 2rem, 980px);
+      margin-inline: auto;
+    }
+
+    .search-page__hero {
+      margin-bottom: 1.75rem;
+    }
+
+    .search-page__eyebrow {
+      margin: 0 0 0.5rem;
+      font-size: 0.857rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+    }
+
+    .search-page__hero h1 {
+      margin: 0;
+      font-family: var(--font-family-heading, "Montserrat", sans-serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.05;
+      text-wrap: balance;
+    }
+
+    .search-page__intro {
+      margin-top: 0.875rem;
+      max-width: 58ch;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--color-text-muted, #5f6b76);
+    }
+
+    .search-shell {
+      padding: clamp(1rem, 2vw, 1.5rem);
+      border: 1px solid rgba(31, 109, 140, 0.12);
+      border-radius: 1.25rem;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.05);
+    }
+
+    :global(.search-ui) {
+      --pagefind-ui-scale: 1;
+      --pagefind-ui-primary: var(--color-primary, #1f6d8c);
+      --pagefind-ui-text: #1f2933;
+      --pagefind-ui-background: #ffffff;
+      --pagefind-ui-border: #d7e1e8;
+      --pagefind-ui-tag: #eef4f7;
+      --pagefind-ui-border-width: 1px;
+      --pagefind-ui-border-radius: 18px;
+      --pagefind-ui-font: var(--font-family-body, "Montserrat", sans-serif);
+    }
+
+    :global(.search-ui .pagefind-ui__search-input) {
+      min-height: 60px;
+      padding-inline: 1.125rem;
+      border-radius: 16px;
+      font-size: 1rem;
+      font-weight: 500;
+      background: #fff;
+      border: 1px solid #d7e1e8;
+      box-shadow: none;
+    }
+
+    :global(.search-ui .pagefind-ui__search-input:focus) {
+      border-color: var(--color-primary, #1f6d8c);
+      box-shadow: 0 0 0 4px rgba(31, 109, 140, 0.12);
+    }
+
+    :global(.search-ui .pagefind-ui__drawer) {
+      margin-top: 1rem;
+    }
+
+    :global(.search-ui .pagefind-ui__search-clear) {
+      background-color: var(--color-magenta)!important;
+      color: var(--color-light)!important;
+      border-radius: var(--pagefind-ui-border-radius);
+      border: none;
+      font-weight: 600;
+      padding: 0px 10px!important;
+    }
+
+    :global(.search-ui .pagefind-ui__message) {
+      font-size: 0.95rem;
+      color: #5f6b76;
+    }
+
+    :global(.search-ui .pagefind-ui__result) {
+      padding-block: 1.1rem;
+      border-top: 1px solid #e7edf1;
+    }
+
+    :global(.search-ui .pagefind-ui__result:first-child) {
+      border-top: 0;
+    }
+
+    :global(.search-ui .pagefind-ui__result-link) {
+      text-decoration: none;
+    }
+
+    :global(.search-ui .pagefind-ui__result-title) {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #163142;
+      line-height: 1.35;
+    }
+
+    :global(
+      .search-ui .pagefind-ui__result-link:hover .pagefind-ui__result-title
+    ) {
+      color: var(--color-primary, #1f6d8c);
+    }
+
+    :global(.search-ui .pagefind-ui__result-excerpt) {
+      margin-top: 0.35rem;
+      font-size: 0.96rem;
+      line-height: 1.6;
+      color: #51606d;
+    }
+
+    :global(.search-ui mark) {
+      padding: 0.05em 0.2em;
+      border-radius: 0.25rem;
+      background: rgba(31, 109, 140, 0.12);
+      color: inherit;
+    }
+
+    :global(.search-ui .pagefind-ui__button) {
+      min-height: 44px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .search-page {
+        padding-block: 2rem 4rem;
+      }
+
+      .search-page__hero {
+        margin-bottom: 1.25rem;
+      }
+
+      .search-page__hero h1 {
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+      }
+
+      .search-shell {
+        padding: 0.9rem;
+        border-radius: 1rem;
+        background: #ffffff;
+      }
+
+      :global(.search-ui .pagefind-ui__search-input) {
+        min-height: 56px;
+        border-radius: 14px;
+      }
+
+      :global(.search-ui .pagefind-ui__result-title) {
+        font-size: 1rem;
+      }
+
+      :global(.search-ui .pagefind-ui__result-excerpt) {
+        font-size: 0.93rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+</BaseLayout>
