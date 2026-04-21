@@ -19,6 +19,7 @@ const [featured, ...rest] = sorted;
   />
 
   <section class="blog-list">
+    <div class="blog-list__container">
     <!-- ── CARD DESTACADA (post más reciente) ── -->
     {
       featured && (
@@ -71,11 +72,11 @@ const [featured, ...rest] = sorted;
         </a>
       )
     }
-
+</div>
     <!-- ── GRID DE POSTS RESTANTES ── -->
     {
       rest.length > 0 && (
-        <>
+        <div>
           <div class="blog-list__section-header">
             <h2 class="blog-list__section-title">Todos los artículos</h2>
             <span class="blog-list__count">
@@ -89,10 +90,14 @@ const [featured, ...rest] = sorted;
                 <a href={`/blog/${post.id}`} class="post-card">
                   <div class="post-card__image-wrap">
                     {post.data.image ? (
-                      <img
+                      <Image
                         src={post.data.image}
                         alt={post.data.title}
-                        loading="lazy"
+                        width={1066}
+                        height={340}
+                        format="webp"
+                        quality={82}
+                        loading="eager"
                       />
                     ) : (
                       <div
@@ -131,7 +136,7 @@ const [featured, ...rest] = sorted;
               </li>
             ))}
           </ul>
-        </>
+        </div>
       )
     }
 
@@ -187,6 +192,9 @@ const [featured, ...rest] = sorted;
     margin-inline: auto;
     padding-block: clamp(var(--space-8), 6vw, var(--space-16));
     padding-inline: var(--space-4);
+  }
+
+  .blog-list__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -276,8 +284,8 @@ const [featured, ...rest] = sorted;
   /* Título de la card featured */
   .post-card--featured .post-card__title {
     font-family: var(--font-family-heading);
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-bold);
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-semibold);
     line-height: 1.15;
     color: var(--color-marino);
     text-wrap: balance;
@@ -538,12 +546,11 @@ const [featured, ...rest] = sorted;
 
   /* Tablet: featured pasa a columna única */
   @media (max-width: 900px) {
-    
-    .blog-list{
+    .blog-list {
       display: grid;
       grid-template-columns: 1fr;
     }
-    
+
     .post-card--featured {
       grid-template-columns: 1fr;
       grid-template-areas:
