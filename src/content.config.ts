@@ -24,9 +24,13 @@ const talleres = defineCollection({
     precio: z.number().optional(),
     image: image().optional(),
     modalidad: z.preprocess(
-  (val) => (Array.isArray(val) ? val : [val]),
-  z.array(z.enum(['santiago', 'coruna', 'online']))
-),
+      (val) => {
+        if (Array.isArray(val)) return val;
+        if (typeof val === "string") return val.split(",").map((s) => s.trim());
+        return [val];
+      },
+      z.array(z.enum(['santiago', 'coruna', 'online']))
+    ),
     inscription_url: z.string().url().optional(),
     fecha_limite_inscripcion: z.coerce.date().optional(),
     publicado: z.boolean().default(true),

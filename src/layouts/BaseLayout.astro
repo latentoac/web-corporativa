@@ -67,50 +67,30 @@ const {
 	<Footer/>
   <NewsletterModal/>
 
-  <script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
-    const btns = document.querySelectorAll(".filtro-btn");
-    const cards = document.querySelectorAll(".taller-card");
-    const filtroVacio = document.getElementById("filtro-vacio");
+<script>
+  const btnsFiltro = document.querySelectorAll<HTMLButtonElement>('.filtro-btn');
+  const cards = document.querySelectorAll<HTMLElement>('.taller-card');
 
-    console.log("Botones encontrados:", btns.length);
-    console.log("Tarjetas encontradas:", cards.length);
-    console.log("Elemento filtro-vacio:", filtroVacio);
+  btnsFiltro.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filtro = btn.dataset.filtro;
 
-    const btnTodos = document.querySelector('[data-filtro="todos"]');
-    if (btnTodos) {
-      btnTodos.classList.add("filtro-btn--activo");
-      btnTodos.setAttribute("aria-pressed", "true");
-    }
-
-    function aplicarFiltro(filtro) {
-      let visibles = 0;
+      btnsFiltro.forEach((b) => {
+        b.classList.remove('filtro-btn--activo');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('filtro-btn--activo');
+      btn.setAttribute('aria-pressed', 'true');
 
       cards.forEach((card) => {
-        const modalidad = card.dataset.modalidad ?? "";
-        const mostrar = filtro === "todos" || modalidad === filtro;
-        card.hidden = !mostrar;
-        if (mostrar) visibles++;
-      });
-
-      if (filtroVacio) {
-        filtroVacio.hidden = visibles > 0;
-      }
-
-      btns.forEach((btn) => {
-        const activo = btn.dataset.filtro === filtro;
-        btn.classList.toggle("filtro-btn--activo", activo);
-        btn.setAttribute("aria-pressed", activo ? "true" : "false");
-      });
-    }
-
-    btns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const filtro = btn.dataset.filtro ?? "todos";
-        aplicarFiltro(filtro);
+        const modalidades = JSON.parse(card.dataset.modalidad ?? '[]');
+        const visible = filtro === 'todos' || modalidades.includes(filtro);
+        card.style.display = visible ? '' : 'none';
       });
     });
   });
+
+  document.querySelector<HTMLButtonElement>('[data-filtro="todos"]')?.click();
 </script>
   </body>
 </html>

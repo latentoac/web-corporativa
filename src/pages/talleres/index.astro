@@ -57,9 +57,9 @@ const filtros = [
             {sorted.map((taller) => (
               <li
                 class="taller-card"
-                data-modalidad={taller.data.modalidad}
+                data-modalidad={JSON.stringify(taller.data.modalidad)}
               >
-                <!-- 1. NUEVA SECCIÓN: Imagen del taller -->
+                <!-- Imagen del taller -->
       {taller.data.image && (
          <div class="taller-card__image-wrapper">
 
@@ -74,10 +74,15 @@ const filtros = [
       class="taller-card__image"
     />
 
-    <!-- 2. NUEVA SECCIÓN: Pill de modalidad -->
-    <span class="taller-card__badge">
-      {taller.data.modalidad}
-    </span>
+    <!-- Pill de modalidad -->
+<span class="taller-card__badge">
+  {taller.data.modalidad.map((m) => {
+    if (m === "santiago") return "Santiago";
+    if (m === "coruna") return "A Coruña";
+    if (m === "online") return "Online";
+  }).join(" · ")}
+</span>
+
   </div>
 )}
                 <div class="taller-card__body">
