@@ -111,6 +111,17 @@ button {
  cursor: pointer;
 }
 
+/* Sobreescribir el ::selection del base con el color magenta de Latento */
+::selection {
+  background-color: var(--color-magenta);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: var(--color-magenta);
+  color: #ffffff;
+}
+
 /* Header and Navigation */
 
 .site-header {

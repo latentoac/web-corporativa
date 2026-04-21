@@ -187,6 +187,9 @@ const [featured, ...rest] = sorted;
     margin-inline: auto;
     padding-block: clamp(var(--space-8), 6vw, var(--space-16));
     padding-inline: var(--space-4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   /* ─────────────────────────────────────────
@@ -475,7 +478,7 @@ const [featured, ...rest] = sorted;
   .post-card__title {
     font-family: var(--font-family-heading);
     font-size: var(--text-lg);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
     line-height: 1.25;
     color: var(--color-marino);
     text-wrap: balance;
@@ -535,6 +538,12 @@ const [featured, ...rest] = sorted;
 
   /* Tablet: featured pasa a columna única */
   @media (max-width: 900px) {
+    
+    .blog-list{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
     .post-card--featured {
       grid-template-columns: 1fr;
       grid-template-areas:
