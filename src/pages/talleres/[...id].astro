@@ -34,7 +34,9 @@ const fechaLimiteFormateada = fechaLimite
 
 <BaseLayout>
   <HeroSections titular="Talleres" subtitular="Formación práctica en el espacio Latento" />
-
+    <footer class="taller__footer">
+      <a href="/talleres" class="taller__back-link">Volver a talleres</a>
+    </footer>
   <article class="taller">
     <header class="taller__header">
       <span class="taller__eyebrow">Taller</span>
@@ -70,6 +72,7 @@ const fechaLimiteFormateada = fechaLimite
         )}
       </div>
     </header>
+
 
     {taller.data.image && (
       <div class="taller__image-wrap">
