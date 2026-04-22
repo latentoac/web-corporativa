@@ -3,6 +3,12 @@ backend:
   repo: latentoac/web-corporativa
   branch: main
 
+locale: 'es'
+
+logo:
+  src: /admin/latento-cms-logo.svg
+  show_in_header: true
+
 media_folder: "src/assets/uploads"
 public_folder: "/src/assets/uploads"
 
@@ -15,7 +21,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false }
       - label: "Imagen destacada"
         name: "image"
         widget: "image"
@@ -29,7 +35,7 @@ collections:
         required: false
         field: { label: "Etiqueta", name: "tag", widget: "string" }
       - { label: "Publicado", name: "publicado", widget: "boolean", default: true }
-      - { label: "Contenido", name: "body", widget: "markdown" }
+      - { label: "Contenido", name: "body", widget: "markdown", required: false }
 
   - name: "talleres"
     label: "Talleres"
@@ -38,8 +44,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: "Descripción", name: "description", widget: "text", required: false }
+      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false }
       - { label: "Dirigido a", name: "dirigido_a", widget: "string", required: false, hint: "Ej: Niños de 8 a 12 años" }
       - { label: "Hora de inicio", name: "hora_inicio", widget: "string", required: false, hint: "Formato HH:MM, ej: 17:00" }
       - { label: "Hora de fin", name: "hora_fin", widget: "string", required: false, hint: "Formato HH:MM, ej: 19:00" }
@@ -63,4 +69,4 @@ collections:
       - { label: "URL de inscripción", name: "inscription_url", widget: "string", required: false, hint: "URL completa, ej: https://tally.so/r/xxxxx" }
       - { label: "Fecha límite de inscripción", name: "fecha_limite_inscripcion", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Fecha límite para inscribirse en el taller" }
       - { label: "Publicado", name: "publicado", widget: "boolean", default: true }
-      - { label: "Contenido", name: "body", widget: "markdown" }
+      - { label: "Contenido", name: "body", widget: "markdown", required: false }

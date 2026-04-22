@@ -5,7 +5,7 @@ const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: ({ image }) => z.object({
     title: z.string(),
-    date: z.coerce.date(),
+    date: z.coerce.date().optional(),
     image: image().optional(),
     tags: z.array(z.string()).optional(),
     publicado: z.boolean().default(true),
@@ -16,9 +16,9 @@ const talleres = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/talleres" }),
   schema: ({ image }) => z.object({
     title: z.string(),
-    description: z.string(),
+    description: z.string().optional(),
     dirigido_a: z.string().optional(),
-    date: z.coerce.date(),
+    date: z.coerce.date().optional(),
     hora_inicio: z.string().optional(),
     hora_fin: z.string().optional(),
     precio: z.number().optional(),
