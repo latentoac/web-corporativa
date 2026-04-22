@@ -34,7 +34,7 @@ const fechaLimiteFormateada = fechaLimite
 
 <BaseLayout>
   <HeroSections titular="Talleres" subtitular="Formación práctica en el espacio Latento" />
-    <footer class="taller__footer">
+    <footer class="taller__footer taller__footer--top">
       <a href="/talleres" class="taller__back-link">Volver a talleres</a>
     </footer>
   <article class="taller">
@@ -626,6 +626,10 @@ const fechaLimiteFormateada = fechaLimite
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
+}
+
+.taller__footer--top{
+  border-bottom: 1px solid var(--taller-border);
 }
 
 /* Botón volver */
