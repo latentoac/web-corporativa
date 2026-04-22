@@ -343,6 +343,12 @@ button {
   left: 0px;
   }
   
+.site-header__mobile-panel{
+        position: fixed;
+  top: 76px;
+  left: 0px;
+}
+
   .site-header__bar-inner {
     gap: 1.25rem;
   }
