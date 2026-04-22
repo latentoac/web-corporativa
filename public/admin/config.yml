@@ -18,7 +18,7 @@ media_library:
   use_secure_url: true
   use_transformations: false
   config:
-    cloud_name: latento
+    cloud_name: dmvpxkp5m
     api_key: 829335741176169
     multiple: false
     default_transformations:
