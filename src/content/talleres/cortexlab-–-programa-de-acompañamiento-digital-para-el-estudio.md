@@ -10,7 +10,7 @@ precio: 180
 image: /src/assets/uploads/cortexlab_instagram_post.png
 modalidad:
   - online
-inscription_url: latento.conecta@latentoac.com
+inscription_url: ""
 fecha_limite_inscripcion: 2026-01-20
 publicado: true
 ---
