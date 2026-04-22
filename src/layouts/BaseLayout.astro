@@ -17,7 +17,7 @@ const {
   title = "Latento Altas Capacidades",
   description = "Somos un equipo multidisciplinar de expertas en identificación, orientación e intervención de altas capacidades.",
   canonical = "https://www.latentoac.com/",
-  ogImage = "https://www.latentoac.com/logo_latento_final-01.jpg",
+  ogImage = "https://latentoac.com/og-default.jpg",
 } = Astro.props;
 ---
 
@@ -31,6 +31,10 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- PWA -->
+     <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#CE3061" />
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -67,8 +71,15 @@ const {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <script is:inline>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+</script>
   </head>
-  <body>
+  <body id="top">
 	<Header/>
 	<main>
 		<slot />

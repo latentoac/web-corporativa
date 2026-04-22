@@ -19,7 +19,9 @@ import HeroSections from "../../components/sections/HeroSections.astro";
 
 <BaseLayout>
   <HeroSections titular="Blog" subtitular="Ideas, procesos y novedades..." />
-
+    <footer class="post__footer post__footer--top">
+      <a href="/blog" class="post__back-link">Volver al blog</a>
+    </footer>
   <article class="post">
     <header class="post__header">
       <h1 class="post__title">{post.data.title}</h1>
@@ -436,6 +438,11 @@ import HeroSections from "../../components/sections/HeroSections.astro";
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
+}
+
+.post__footer--top{
+  padding-left: 15px;
+  border-bottom: 1px solid var(--taller-border);
 }
 
 /* Botón de volver al blog */
