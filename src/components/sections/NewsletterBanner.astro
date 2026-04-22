@@ -5,7 +5,10 @@ const bgUrl = `url(${backgroundBanner.src})`;
 
 <section class="newsletter">
   <div class="newsletter__banner">
-    <h2 class="newsletter__h2">Boletín de novedades</h2>
+    <div class="newsletter__header">
+      <h2 class="newsletter__h2">Boletín de novedades</h2>
+      <p class="newsletter__p">Te avisamos de nuevos talleres, recursos ...</p>
+    </div>
 
     <button
       class="newsletter__btn newsletter__btn--primary newsletter-banner__cta"
@@ -13,7 +16,7 @@ const bgUrl = `url(${backgroundBanner.src})`;
       onclick="openNewsletterModal()"
       aria-haspopup="dialog"
     >
-      Subscríbete pulsando aquí ...
+      Subscríbete pulsando aquí
     </button>
   </div>
 </section>
@@ -24,76 +27,129 @@ const bgUrl = `url(${backgroundBanner.src})`;
   }
 
   .newsletter__banner {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     background-image: var(--background);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem;
+    padding: clamp(1.5rem, 4vw, 4rem);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1440px;
     margin: 0 auto;
     border-radius: 20px;
     flex-wrap: wrap;
+    gap: 1rem;
+    min-height: 180px;
   }
 
-  .newsletter__h2{
+  .newsletter__banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    );
+    z-index: 0;
+  }
+
+  .newsletter__header,
+  .newsletter__btn {
+    position: relative;
+    z-index: 1;
+  }
+
+  .newsletter__header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    max-width: 42rem;
+  }
+
+  .newsletter__h2 {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
     font-size: var(--text-xl);
+    color: var(--color-light);
+  }
+
+  .newsletter__p {
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-light);
   }
 
   .newsletter__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-3) var(--space-6);
-  font-family: var(--font-family-body);
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: var(--radius-full);
-  border: 2px solid transparent;
-  cursor: pointer;
-  white-space: nowrap;
-  min-height: 44px; /* touch target */
-}
-
-/* Primario — magenta sólido */
-.newsletter__btn--primary {
-  background-color: var(--color-light);
-  color: var(--color-magenta);
-  border-color: var(--color-light);
-}
-
-.newsletter__btn--primary:hover,
-.newsletter__btn--primary:focus-visible {
-  background-color: var(--color-magenta);
-  border-color: var(--color-magenta);
-  color: var(--color-light);
-}
-
-.newsletter__btn--primary:active {
-  background-color: var(--color-magenta);
-  border-color: var(--color-magenta);
-  color: var(--color-light);
-}
-
-
-@media (max-width:840px) {
-  .newsletter__banner{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
-    padding: 1rem 10px;
-    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-3) var(--space-6);
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    border: 2px solid transparent;
+    cursor: pointer;
+    white-space: normal;
+    min-height: 44px;
+    text-align: center;
   }
 
-  .newsletter__btn{
-    white-space: wrap;
+  .newsletter__btn--primary {
+    background-color: var(--color-light);
+    color: var(--color-magenta);
+    border-color: var(--color-light);
   }
-}
+
+  .newsletter__btn--primary:hover,
+  .newsletter__btn--primary:focus-visible {
+    background-color: var(--color-magenta);
+    border-color: var(--color-magenta);
+    color: var(--color-light);
+  }
+
+  .newsletter__btn--primary:active {
+    background-color: var(--color-magenta);
+    border-color: var(--color-magenta);
+    color: var(--color-light);
+  }
+
+  @media (max-width: 840px) {
+    .newsletter__banner {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background-position: center;
+      min-height: 220px;
+    }
+
+    .newsletter__banner::before {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+      );
+    }
+
+    .newsletter__header {
+      align-items: center;
+    }
+
+    .newsletter__btn {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
 </style>
