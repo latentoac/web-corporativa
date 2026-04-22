@@ -142,16 +142,17 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
 <div class="site-footer__bottom">
   <div class="site-footer__container site-footer__bottom-inner">
     <p class="site-footer__copyright">
-      ©2026 Latento Altas Capacidades. Todos los derechos reservados - Hecho con <a
+      ©2026 Latento Altas Capacidades. Todos los derechos reservados - Hecho con 
+      <a
+        class="site-footer__a"
         href="https://astro.build/"
         target="_blank"
-        rel="noopener noreferrer">Astro</a
-      >
+        rel="noopener noreferrer">Astro</a>
     </p>
 
     <p class="site-footer__credit">
       Diseñado y desarrollado por
-      <a href="https://rubenterre.me" target="_blank" rel="noopener noreferrer">
+      <a class="site-footer__a" href="https://rubenterre.me" target="_blank" rel="noopener noreferrer">
         Rubén Terré
       </a>
     </p>
@@ -369,7 +370,8 @@ import uexuntalogo from "../../assets/brand/logo/ue-xunta-logos.webp";
   .site-footer__credit a:hover,
   .site-footer__credit a:focus-visible,
   .site-footer__support-link:hover,
-  .site-footer__support-link:focus-visible {
+  .site-footer__support-link:focus-visible,
+  .site-footer__a:hover {
     color: var(--footer-link-hover);
   }
 

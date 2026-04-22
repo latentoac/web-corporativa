@@ -72,9 +72,9 @@ const query = Astro.url.searchParams.get("q") ?? "";
 
     .search-page__hero h1 {
       margin: 0;
-      font-family: var(--font-family-heading, "Montserrat", sans-serif);
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 700;
+      font-family: var(--font-family-heading);
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-semibold);
       line-height: 1.05;
       text-wrap: balance;
     }
@@ -82,7 +82,7 @@ const query = Astro.url.searchParams.get("q") ?? "";
     .search-page__intro {
       margin-top: 0.875rem;
       max-width: 58ch;
-      font-size: 1rem;
+      font-size: var(--text-sm);
       line-height: 1.6;
       color: var(--color-text-muted, #5f6b76);
     }
