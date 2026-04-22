@@ -3,7 +3,7 @@ title: CORTEXLAB – Programa de acompañamiento digital para el estudio-
 description: CORTEXLAB es un programa psicoeducativo digital dirigido a alumnado
   de 5º y 6º de Primaria y 1º de E.S.O. con Altas Capacidades, diseñado para
   mejorar su bienestar, hábitos de estudio y uso responsable de la tecnología.
-date: 2026-01-09
+date: 2026-01-12
 dirigido_a: Alumnado de 5º y 6º de Primaria y 1º de E.S.O.
 hora_inicio: "12"
 precio: 180
