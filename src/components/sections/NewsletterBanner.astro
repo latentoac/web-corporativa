@@ -20,7 +20,7 @@ const bgUrl = `url(${backgroundBanner.src})`;
 
 <style define:vars={{ background: bgUrl }}>
   .newsletter {
-    padding: 2rem .5rem;
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem);
   }
 
   .newsletter__banner {
@@ -34,6 +34,7 @@ const bgUrl = `url(${backgroundBanner.src})`;
     max-width: 1440px;
     margin: 0 auto;
     border-radius: 20px;
+    flex-wrap: wrap;
   }
 
   .newsletter__h2{
@@ -80,4 +81,19 @@ const bgUrl = `url(${backgroundBanner.src})`;
   color: var(--color-light);
 }
 
+
+@media (max-width:840px) {
+  .newsletter__banner{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 10px;
+    flex-direction: column;
+  }
+
+  .newsletter__btn{
+    white-space: wrap;
+  }
+}
 </style>
