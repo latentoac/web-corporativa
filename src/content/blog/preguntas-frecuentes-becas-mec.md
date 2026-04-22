@@ -25,7 +25,7 @@ Al igual que el curso pasado, todas las familias beneficiarias, al cumplir los u
 
 Como cualquier beca lo principal son los **umbrales de renta y patrimonio** en función de la unidad familiar, por lo que debéis comprobarlo en la convocatoria de cada año, para que podáis comprobar todo en la convocatoria os dejamos el enlace del curso 2025/2026: [enlace a la página del Ministerio.](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2286)
 
-![Umbrales económicos NEAE](/src/assets/uploads/umbrales-economicos-becas-neae-2025-2026.png "Umbrales económicos NEAE")
+![Umbrales de NEAE](/src/assets/uploads/umbrales-economicos-becas-neae-2025-2026.png)
 
 **¿Dónde se cubre el formulario online para PRESENTAR el PDF de mi solicitud?**
 
