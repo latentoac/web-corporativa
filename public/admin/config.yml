@@ -6,11 +6,24 @@ backend:
 locale: 'es'
 
 logo:
-  src: /admin/latento-cms-logo.svg
+  src: /admin/latento-cms-logo.png
   show_in_header: true
 
 media_folder: "src/assets/uploads"
 public_folder: "/src/assets/uploads"
+
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  use_secure_url: true
+  use_transformations: false
+  config:
+    cloud_name: Root
+    api_key: 378714621495412
+    multiple: false
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
 
 collections:
 
@@ -28,7 +41,11 @@ collections:
         required: false
         media_library:
           config:
-            max_file_size: 2000000
+            default_transformations:
+              - - fetch_format: auto
+                  quality: auto
+                  width: 1600
+                  crop: limit
       - label: "Etiquetas"
         name: "tags"
         widget: "list"
@@ -56,7 +73,11 @@ collections:
         required: false
         media_library:
           config:
-            max_file_size: 2000000
+            default_transformations:
+              - - fetch_format: auto
+                  quality: auto
+                  width: 1600
+                  crop: limit
       - label: "Modalidad"
         name: "modalidad"
         widget: "select"
