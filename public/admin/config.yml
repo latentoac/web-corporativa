@@ -18,8 +18,8 @@ media_library:
   use_secure_url: true
   use_transformations: false
   config:
-    cloud_name: Root
-    api_key: 378714621495412
+    cloud_name: latento
+    api_key: 829335741176169
     multiple: false
     default_transformations:
       - - fetch_format: auto
