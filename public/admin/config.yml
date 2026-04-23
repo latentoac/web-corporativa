@@ -6,7 +6,7 @@ backend:
 locale: 'es'
 
 logo:
-  src: /admin/latento-cms-logo.png
+  src: /admin/latento-cms-logo.svg
   show_in_header: true
 
 media_folder: "src/assets/uploads"
