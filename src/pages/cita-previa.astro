@@ -1,0 +1,50 @@
+---
+import HeroSections from "~/components/sections/HeroSections.astro";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <HeroSections
+    titular="Cita previa"
+    subtitular="Completa este formulario y nos pondremos en contacto contigo"
+  />
+
+  <div class="cita-previa">
+    <iframe
+      data-tally-src="https://tally.so/embed/zx0y7a?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy"
+      width="100%"
+      height="100"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      title="Cita previa"></iframe>
+
+    <script>
+      var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d
+                .querySelectorAll("iframe[data-tally-src]:not([src])")
+                .forEach(function (e) {
+                  e.src = e.dataset.tallySrc;
+                });
+        };
+      if ("undefined" != typeof Tally) v();
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script");
+        ((s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s));
+      }
+    </script>
+  </div>
+</BaseLayout>
+
+<style>
+  .cita-previa {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem);
+  }
+</style>
