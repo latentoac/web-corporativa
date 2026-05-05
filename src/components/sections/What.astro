@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import what from "../../assets/images/home/que-hacemos-v3.avif";
 ---
 
@@ -32,12 +33,12 @@ import what from "../../assets/images/home/que-hacemos-v3.avif";
     </p>
   </div>
   <div class="site-what__image">
-    <img
+    <Image
       class="site-what__img"
-      src={what.src}
+      src={what}
       alt="Alumnos de una clase montando un robot en una mesa"
-      width="600"
-      height="450"
+      width={600}
+      height={450}
       loading="lazy"
       decoding="async"
     />

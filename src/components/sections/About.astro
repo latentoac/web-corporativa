@@ -1,15 +1,16 @@
 ---
 import about from "../../assets/images/home/quienes-somos-v2.avif";
+import { Image } from "astro:assets";
 ---
 
 <section class="site-about" id="about">
   <div class="site-about__image">
-    <img
+    <Image
       class="site-about__img"
-      src={about.src}
+      src={about}
       alt="Psicóloga acompañando a un chico y poniendo su mano en su hombro"
-      width="600"
-      height="450"
+      width={600}
+      height={450}
       loading="lazy"
       decoding="async"
     />
