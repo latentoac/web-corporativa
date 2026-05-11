@@ -1,24 +1,83 @@
 ---
 const { titular, subtitular } = Astro.props;
+
+import background from "../../assets/images/ui/columpio-hero-gray.avif";
+
+import { getImage } from "astro:assets";
+
+const heroBg = await getImage({
+  src: background,
+  format: "webp",
+  width: 1920,
+  quality: 85,
+});
 ---
-<section class="hero-sections">
-<div class="hero-sections__header">
-  <h1 class="hero-sections__h1">{titular}</h1>
-  <p class="hero-sections__p">
-    {subtitular}
-  </p>
-</div>
+
+<!-- <section class="hero-sections">
+  <div class="hero-sections__header">
+    <h1 class="hero-sections__h1">{titular}</h1>
+    <p class="hero-sections__p">
+      {subtitular}
+    </p>
+  </div>
+</section> -->
+
+<section class="hero" aria-label="Presentación principal">
+  <div class="hero__bg" aria-hidden="true">
+    <img
+      src={background.src}
+      alt="Fondo en vista cenital con manos de personas trabajando con materiales educativos"
+      width="1400"
+      height="700"
+      loading="eager"
+      decoding="async"
+      class="hero__bg-img"
+    />
+    <div class="hero__bg-overlay" aria-hidden="true"></div>
+  </div>
+
+  <!-- Contenido superpuesto -->
+  <div class="hero__inner" style={`--hero-bg: url('${heroBg.src}')`}>
+    <!-- Bloque de texto principal -->
+    <div class="hero__content">
+      <div class="hero-sections__header">
+        <h1 class="hero-sections__h1">{titular}</h1>
+        <p class="hero-sections__p">
+          {subtitular}
+        </p>
+      </div>
+    </div>
+  </div><!-- /.hero__inner -->
+  <div class="hero__wave" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="Capa_1"
+      version="1.1"
+      viewBox="0 0 3810 133"
+      ><defs
+        ><style>
+          .st1 {
+            fill: #fefefe;
+          }
+        </style></defs
+      ><path
+        d="M2718.4-.5c158.7 1 324.9 16 497.8 47.2l139.9 30.2c111.1 29.6 214.8 28.6 320 20.8l132.5-17.6 1.2 1v51.1H.8c-.2 0-.5-.2-.7-.5V82l.7-2.1c252.9-24.4 511.4-34.1 764.6-3.8 272.5 36.6 536.3 54.5 803.8 45.1 112.8-4 231.1-12.7 342.4-41.8C2130.3 28.8 2355.8.9 2573.4-.5z"
+        class="st1"></path><path
+        d="M1231-.4c229.7 1.1 481.9 33.1 713.7 91.7 127.8 23.6 249.4 30.8 372 31.8 249.5 2.2 488.2-12.4 748-49.5 145.2-18.1 293.4-16.6 439.6-14.4l3.9.9c99 2.8 199.7 9.2 298.5 20.2.8 17.2.9 34.4.5 51.6-1269.1.6-2538.2.5-3807.3-.2V82c17.5 1 35 3.2 52.4 6.6 122.3 15.8 239.8 21.9 361.6-2.1 219.7-57 458-85.6 678.2-86.9z"
+        class="st1"
+        style="opacity:.8"></path></svg
+    >
+  </div>
 </section>
 
 <style>
-
-.hero-sections{
+  .hero-sections {
     width: 100vw;
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
     background-color: var(--color-light-dark);
-}
+  }
 
-.hero-sections__header {
+  .hero-sections__header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +93,10 @@ const { titular, subtitular } = Astro.props;
     font-size: var(--text-xl);
     font-weight: var(--font-weight-semibold);
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--color-magenta);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4em;
   }
 
   .hero-sections__p {
@@ -43,5 +106,263 @@ const { titular, subtitular } = Astro.props;
     color: var(--color-texto-dark);
     text-align: center;
     line-height: 1.7rem;
+  }
+
+
+  /* HERO Section - Con imagen de fondo */
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    transition:
+      color var(--transition-interactive),
+      background var(--transition-interactive),
+      border-color var(--transition-interactive),
+      box-shadow var(--transition-interactive),
+      opacity var(--transition-interactive);
+  }
+
+  /* ============================================================
+   .hero  —  Bloque raíz
+   ============================================================ */
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: clamp(160px, 18vw, 200px);
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+  }
+
+  /* ── .hero__bg  — imagen de fondo + overlay ─────────────────── */
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+
+  /* Gradiente oscuro hacia la izquierda para garantizar legibilidad del texto */
+  .hero__bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(184deg, #ffffff, rgb(253 199 65 / 53%) 100%);
+  }
+
+  /* ── .hero__inner  — contenedor centrado ───────────────────── */
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: clamp(var(--space-6), 5vw, var(--space-16));
+/*  padding-top: clamp(var(--space-10), 8vw, var(--space-16));
+    padding-bottom: clamp(var(--space-16), 12vw, 160px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ── .hero__content  — columna de texto ────────────────────── */
+  .hero__content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  /* ── .hero__heading  — h1 principal ────────────────────────── */
+  .hero__heading {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color-light);
+    text-wrap: balance;
+  }
+  .hero__mark {
+    background: var(--color-magenta);
+    color: var(--color-light);
+    padding-inline: 0.2em;
+    font-weight: var(--font-weight-bold);
+
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-radius: 0.15em;
+  }
+  /* ── .hero__description  — bajada ──────────────────────────── */
+  .hero__description {
+    font-size: var(--text-base);
+    text-align: center;
+    font-weight: var(--font-weight-regular);
+    max-width: 50ch;
+    line-height: 1.55;
+  }
+
+  .hero__mark--description {
+    background-color: var(--color-magenta);
+    color: var(--color-light);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-radius: 0.15em;
+    padding-inline: 0.2em;
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* ── .hero__actions  — grupo de botones ────────────────────── */
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-2);
+    justify-content: center;
+  }
+
+  /* ── .hero__btn  — botón base ──────────────────────────────── */
+  .hero__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3) var(--space-6);
+    font-family: var(--font-family-body);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    border: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    min-height: 44px; /* touch target */
+  }
+
+  /* Primario — magenta sólido */
+  .hero__btn--primary {
+    background-color: var(--color-light);
+    color: var(--color-magenta);
+    border-color: var(--color-light);
+  }
+
+  .hero__btn--primary:hover,
+  .hero__btn--primary:focus-visible {
+    background-color: var(--color-magenta);
+    border-color: var(--color-magenta);
+    color: var(--color-light);
+  }
+
+  .hero__btn--primary:active {
+    background-color: var(--color-magenta);
+    border-color: var(--color-magenta);
+    color: var(--color-light);
+  }
+
+  /* Ghost — contorno blanco */
+  .hero__btn--ghost {
+    background-color: transparent;
+    color: var(--color-light);
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .hero__btn--ghost:hover,
+  .hero__btn--ghost:focus-visible {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: var(--color-light);
+  }
+
+  .hero__btn--ghost:active {
+    background-color: rgba(255, 255, 255, 0.22);
+  }
+
+  /* ── .hero__wave — onda de transición inferior ──────────────── */
+  .hero__wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+    line-height: 0;
+  }
+
+  .hero__wave-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ============================================================
+   RESPONSIVE — max-width: 1100px (tablet landscape / iPad)
+   ============================================================ */
+  @media (max-width: 1100px) {
+    .hero {
+      /* Mantiene la altura compacta — no hereda valores del Hero principal */
+      min-height: clamp(140px, 16vw, 180px);
+    }
+
+    .hero__inner {
+      padding-inline: clamp(var(--space-4), 4vw, var(--space-10));
+      padding-block: var(--space-6);
+    }
+
+    .hero-sections__h1 {
+      font-size: var(--text-lg);
+    }
+
+    .hero-sections__p {
+      font-size: var(--text-sm);
+    }
+  }
+
+  /* ============================================================
+   RESPONSIVE — max-width: 640px (móvil)
+   ============================================================ */
+  @media (max-width: 640px) {
+    .hero {
+      /* En móvil la imagen sigue visible como fondo — no se oculta */
+      min-height: clamp(120px, 40vw, 160px);
+    }
+
+    .hero__inner {
+      padding-inline: var(--space-5);
+      padding-block: var(--space-5);
+      padding-bottom: calc(var(--space-5) + 40px); /* absorbe la onda */
+    }
+
+    .hero-sections__header {
+      gap: var(--space-2);
+      padding: 0;
+    }
+
+    .hero-sections__h1 {
+      font-size: var(--text-lg);
+      text-underline-offset: 0.35em;
+    }
+
+    .hero-sections__p {
+      font-size: var(--text-sm);
+      line-height: 1.5;
+    }
+  }
+
+  /* ── Respeta preferencias de movimiento reducido ──────────── */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
   }
 </style>
