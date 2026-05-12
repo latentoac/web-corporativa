@@ -11,6 +11,7 @@
       d="M1683 1331l-166 165q-19 19-45 19t-45-19l-531-531-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"
     ></path>
   </svg>
+  <span class="sr-only">Volver arriba</span>
 </a>
 
 <style>
@@ -25,9 +26,23 @@
         align-items: center;
         justify-content: center;
         border-radius: var(--radius-md);
+        z-index: 999;
 }
 
 .gotoup-svg-icon{
     fill: var(--color-light);
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 </style>
