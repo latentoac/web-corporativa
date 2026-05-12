@@ -21,7 +21,7 @@ const talleres = defineCollection({
     date: z.coerce.date().optional(),
     hora_inicio: z.string().optional(),
     hora_fin: z.string().optional(),
-    precio: z.number().optional(),
+    precio: z.string().optional(),
     image: image().optional(),
     modalidad: z.preprocess(
       (val) => {

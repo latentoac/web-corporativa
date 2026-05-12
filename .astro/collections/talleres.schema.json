@@ -22,7 +22,7 @@
       "type": "string"
     },
     "precio": {
-      "type": "number"
+      "type": "string"
     },
     "image": {
       "type": "string"

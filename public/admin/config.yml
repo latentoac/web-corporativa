@@ -66,7 +66,7 @@ collections:
       - { label: "Dirigido a", name: "dirigido_a", widget: "string", required: false, hint: "Ej: Niños de 8 a 12 años" }
       - { label: "Hora de inicio", name: "hora_inicio", widget: "string", required: false, hint: "Formato HH:MM, ej: 17:00" }
       - { label: "Hora de fin", name: "hora_fin", widget: "string", required: false, hint: "Formato HH:MM, ej: 19:00" }
-      - { label: "Precio (€)", name: "precio", widget: "number", required: false, value_type: "float", min: 0 }
+      - { label: "Precio", name: "precio", widget: "string", required: false, hint: "Ej: 25€/sesión, 80€/mes, Gratuito" }
       - label: "Imagen destacada"
         name: "image"
         widget: "image"

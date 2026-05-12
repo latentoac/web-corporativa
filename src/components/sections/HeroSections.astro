@@ -26,7 +26,7 @@ const heroBg = await getImage({
   <div class="hero__bg" aria-hidden="true">
     <img
       src={background.src}
-      alt="Fondo en vista cenital con manos de personas trabajando con materiales educativos"
+      alt="Fondo de niño feliz columpiándose en un columpio"
       width="1400"
       height="700"
       loading="eager"
@@ -149,15 +149,18 @@ const heroBg = await getImage({
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 30%;
+  /*   object-position: center 30%; */
+  object-position: left;
   }
 
   /* Gradiente oscuro hacia la izquierda para garantizar legibilidad del texto */
   .hero__bg-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(184deg, #ffffff, rgb(253 199 65 / 53%) 100%);
-  }
+/*     background: linear-gradient(184deg, #ffffff, rgb(253 199 65 / 53%) 100%);
+ */
+    background: linear-gradient(90deg, #fff, #ffffff, #fdc74187);
+}
 
   /* ── .hero__inner  — contenedor centrado ───────────────────── */
   .hero__inner {
@@ -172,6 +175,7 @@ const heroBg = await getImage({
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1.5rem;
   }
 
   /* ── .hero__content  — columna de texto ────────────────────── */
@@ -294,6 +298,7 @@ const heroBg = await getImage({
     z-index: 2;
     pointer-events: none;
     line-height: 0;
+    filter: drop-shadow(10px 10px 10px grey);
   }
 
   .hero__wave-img {
