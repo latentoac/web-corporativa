@@ -1,6 +1,6 @@
 ---
 title: "TALLERES SEMANA SANTA -A CORUÑA-"
-description: "Aventura en el safari: Explorando la naturaleza Semana Santa está a la vuelta de la esquina y en Latento nos vamos a sumergir en una aventura increíble. ¡Nos vamos de Safari! A través de actividades descubriremos diferentes especies de animales y sus hábitats, realizaremos juegos y dinámicas que fom"
+description: "Aventura en el safari: Explorando la naturaleza Semana Santa está a la vuelta de la esquina y en Latento nos vamos a sumergir en una aventura increíble. ¡Nos vamos de Safari! A través de actividades descubriremos diferentes especies de animales y sus hábitats, realizaremos juegos."
 date: 2025-03-26
 dirigido_a: "Alumnado de 5º de educación Infantil a 6º de E.P."
 hora_inicio: "10:30"

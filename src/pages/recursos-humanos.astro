@@ -2,8 +2,7 @@
 import HeroSections from "../components/sections/HeroSections.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HumanResourcesCard from "../components/cards/HumanResourcesCard.astro";
-/* import banner from "../assets/images/pages/rrhh/rrhhlatento.avif";
- */
+
 const jobs = [
   {
     title: "Vacante para psicóloga/ psicopedagoga/ pedagoga",
@@ -26,17 +25,11 @@ const jobs = [
   <HeroSections
     titular="Recursos Humanos"
     subtitular="En Latento buscamos profesionales con mirada educativa, sensibilidad por las altas capacidades y ganas de crecer en un equipo multidisciplinar comprometido con el desarrollo integral de niños, adolescentes y adultos."
-  />
+    page="recursos-humanos"
+    backgroundAlt="Manos en entorno profesional de empleo"
+    />
   <section class="rrhh">
     <div class="rrhh__container">
-<!--       <img
-        class="rrhh__img"
-        src={banner.src}
-        alt="Imagen de unas manos explicando algo y el logo y colores de Latento degradando paulatinamente la imagen"
-        width="1440"
-        height="129"
-        loading="lazy"
-      /> -->
       <h2 class="rrhh__h2">El equipo de Latento aumenta...</h2>
       <p class="rrhh__p">
         ¿Quieres crecer como profesional en tu ámbito de experticia? ¿Te

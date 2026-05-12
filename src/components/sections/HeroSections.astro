@@ -1,34 +1,39 @@
 ---
-const { titular, subtitular } = Astro.props;
-
-import background from "../../assets/images/ui/columpio-hero-gray.avif";
-
+import columpioImg from "../../assets/images/ui/columpio-hero-dark.avif";
+import manosImg from "../../assets/images/ui/manos-recursos-humanos.avif";
 import { getImage } from "astro:assets";
 
+interface Props {
+  titular: string;
+  subtitular?: string;
+  backgroundAlt?: string;
+  page?: string;
+}
+
+const {
+  titular,
+  subtitular,
+  backgroundAlt = "Fondo de niño feliz columpiándose en un columpio",
+  page,
+} = Astro.props;
+
+const rawImage = page === "recursos-humanos" ? manosImg : columpioImg;
+
 const heroBg = await getImage({
-  src: background,
+  src: rawImage,
   format: "webp",
   width: 1920,
   quality: 85,
 });
 ---
 
-<!-- <section class="hero-sections">
-  <div class="hero-sections__header">
-    <h1 class="hero-sections__h1">{titular}</h1>
-    <p class="hero-sections__p">
-      {subtitular}
-    </p>
-  </div>
-</section> -->
-
 <section class="hero" aria-label="Presentación principal">
   <div class="hero__bg" aria-hidden="true">
     <img
-      src={background.src}
-      alt="Fondo de niño feliz columpiándose en un columpio"
-      width="1400"
-      height="700"
+      src={rawImage.src}
+      alt={backgroundAlt}
+      width={rawImage.width}
+      height={rawImage.height}
       loading="eager"
       decoding="async"
       class="hero__bg-img"
@@ -74,7 +79,7 @@ const heroBg = await getImage({
   .hero-sections {
     width: 100vw;
     padding: 1rem 0.5rem;
-    background-color: var(--color-light-dark);
+    background-color: var(--color-light-dark); 
   }
 
   .hero-sections__header {
@@ -107,7 +112,6 @@ const heroBg = await getImage({
     text-align: center;
     line-height: 1.7rem;
   }
-
 
   /* HERO Section - Con imagen de fondo */
 
@@ -149,18 +153,18 @@ const heroBg = await getImage({
     width: 100%;
     height: 100%;
     object-fit: cover;
-  /*   object-position: center 30%; */
-  object-position: left;
+    /*   object-position: center 30%; */
+    object-position: left;
   }
 
   /* Gradiente oscuro hacia la izquierda para garantizar legibilidad del texto */
   .hero__bg-overlay {
     position: absolute;
     inset: 0;
-/*     background: linear-gradient(184deg, #ffffff, rgb(253 199 65 / 53%) 100%);
+    /*     background: linear-gradient(184deg, #ffffff, rgb(253 199 65 / 53%) 100%);
  */
     background: linear-gradient(90deg, #fff, #ffffff, #fdc74187);
-}
+  }
 
   /* ── .hero__inner  — contenedor centrado ───────────────────── */
   .hero__inner {
@@ -170,7 +174,7 @@ const heroBg = await getImage({
     max-width: 1280px;
     margin-inline: auto;
     padding-inline: clamp(var(--space-6), 5vw, var(--space-16));
-/*  padding-top: clamp(var(--space-10), 8vw, var(--space-16));
+    /*  padding-top: clamp(var(--space-10), 8vw, var(--space-16));
     padding-bottom: clamp(var(--space-16), 12vw, 160px); */
     display: flex;
     align-items: center;
