@@ -6,7 +6,7 @@ dirigido_a: "Alumnado de 2º a 6º de E.P."
 hora_inicio: "10:30h"
 hora_fin: "13:30h"
 precio: "30€ a 35€/sesión (según taller)"
-image: /src/assets/uploads/carnaval-2026-a-coruna-2.jpg
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/q_auto/f_auto/v1778497331/post-de-instagram-fiesta-de-carnaval-alegre-multicolor-1_rjct5b.png
 modalidad: 
     - coruna
 fecha_limite_inscripcion: 2026-02-12
