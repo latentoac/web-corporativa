@@ -28,15 +28,15 @@ Herramientas para aplicar en casa desde el primer día.
 
 **Dirigido a** padres y madres con hijos con altas capacidades en la etapa educativa de primaria.
 
-Viernes 17 de Abril → ***Amistad y pertenencia: acompañando sus relaciones sociales.***
-Viernes 22 de Mayo → ***Autonomía y límites: rutinas y acuerdos familiares.***
-Viernes 26 de Junio → ***Cuidar(se) para cuidar: autocuidado y cohesión familiar.***
+- Viernes 17 de Abril → ***Amistad y pertenencia: acompañando sus relaciones sociales.***
+- Viernes 22 de Mayo → ***Autonomía y límites: rutinas y acuerdos familiares.***
+- Viernes 26 de Junio → ***Cuidar(se) para cuidar: autocuidado y cohesión familiar.***
 
-Viernes 24 de octubre →  ***Altas Capacidades: comprender para acompañar.***
-Viernes 21 de noviembre → ***Emociones intensas: sensibilidad y madurez desigual. ***
-Viernes 30 de enero → ***Disciplina Positiva: firmeza y respeto en casa.***
-Viernes 20 de febrero → ***Comunicación que conecta: escucha activa y asertividad. ***
-Viernes 27 de Marzo → ***Perfeccionismo y frustración: herramientas para crecer. ***
+- Viernes 24 de octubre →  ***Altas Capacidades: comprender para acompañar.***
+- Viernes 21 de noviembre → ***Emociones intensas: sensibilidad y madurez desigual.***
+- Viernes 30 de enero → ***Disciplina Positiva: firmeza y respeto en casa.***
+- Viernes 20 de febrero → ***Comunicación que conecta: escucha activa y asertividad.***
+- Viernes 27 de Marzo → ***Perfeccionismo y frustración: herramientas para crecer.***
 
 **✨NUEVO HORARIO**
 

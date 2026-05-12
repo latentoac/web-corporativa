@@ -20,9 +20,9 @@ Se acerca el Carnaval y en Latento estamos preparando un taller muy especial par
 
 Latento A Coruña
 
-Miércoles **18 de febrero** de 2026 de 10:30 a 13:30
+- Miércoles **18 de febrero** de 2026 de 10:30 a 13:30
 
-**35 euros**
+- **35 euros**
 
 **Plazo de inscripción:** Abierto hasta el jueves **12 de febrero** a través del siguiente [enlace](https://forms.gle/1DfDn7TtS2yc6A7n9).
 
@@ -40,11 +40,11 @@ Un lugar para **expresarte con libertad**, compartir diferentes miradas y **expl
 
 Latento A Coruña
 
-17:00 a 19:00
+- 17:00 a 19:00
 
-Miércoles **18 de febrero** de 2026 de 17:00 a 19:00 hs
+- Miércoles **18 de febrero** de 2026 de 17:00 a 19:00 hs
 
-30€/ sesión
+- 30€/ sesión
 
 **Plazo de inscripción:** Abierto hasta el jueves **12 de febrero** a través del siguiente [enlace](https://forms.gle/1DfDn7TtS2yc6A7n9).
 

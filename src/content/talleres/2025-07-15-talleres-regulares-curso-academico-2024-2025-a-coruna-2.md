@@ -11,7 +11,7 @@ modalidad:
   - coruna
 publicado: true
 ---
-** TALLERES REGULARES CURSO 25/26 - A CORUÑA**
+**TALLERES REGULARES CURSO 25/26 - A CORUÑA**
 
 **Selecciona tu grupo a continuación**
 
@@ -19,7 +19,7 @@ Latento Emociona abre un rincón mágico donde los más pequeños descubren el v
 
 Latento A Coruña
 
-Lunes de 17.15  a 18.15
+- Lunes de 17.15  a 18.15
 
 Inicio lunes 22 de septiembre
 
@@ -35,8 +35,8 @@ Abrimos un espacio donde la curiosidad se convierte en motor, la creatividad en 
 
 Latento A Coruña
 
-Martes 17.15 a 18.15 (3º y 4º de E.P.)
-Lunes 18.30 a 19.30 (2º y 3º de E.P.)
+- Martes 17.15 a 18.15 (3º y 4º de E.P.)
+- Lunes 18.30 a 19.30 (2º y 3º de E.P.)
 
 Inicio martes 23 de septiembre alumnado de 3º y 4º de E.P.
 Inicio lunes 21 de septiembre alumnado de 2º y 3º de E.P. 
@@ -53,8 +53,8 @@ En este proyecto os invitamos a formar parte de un equipo creativo. A lo largo d
 
 Latento A Coruña
 
-Martes  18.30 a 19.30 (5º y 6º de E.P.)
-Miércoles 17.15 a 18.15 (6º de E.P.  y 1º de E.S.O.)
+- Martes  18.30 a 19.30 (5º y 6º de E.P.)
+- Miércoles 17.15 a 18.15 (6º de E.P.  y 1º de E.S.O.)
 
 Inicio miércoles 17 de septiembre  alumnado de 6º de E.P. y 1º de E.S.O.
 
@@ -70,7 +70,7 @@ En este proyecto creativo os invitamos a convertiros en comunicadores activos. A
 
 Latento A Coruña
 
-Jueves de 18.30 a 20.00 (3º , 4º de E.S.O y 1º de BACH.)
+- Jueves de 18.30 a 20.00 (3º , 4º de E.S.O y 1º de BACH.)
 
 Inicio jueves 18 de septiembre
 
