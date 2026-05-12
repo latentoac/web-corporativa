@@ -21,5 +21,5 @@ Entrada gratuita!
 
 NOTA: se recomienda a los asistentes la lectura previa de la obra para un mayor aprovechamiento de la sesión. Puntos de venta recomendados del libro:
 - Librería Berbidiana en la C/ Santiago, 7, 15001 A Coruña
--  Aenea en Rúa dos Irmáns Rey-Alvite, 3, 15702 Santiago de Compostela
+- Aenea en Rúa dos Irmáns Rey-Alvite, 3, 15702 Santiago de Compostela
 - Cronopios en Rúa de Alfredo Brañas, 24, 15701 Santiago de Compostela

@@ -8,7 +8,6 @@ tags:
   - protocolo
 publicado: true
 ---
-**PROTOCOLO POR LA COVID-19 LATENTO ALTAS CAPACIDADES
-**
+**PROTOCOLO POR LA COVID-19 LATENTO ALTAS CAPACIDADES**
 
 ![Protocolo COVID](https://res.cloudinary.com/dmvpxkp5m/image/upload/q_auto/f_auto/v1778494289/latento_covid_protocolo1-1_kmn6lu.png)

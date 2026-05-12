@@ -34,6 +34,4 @@ Le corresponde al centro educativo facilitaros el ANEXO VI para que nos enviéis
 
 Una vez recibida la documentación del centro y hayáis hecho la petición de memoria técnica y presupuesto económico os facilitaremos toda la documentación lo antes posible. Agradecemos vuestra comprensión en este sentido.
 
-
-
 **FORMULARIO PARA SOLICITAR LA MEMORIA TÉCNICA CON LATENTO:**

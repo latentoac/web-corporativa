@@ -22,11 +22,11 @@ Latento A Coruña
 
 Lunes de 18:15 a 19:45.
 
- 	- Lunes 27 de octubre
- 	- Lunes 10 de noviembre
- 	- Lunes 24 de noviembre
- 	- Lunes 1 de diciembre
- 	- Lunes 15 de diciembre
+- Lunes 27 de octubre
+- Lunes 10 de noviembre
+- Lunes 24 de noviembre
+- Lunes 1 de diciembre
+- Lunes 15 de diciembre
 
 Inicio Lunes 27 de octubre
 
@@ -42,11 +42,11 @@ Latento A Coruña
 
 Viernes de 18:15 a 19:45 hs.
 
- 	- Viernes 24 de octubre
- 	- Viernes 7 de noviembre
- 	- Viernes 21de  noviembre
- 	- Viernes 12 de diciembre
- 	- Viernes 19 de diciembre
+- Viernes 24 de octubre
+- Viernes 7 de noviembre
+- Viernes 21de  noviembre
+- Viernes 12 de diciembre
+- Viernes 19 de diciembre
 
 Inicio Viernes 24 de octubre
 

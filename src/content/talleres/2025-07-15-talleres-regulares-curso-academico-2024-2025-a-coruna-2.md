@@ -35,12 +35,11 @@ Abrimos un espacio donde la curiosidad se convierte en motor, la creatividad en 
 
 Latento A Coruña
 
- 	- Martes 17.15 a 18.15 (3º y 4º de E.P.)
- 	- Lunes 18.30 a 19.30 (2º y 3º de E.P.)
+Martes 17.15 a 18.15 (3º y 4º de E.P.)
+Lunes 18.30 a 19.30 (2º y 3º de E.P.)
 
- 	- Inicio martes 23 de septiembre alumnado de 3º y 4º de E.P.
- 	- Inicio lunes 21 de septiembre alumnado de 2º y 3º de E.P.
- 	- 
+Inicio martes 23 de septiembre alumnado de 3º y 4º de E.P.
+Inicio lunes 21 de septiembre alumnado de 2º y 3º de E.P. 
 
 85€ / mes
 
@@ -54,10 +53,10 @@ En este proyecto os invitamos a formar parte de un equipo creativo. A lo largo d
 
 Latento A Coruña
 
- 	- Martes  18.30 a 19.30 (5º y 6º de E.P.)
- 	- Miércoles 17.15 a 18.15 (6º de E.P.  y 1º de E.S.O.)
+Martes  18.30 a 19.30 (5º y 6º de E.P.)
+Miércoles 17.15 a 18.15 (6º de E.P.  y 1º de E.S.O.)
 
- 	- Inicio miércoles 17 de septiembre  alumnado de 6º de E.P. y 1º de E.S.O.
+Inicio miércoles 17 de septiembre  alumnado de 6º de E.P. y 1º de E.S.O.
 
 85€ / mes
 
@@ -71,9 +70,9 @@ En este proyecto creativo os invitamos a convertiros en comunicadores activos. A
 
 Latento A Coruña
 
- 	- Jueves de 18.30 a 20.00 (3º , 4º de E.S.O y 1º de BACH.)
+Jueves de 18.30 a 20.00 (3º , 4º de E.S.O y 1º de BACH.)
 
- 	- Inicio jueves 18 de septiembre
+Inicio jueves 18 de septiembre
 
 **110€ / mes**
 

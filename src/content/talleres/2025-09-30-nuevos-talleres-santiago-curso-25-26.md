@@ -22,11 +22,11 @@ Latento Santiago
 
 Viernes de 18.00 a 19.30 ( quincenal)
 
- 	- Viernes 24 de octubre
- 	- Viernes 7 de noviembre
- 	- Viernes 21 de noviembre
- 	- Viernes 12 de diciembre
- 	- Viernes 19 de diciembre
+- Viernes 24 de octubre
+- Viernes 7 de noviembre
+- Viernes 21 de noviembre
+- Viernes 12 de diciembre
+- Viernes 19 de diciembre
 
 Inicio Viernes 24 de octubre
 
@@ -40,11 +40,11 @@ Latento Santiago
 
 Miércoles de 18:30 a 19:30 h.
 
- 	- Miércoles  22 de octubre
- 	- Miércoles 5 de noviembre
- 	- Miércoles 19 de  noviembre
- 	- Miércoles 3 de diciembre
- 	- Miércoles 17 de diciembre
+- Miércoles  22 de octubre
+- Miércoles 5 de noviembre
+- Miércoles 19 de  noviembre
+- Miércoles 3 de diciembre
+- Miércoles 17 de diciembre
 
 Inicio Miércoles 22 de octubre.
 

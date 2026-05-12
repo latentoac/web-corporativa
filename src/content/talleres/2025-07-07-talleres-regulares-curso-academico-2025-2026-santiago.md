@@ -21,9 +21,9 @@ Latento Santiago
 
 Lunes de 18.30 a 19.30 ( quincenal)
 
- 	- 1er Trimestre 06/10; 20/10; 10/11; 24/11 y 15/12.
- 	- 2º Trimestre 19/01; 13/02; 23/02; 09/03 y 23/03.
- 	- 3er Trimestre: 20/04; 04/05; 18/05; 01/06 y 15/06.
+1er Trimestre 06/10; 20/10; 10/11; 24/11 y 15/12.
+2º Trimestre 19/01; 13/02; 23/02; 09/03 y 23/03.
+3er Trimestre: 20/04; 04/05; 18/05; 01/06 y 15/06.
 
 Inicio lunes 6 de octubre
 
@@ -71,9 +71,9 @@ Latento Santiago
 
 Lunes de 19.00 a 20.30
 
- 	- 1er Trimestre: 29/09; 13/10; 27/10; 17/11 y 01/12.
- 	- 2º Trimestre: 12/01; 26/01; 09/02; 02/03 y 16/03.
- 	- 3er Trimestre: 13/04; 27/04; 11/05; 25/05 y 08/06.
+1er Trimestre: 29/09; 13/10; 27/10; 17/11 y 01/12.
+2º Trimestre: 12/01; 26/01; 09/02; 02/03 y 16/03.
+3er Trimestre: 13/04; 27/04; 11/05; 25/05 y 08/06.
 
 Inicio lunes 29 de septiembre.
 

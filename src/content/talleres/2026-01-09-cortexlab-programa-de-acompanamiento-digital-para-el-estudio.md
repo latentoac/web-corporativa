@@ -20,35 +20,23 @@ A través de un **entorno digital seguro**, los participantes trabajan de forma 
 
 ### ¿Qué ofrece el programa?
 
- 	- 
 👥 Grupo reducido (máx. 10 participantes)
-
- 	- 
 🌐 Trabajo digital y mayoritariamente asincrónico
-
- 	- 
 💬 Espacio comunitario y dinámicas interactivas
-
- 	- 
 👨‍👩‍👧 Sesión inicial de acompañamiento familiar
-
- 	- 🧩Sesión final grupal online
+🧩 Sesión final grupal online
 
 ### Duración y precio
 
- 	- 
 ⏳ **3 meses**
-
- 	- 
 💰 **180€ por participante**
 
- 	- 
 **Descuento del 10% en las intervenciones individuales solicitadas hasta final de curso.**
 
 ### 📩 Información e inscripciones
 📅 **Sesión online gratuita de presentación para familias**
 
-**Viernes 16 de enero · 12:00 h**Una sesión informativa donde presentaremos el programa, resolveremos dudas y explicaremos el funcionamiento de CORTEXLAB.
+**Viernes 16 de enero · 12:00 h** Una sesión informativa donde presentaremos el programa, resolveremos dudas y explicaremos el funcionamiento de CORTEXLAB.
 
 👉 Para asistir a la sesión o reservar plaza en el programa inscríbete a través del siguiente [formulario](https://forms.gle/7ukhe4ducqvSasSq7). (PLAZO DE INSCRIPCIÓN  DE CHARLA DE PRESENTACIÓN FINALIZADO)
 

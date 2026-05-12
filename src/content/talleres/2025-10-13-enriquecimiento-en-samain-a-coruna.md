@@ -13,7 +13,7 @@ fecha_limite_inscripcion: 2025-10-23
 publicado: true
 ---
 ### *El museo de los Miedos*
-**🎃 Este Samaín, atrévete a entrar en el Museo de los Miedos… **
+**🎃 Este Samaín, atrévete a entrar en el Museo de los Miedos…**
 
 Descubre esos temores que rondan tu cabeza día a día… ¡pero tranquilos, estarán encerrados en sus vitrinas! Cada miedo es un misterio esperando a ser resuelto, y solo tú puedes encontrar la manera de superarlo.
 

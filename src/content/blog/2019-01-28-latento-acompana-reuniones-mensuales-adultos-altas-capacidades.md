@@ -16,8 +16,6 @@ publicado: true
 
 **PARTICIPANTES CON EDADES COMPRENDIDAS ENTRE LOS 18 Y 30 AÑOS**
 
-** **
-
 Latento también quiere ser un punto de encuentro para aquellos jóvenes (de entre 18 y 30 años)  con altas capacidades que deseen conocer y compartir iniciativas, experiencias, hobbies e intereses con otras personas de toda Galicia.
 
 Estas reuniones tendrán lugar en nuestra  sede de Santiago de Compostela (Rúa del Hórreo, 23 1º piso) el primer viernes de cada mes y su objetivo es el de facilitar el contacto entre distintos jóvenes con perfiles cognitivos similares a partir de diferentes temas y actividades ( club de lecturas, charlas, eventos culturales…)

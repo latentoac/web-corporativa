@@ -37,4 +37,4 @@ El programa aborda de forma estructurada áreas como la planificación y organiz
 
 🚀 **Inicio del programa:** al conformarse grupo*(Mínimo 3 participantes – máximo 5 participantes)*
 
-*👉***[formulario de inscripción](https://forms.gle/9o7vwg5A63QqyvGdA) **
+👉 **[formulario de inscripción](https://forms.gle/9o7vwg5A63QqyvGdA)**

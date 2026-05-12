@@ -15,6 +15,4 @@ Tal y como apunta *Sánchez Dauder* (2019), muchas veces la falta de rendimiento
 
 Esta propuesta radica en el uso de diferentes historias que usan escenarios basados en diferentes épocas históricas y enriquecen la línea narrativa con fenómenos intelectualmente desafiantes, así les proporcionaremos un espacio en el que puedan exponer sus buenas competencias cognitivas, donde se revelen intereses comunes entre alumnos/as y, se generen nuevas amistades.
 
- 
-
 Fuente: Las altas capacidades en la escuela inclusiva. Estrategias y recursos. Sánchez Dauder. (2019) [https://institutoecg.es/wp-content/uploads/2019/05/Las-altas-capacidades-escuela-inclusiva.pdf](https://institutoecg.es/wp-content/uploads/2019/05/Las-altas-capacidades-escuela-inclusiva.pdf) y Storytelling: Una herramienta para la mejora de la competencia comunicativa y el pensamiento crítico con alumnado de altas capacidades Fernández –del Río y Barreira Arias (2016) [https://dialnet.unirioja.es/servlet/articulo?codigo=6026410](https://dialnet.unirioja.es/servlet/articulo?codigo=6026410)
