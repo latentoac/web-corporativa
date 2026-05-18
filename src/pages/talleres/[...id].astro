@@ -42,18 +42,20 @@ const fechaLimiteFormateada = fechaLimite
       <span class="taller__eyebrow">Taller</span>
       <h1 class="taller__title">{taller.data.title}</h1>
 
-      <div class="taller__meta">
-        <time
-          class="taller__meta-item"
-          datetime={taller.data.date.toISOString()}
-        >
-          {taller.data.date.toLocaleDateString("es-ES", {
-            weekday: "long",
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
-        </time>
+<div class="taller__meta">
+  {taller.data.date && (
+    <time
+      class="taller__meta-item"
+      datetime={taller.data.date.toISOString()}
+    >
+      {taller.data.date.toLocaleDateString("es-ES", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })}
+    </time>
+  )}
 
         {(taller.data.hora_inicio || taller.data.hora_fin) && (
           <span class="taller__meta-sep"></span>
@@ -64,12 +66,13 @@ const fechaLimiteFormateada = fechaLimite
           </span>
         )}
 
-        {taller.data.precio !== undefined && (
-          <span class="taller__meta-sep"></span>
-          <span class="taller__meta-item taller__meta-precio">
-            {taller.data.precio === 0 ? "Gratuito" : `${taller.data.precio} €`}
-          </span>
-        )}
+{taller.data.precio && (
+  <span class="taller__meta-sep"></span>
+  <span class="taller__meta-item taller__meta-precio">
+    {taller.data.precio === "0" ? "Gratuito" : `${taller.data.precio} €`}
+  </span>
+)}
+
       </div>
     </header>
 
@@ -97,17 +100,19 @@ const fechaLimiteFormateada = fechaLimite
         <div class="taller__card">
 
           <!-- Fecha -->
-          <div class="taller__card-row">
-            <span class="taller__card-label">Fecha</span>
-            <span class="taller__card-value">
-              {taller.data.date.toLocaleDateString("es-ES", {
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </span>
-          </div>
+{taller.data.date && (
+  <div class="taller__card-row">
+    <span class="taller__card-label">Fecha</span>
+    <span class="taller__card-value">
+      {taller.data.date.toLocaleDateString("es-ES", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })}
+    </span>
+  </div>
+)}
 
           <!-- Horario -->
           {(taller.data.hora_inicio || taller.data.hora_fin) && (
@@ -122,14 +127,15 @@ const fechaLimiteFormateada = fechaLimite
           )}
 
           <!-- Precio -->
-          {taller.data.precio !== undefined && (
-            <div class="taller__card-row">
-              <span class="taller__card-label">Precio</span>
-              <span class="taller__card-value taller__card-value--precio">
-                {taller.data.precio === 0 ? "Gratuito" : `${taller.data.precio} €`}
-              </span>
-            </div>
-          )}
+{taller.data.precio && (
+  <div class="taller__card-row">
+    <span class="taller__card-label">Precio</span>
+    <span class="taller__card-value taller__card-value--precio">
+      {taller.data.precio === "0" ? "Gratuito" : `${taller.data.precio} €`}
+    </span>
+  </div>
+)}
+
 
           <!-- Dirigido a -->
           {taller.data.dirigido_a && (
