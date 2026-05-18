@@ -18,15 +18,11 @@ Si tienes dudas generales sobre la beca del Ministerio de Educación y Ciencia c
 
 Como explicamos bien en este enlace, si solamente optáis por renta y patrimonio al SUBSIDIO ya no tenéis que solicitar documentación a centros ni gabinetes. Esta parte ya es solamente para quien opte a BECA.
 
-
-
 **PASO 2:**
 
-**[RELLENAD LA SOLICITUD DE NUESTRO FORMULARIO](www.latentoac.com/becas)**, que figura al final de esta página, antes del 10 DE SEPTIEMBRE de 2026. Recuerda que debes seleccionar el tipo de servicio o servicios para el/los que deseas solicitar la beca y firmaremos por el máximo que propongas.
+**[RELLENAD LA SOLICITUD DE NUESTRO FORMULARIO](https://latentoac.com/becas)**, que figura al final de esta página, antes del 10 DE SEPTIEMBRE de 2026. Recuerda que debes seleccionar el tipo de servicio o servicios para el/los que deseas solicitar la beca y firmaremos por el máximo que propongas.
 
 **NOTA:** queda en vuestra mano la debida solicitud para intervención para iniciar en septiembre, o la inscripción en los talleres de LATENTO en nuestra web: [www.latentoac.com](www.latentoac.com)
-
-
 
 **PASO 3:**
 
@@ -34,10 +30,8 @@ Del PDF de la solicitud al Ministerio os saldrán varios anexos, entre los que e
 
 **NOTA:** Os informamos de que los documentos por nuestra parte no cuentan con un plazo fijo de entrega, se irán entregando a medida que el resto del trabajo de administración lo permita para que lo tengáis antes del límite de septiembre.
 
-
-
 **PASO 4:**
 
 Una vez recibido el anexo VI junto a la petición de memoria técnica y presupuesto económico os facilitaremos toda la documentación lo antes posible. No podemos daros plazos diferentes a los establecidos legalmente. Agradecemos vuestra comprensión en este sentido.
 
-**[FORMULARIO PARA SOLICITAR LA MEMORIA TÉCNICA CON LATENTO](www.latentoac.com/becas)**
+**[FORMULARIO PARA SOLICITAR LA MEMORIA TÉCNICA CON LATENTO](https://latentoac.com/becas)**
