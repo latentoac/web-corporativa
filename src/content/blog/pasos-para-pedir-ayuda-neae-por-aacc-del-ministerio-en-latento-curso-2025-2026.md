@@ -22,7 +22,7 @@ Como explicamos bien en este enlace, si solamente optáis por renta y patrimonio
 
 **[RELLENAD LA SOLICITUD DE NUESTRO FORMULARIO](https://latentoac.com/becas)**, que figura al final de esta página, antes del 10 DE SEPTIEMBRE de 2026. Recuerda que debes seleccionar el tipo de servicio o servicios para el/los que deseas solicitar la beca y firmaremos por el máximo que propongas.
 
-**NOTA:** queda en vuestra mano la debida solicitud para intervención para iniciar en septiembre, o la inscripción en los talleres de LATENTO en nuestra web: [www.latentoac.com](www.latentoac.com)
+**NOTA:** queda en vuestra mano la debida solicitud para intervención para iniciar en septiembre, o la inscripción en los talleres de LATENTO en nuestra web: [www.latentoac.com](https://latentoac.com)
 
 **PASO 3:**
 
