@@ -1,7 +1,7 @@
 ---
 title: PASOS PARA PEDIR AYUDA NEAE POR AACC DEL MINISTERIO CON LATENTO CURSO 2026/2027
 date: 2026-05-18
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1779108381/becasnuevo_ztsipr.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1779110846/becas_neae_uyjcap.png
 tags:
   - becas MEC
 publicado: true
