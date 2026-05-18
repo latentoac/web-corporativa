@@ -25,11 +25,13 @@ import HeroSections from "../../components/sections/HeroSections.astro";
   <article class="post">
     <header class="post__header">
       <h1 class="post__title">{post.data.title}</h1>
-      <div class="post__meta">
-        <time datetime={post.data.date.toISOString()}>
-          {post.data.date.toLocaleDateString("es-ES")}
-        </time>
-      </div>
+<div class="post__meta">
+  {post.data.date && (
+    <time datetime={post.data.date.toISOString()}>
+      {post.data.date.toLocaleDateString("es-ES")}
+    </time>
+  )}
+</div>
     </header>
 
     {post.data.image && (
