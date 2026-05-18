@@ -7,9 +7,11 @@ import { Image } from 'astro:assets';
 // Solo publicados, todos — el filtro lo hace el cliente
 const allTalleres = await getCollection("talleres", ({ data }) => data.publicado);
 
-const sorted = allTalleres.sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
+const sorted = allTalleres.sort((a, b) => {
+  const dateA = a.data.date ? a.data.date.valueOf() : 0;
+  const dateB = b.data.date ? b.data.date.valueOf() : 0;
+  return dateB - dateA;
+});
 
 const filtros = [
   { slug: "todos",    label: "Todos" },
@@ -80,16 +82,18 @@ const filtros = [
                 )}
 
                 <div class="taller-card__body">
-                  <time
-                    class="taller-card__date"
-                    datetime={taller.data.date.toISOString()}
-                  >
-                    {taller.data.date.toLocaleDateString("es-ES", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </time>
+                  {taller.data.date && (
+  <time
+    class="taller-card__date"
+    datetime={taller.data.date.toISOString()}
+  >
+    {taller.data.date.toLocaleDateString("es-ES", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    })}
+  </time>
+)}
                   <h2 class="taller-card__title">
                     <a class="taller-card__title-link" href={`/talleres/${taller.id}`}>
                       {taller.data.title}
