@@ -15,7 +15,7 @@ Se conceden a través del **Ministerio de Educación y Ciencia (MEC)** para los 
 
 **¿Quién puede ser beneficiario del SUBSIDIO de 400 euros para gastos adicionales de carácter general derivados de la escolarización de los alumnos con necesidad específica de apoyo educativo?**
 
-Desde el pasado curso escolar 2025/2026, el MEC también contempla un SUBSIDIO de 400 euros adicionales a la AYUDA NEAE o como única ayuda para **cualquier familia independientemente de su renta económica**. Para solicitar el SUBSIDIO únicamente hay presentar la solicitud de ayuda cursada en la web del Ministerio: [enlace](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2507), en el centro educativo. No es necesario solicitarnos ni memoria técnica ni presupuesto económico, ya que tal como figura en la convocatoria, no se requiere justificación específica para este subsidio.
+Desde el año 2023, el MEC también contempla un SUBSIDIO de 400 euros adicionales a la AYUDA NEAE o como única ayuda para **cualquier familia independientemente de su renta económica**. Para solicitar el SUBSIDIO únicamente hay presentar la solicitud de ayuda cursada en la web del Ministerio: [enlace](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2507), en el centro educativo. No es necesario solicitarnos ni memoria técnica ni presupuesto económico, ya que tal como figura en la convocatoria, no se requiere justificación específica para este subsidio.
 
 **¿Cómo procedo para solicitar de forma conjunta la AYUDA de 913 euros y el SUBSIDIO?**
 
@@ -23,7 +23,7 @@ Al igual que el curso pasado, todas las familias beneficiarias, al cumplir los u
 
 **¿Qué requisitos económicos hay que tener en cuenta para solicitar la AYUDA?**
 
-Como cualquier beca lo principal son los **umbrales de renta y patrimonio** en función de la unidad familiar, por lo que debéis comprobarlo en la convocatoria de cada año, para que podáis comprobar todo en la convocatoria os dejamos el enlace del curso 2025/2026: [enlace a la página del Ministerio.](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2286)
+Como cualquier beca lo principal son los **umbrales de renta y patrimonio** en función de la unidad familiar, por lo que debéis comprobarlo en la convocatoria de cada año, para que podáis comprobar todo en la convocatoria os dejamos el enlace del curso 2026/2027: [enlace a la página del Ministerio.](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2286)
 
 ![Umbrales de NEAE](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1779101373/UMBRALES_DE_RENTA_Y_PATRIMONIO_ptxujw.png)
 
@@ -43,9 +43,7 @@ Normalmente, entre **dos y tres meses** desde la finalización del plazo de pres
 
 **¿Qué plazo hay para SOLICITAR la beca NEAE?**
 
-Para el curso escolar 2026/2027 el plazo empezó el 30 de abril y **acabará el 10 de septiembre de 2026.** 
-
-
+Para el curso escolar 2026/2027 el plazo empezó el 19 de mayo y **acabará el 10 de septiembre de 2026.** 
 
 **¿Es necesario justificar los gastos del programa de enriquecimiento para el cuál se solicita la AYUDA?**
 
@@ -58,4 +56,4 @@ Debes **guardar/archivar todas las facturas** generadas en relación a los servi
 
 ¿Estás interesado/a en solicitar la AYUDA para programas de enriquecimiento extracurricular con nosotras en LATENTO?
 
-Cubrid pues el siguiente formulario antes del 10 de septiembre de 2026.
+Cubrid pues el siguiente formulario antes del 09 de septiembre de 2026.
