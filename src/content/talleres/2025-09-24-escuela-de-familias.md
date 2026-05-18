@@ -1,9 +1,6 @@
 ---
 title: ESCUELA DE FAMILIAS
-description: ""
-date: ""
 dirigido_a: Familias con hijos e hijas con altas capacidades
-precio: ""
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1778498723/familias-queinspiran_kvbtku.png
 modalidad:
   - santiago
