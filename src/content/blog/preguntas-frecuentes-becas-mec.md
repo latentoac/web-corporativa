@@ -56,4 +56,4 @@ Debes **guardar/archivar todas las facturas** generadas en relación a los servi
 
 ¿Estás interesado/a en solicitar la AYUDA para programas de enriquecimiento extracurricular con nosotras en LATENTO?
 
-Cubrid pues el siguiente formulario antes del 09 de septiembre de 2026.
+Cubrid pues el siguiente formulario antes del 09 de septiembre de 2026: [PETICIÓN MEMORIA TÉCNICA A LATENTO](https://www.latentoac.com/becas)
