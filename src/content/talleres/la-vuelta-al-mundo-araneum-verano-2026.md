@@ -17,5 +17,5 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1779486713/Post_de_ver
 modalidad:
   - coruna
 inscription_url: https://tienda.latentoac.com/producto/araneum/
-publicado: false
+publicado: true
 ---
