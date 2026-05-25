@@ -82,18 +82,23 @@ const filtros = [
                 )}
 
                 <div class="taller-card__body">
-                  {taller.data.date && (
-  <time
-    class="taller-card__date"
-    datetime={taller.data.date.toISOString()}
-  >
-    {taller.data.date.toLocaleDateString("es-ES", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    })}
-  </time>
-)}
+                  {taller.data.fechasTaller && taller.data.fechasTaller.length > 0 && (
+                    <time
+                      class="taller-card__date"
+                      datetime={taller.data.fechasTaller[0].fecha.toISOString()}
+                    >
+                      {taller.data.fechasTaller[0].fecha.toLocaleDateString("es-ES", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                      {taller.data.fechasTaller.length > 1 && (
+                        <span class="taller-card__date-extra">
+                          &nbsp;· {taller.data.fechasTaller.length} sesiones
+                        </span>
+                      )}
+                    </time>
+                  )}
                   <h2 class="taller-card__title">
                     <a class="taller-card__title-link" href={`/talleres/${taller.id}`}>
                       {taller.data.title}

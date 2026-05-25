@@ -19,6 +19,9 @@ const talleres = defineCollection({
     description: z.string().optional(),
     dirigido_a: z.string().optional(),
     date: z.coerce.date().optional(),
+    fechasTaller: z.array(z.object({
+      fecha: z.coerce.date(),
+    })).optional(),
     hora_inicio: z.string().optional(),
     hora_fin: z.string().optional(),
     precio: z.string().optional(),
