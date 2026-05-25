@@ -43,17 +43,18 @@ const fechaLimiteFormateada = fechaLimite
       <h1 class="taller__title">{taller.data.title}</h1>
 
 <div class="taller__meta">
-  {taller.data.date && (
+  {taller.data.fechasTaller && taller.data.fechasTaller.length > 0 && (
     <time
       class="taller__meta-item"
-      datetime={taller.data.date.toISOString()}
+      datetime={taller.data.fechasTaller[0].fecha.toISOString()}
     >
-      {taller.data.date.toLocaleDateString("es-ES", {
+      {taller.data.fechasTaller[0].fecha.toLocaleDateString("es-ES", {
         weekday: "long",
         day: "numeric",
         month: "long",
         year: "numeric",
       })}
+      {taller.data.fechasTaller.length > 1 && ` · +${taller.data.fechasTaller.length - 1} sesiones más`}
     </time>
   )}
 
@@ -99,20 +100,28 @@ const fechaLimiteFormateada = fechaLimite
       <aside class="taller__aside">
         <div class="taller__card">
 
-          <!-- Fecha -->
-{taller.data.date && (
-  <div class="taller__card-row">
-    <span class="taller__card-label">Fecha</span>
-    <span class="taller__card-value">
-      {taller.data.date.toLocaleDateString("es-ES", {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      })}
-    </span>
-  </div>
-)}
+          <!-- Fechas del taller -->
+          {taller.data.fechasTaller && taller.data.fechasTaller.length > 0 && (
+            <div class="taller__card-row">
+              <span class="taller__card-label">
+                {taller.data.fechasTaller.length === 1 ? "Fecha" : "Fechas"}
+              </span>
+              <ul class="taller__card-fechas">
+                {taller.data.fechasTaller.map(({ fecha }) => (
+                  <li>
+                    <time datetime={fecha.toISOString()}>
+                      {fecha.toLocaleDateString("es-ES", {
+                        weekday: "long",
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </time>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <!-- Horario -->
           {(taller.data.hora_inicio || taller.data.hora_fin) && (
@@ -546,6 +555,28 @@ const fechaLimiteFormateada = fechaLimite
 }
 
 /* Separador dentro de la card */
+/* Lista de fechas del taller */
+.taller__card-fechas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.taller__card-fechas li {
+  font-size: var(--text-sm);
+  color: var(--taller-text);
+}
+
+.taller__card-fechas li::before {
+  content: "—";
+  color: var(--taller-accent);
+  margin-right: var(--space-2);
+  font-weight: var(--font-weight-semibold);
+}
+
 .taller__card-divider {
   height: 1px;
   background-color: var(--taller-border);
