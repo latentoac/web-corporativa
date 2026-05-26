@@ -10,9 +10,11 @@ publicado: true
 
 **PASO 1:**
 
-Realiza la solicitud de beca MEC a través de la página del Ministerio: [aquí está el enlace](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2507), la presentación de la solicitud para el curso 2026/2027 seguirá siendo de forma TELEMÁTICA. 
+Realiza la solicitud de beca MEC a través de la página del Ministerio: [aquí está el enlace](https://sede.educacion.gob.es/sede/login/inicio.jjsp?idConvocatoria=2507), la presentación de la solicitud para el curso 2026/2027 seguirá siendo de forma TELEMÁTICA como en años anteriores. 
 
-No será necesario imprimir el PDF ni llevarlo al centro educativo, siempre y cuando os faciliten un correo desde el centro para mandarles el PDF de la solicitud, y que así puedan tramitar los anexos correspondientes.
+Simplemente este año han añadido la posibilidad de que marquéis que pedís solamente el SUBSIDIO o si dudáis de los umbrales de renta que tenéis lo dejéis sin marcar.
+
+Los anexos correspondientes que salían con la solicitud de la beca ahora va directamente al centro educativo, y vosotros simplemente tenéis el justificante de presentación de la beca.
 
 **IMPORTANTE:** No la dejéis en estado «borrador» tiene que quedar como estado «PRESENTADA».
 
@@ -35,8 +37,6 @@ Recuerda que debes seleccionar el tipo de servicio o servicios para el/los que d
 **PASO 3:**
 
 Del PDF de la solicitud al Ministerio ya NO OS SALDRÁN LOS ANEXOS, así que tenéis que esperar a que os faciliten el ANEXO VI desde el centro educativo o manden la comunicación de documento genérico (como el año pasado).
-
-
 
 **NOTA:** Os informamos de que los documentos por nuestra parte no cuentan con un plazo fijo de entrega, se irán entregando a medida que el resto del trabajo de administración lo permita para que lo tengáis antes del límite de septiembre.
 
