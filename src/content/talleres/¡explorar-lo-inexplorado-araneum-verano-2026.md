@@ -27,11 +27,11 @@ Venid con nosotras este verano y disfrutad de una serie de actividades que nos h
 
 ¿Podréis resolver los retos más complicados? ¿Sabréis salir de vuestra mente y explorar nuevas posibilidades? ¡Nos convertiremos en verdaderos y verdaderas exploradoras y experimentaremos las situaciones más extrañas y divertidas!
 
-¿Estáis preparados para una mañana llena de risas y alguna que otra sorpresa que nos hará disfrutar y aprender en este día único?
+¿Estáis preparados para una mañana llena de risas y alguna que otra sorpresa que nos hará disfrutar y aprender en este día único? Podéis apuntaros a una sesión o a las dos. ¡Os esperamos!
 
 **Localización:** SANTIAGO DE COMPOSTELA.
 
-**Dirigido a:** Alumnado  2º 3º, 4º y 5º de educacion primaria.
+**Dirigido a:** Alumnado  2º 3º, 4º y 5º de educación primaria.
 
 **Fecha**s: lunes 22 y 29 de junio de 2026.
 
