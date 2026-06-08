@@ -15,6 +15,21 @@
       "type": "string",
       "format": "date-time"
     },
+    "fechasTaller": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "fecha"
+        ]
+      }
+    },
     "hora_inicio": {
       "type": "string"
     },

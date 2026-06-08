@@ -1,5 +1,4 @@
 
 import __ASTRO_IMAGE_IMPORT_Z28jgck from "/src/assets/uploads/pasos-a-seguir-y-preguntas-frecuentes.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fpreguntas-frecuentes-becas-mec.md";
-import __ASTRO_IMAGE_IMPORT_2hUyCw from "/src/assets/uploads/publicacion-de-becas-ya-a-partir-de-manana-la-solicitudes.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fpasos-para-pedir-ayuda-neae-por-aacc-del-ministerio-en-latento-curso-2025-2026.md";
-export default new Map([["/src/assets/uploads/pasos-a-seguir-y-preguntas-frecuentes.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fpreguntas-frecuentes-becas-mec.md", __ASTRO_IMAGE_IMPORT_Z28jgck], ["/src/assets/uploads/publicacion-de-becas-ya-a-partir-de-manana-la-solicitudes.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fpasos-para-pedir-ayuda-neae-por-aacc-del-ministerio-en-latento-curso-2025-2026.md", __ASTRO_IMAGE_IMPORT_2hUyCw]]);
+export default new Map([["/src/assets/uploads/pasos-a-seguir-y-preguntas-frecuentes.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2Fpreguntas-frecuentes-becas-mec.md", __ASTRO_IMAGE_IMPORT_Z28jgck]]);
 		
