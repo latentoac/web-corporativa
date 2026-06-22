@@ -3,6 +3,8 @@ backend:
   repo: latentoac/web-corporativa
   branch: main
 
+publish_mode: editorial_workflow
+
 locale: 'es'
 
 logo:
