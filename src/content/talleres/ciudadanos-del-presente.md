@@ -5,6 +5,7 @@ description: En este proyecto invitamos a los y las adolescentes a explorar
   les rodea. A partir de temas de actualidad, inquietudes sociales y cuestiones
   que forman parte de su realidad, investigaremos, reflexionaremos y crearemos
   contenidos utilizando diversos lenguajes y formatos de expresión.
+date: 2026-06-29
 dirigido_a: Alumnado de 2º a 4º ESO
 hora_inicio: 18:30
 hora_fin: 20:00
