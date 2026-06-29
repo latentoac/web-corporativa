@@ -5,7 +5,7 @@ description: Abrimos un espacio donde la curiosidad se convierte en motor, la
   experimentos, y juegos exploraremos distintas áreas del conocimiento mientras
   acompañamos emocionalmente cada desafío que surja en el camino.
 date: 2026-06-29
-dirigido_a: Alumnado de 3º a 5º EP
+dirigido_a: Alumnado de 1º a 5º EP
 precio: 85€/mes
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782376826/MENTES_CURIOSAS_EN_ACCI%C3%93N_1_jfngq7.png
 modalidad:
@@ -39,7 +39,7 @@ Durante la experiencia, acompañaremos emocionalmente cada desafío que surja en
 
 •	Grupo de **4º y 5º EP el martes 15 de septiembre**
 
-💶 **Tarifa:** 85 €/sesión
+💶 **Tarifa:** 85 €/mes
 
 📝 **Reserva de plaza y forma de pago**
 
