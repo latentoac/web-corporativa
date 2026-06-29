@@ -12,7 +12,7 @@ modalidad:
   - coruna
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-a-coruna-curso-2025-2026/
 fecha_limite_inscripcion: 2026-08-30
-publicado: true
+publicado: false
 ---
 ##### CREA, EXPLORA, SIENTE
 
@@ -34,4 +34,8 @@ En este proyecto os invitamos a formar parte de un equipo creativo. A lo largo d
 
 💶 **Tarifa**: 85 €/sesión
 
-📝 **Inscripción o reserva de plaza**: https://tienda.latentoac.com/producto/reserva-talleres-a-coruna-curso-2025-2026/
+📝 **Reserva de plaza y forma de pago**
+
+Para formalizar la matrícula en los talleres será necesario abonar una **reserva de plaza de 15 €.**
+
+🏦 A partir de septiembre, la cuota mensual se abonará mediante domiciliación bancaria. En caso de no haber entregado la documentación en cursos anteriores, os facilitaremos el formulario de orden SEPA, que deberá ser cumplimentado y firmado durante el mes de septiembre.
