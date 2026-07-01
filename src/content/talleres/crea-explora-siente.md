@@ -7,7 +7,7 @@ description: En este proyecto invitamos a niños y niñas a convertirse en
 date: 2026-06-29
 dirigido_a: Alumnado de 5º a 1º ESO
 precio: 85 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782115536/CREA_EXPLORA_SIENTE_1_q6ok1o.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782890605/CREA_EXPLORA_SIENTE_1_mrfcng.png
 modalidad:
   - coruna
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-a-coruna-curso-2025-2026/
