@@ -8,12 +8,12 @@ dirigido_a: Alumnado de 2º a  4º de E.P.
 hora_inicio: 17:45
 hora_fin: 18:45
 precio: 55 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782376826/MENTES_CURIOSAS_EN_ACCI%C3%93N_1_jfngq7.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782740915/MENTES_CURIOSAS_1_tkh66y.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
 fecha_limite_inscripcion: 2026-08-30
-publicado: false
+publicado: true
 ---
 ##### MENTES CURIOSAS EN ACCIÓN
 
