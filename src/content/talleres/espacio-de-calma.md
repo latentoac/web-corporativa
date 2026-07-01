@@ -10,13 +10,13 @@ dirigido_a: Alumnado de 5º a 6º EI
 hora_inicio: 16:15
 hora_fin: 17:15
 precio: 55 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782376120/ESPACIO_DE_CALMA_1_kd7fw5.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782891081/ESPACIO_DE_CALMA_1_cye3xl.png
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
   na-curso-2025-2026/ "
 fecha_limite_inscripcion: 2026-08-30
-publicado: false
+publicado: true
 ---
 ##### ESPACIO DE CALMA
 
