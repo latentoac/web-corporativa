@@ -14,7 +14,7 @@ modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
 fecha_limite_inscripcion: 2026-08-30
-publicado: false
+publicado: true
 ---
 ##### EL ARTE DE EMOCIONARTE
 
