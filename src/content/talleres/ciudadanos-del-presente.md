@@ -10,7 +10,7 @@ dirigido_a: Alumnado de 2º a 4º ESO
 hora_inicio: 18:30
 hora_fin: 20:00
 precio: 110 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782375183/ciudadanos_del_presente_qpbxxb.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782890458/CIUDADANOS_DEL_PRESENTE_1_ggjok6.png
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
