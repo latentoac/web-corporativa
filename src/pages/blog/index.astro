@@ -4,7 +4,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroSections from "../../components/sections/HeroSections.astro";
 import { Image } from "astro:assets";
 
-const posts = await getCollection("blog");
+/* const posts = await getCollection("blog"); */
+const posts = await getCollection("blog", ({ data }) => data.publicado);
 const sorted = posts.sort((a, b) => {
   const dateA = a.data.date ? a.data.date.valueOf() : 0;
   const dateB = b.data.date ? b.data.date.valueOf() : 0;

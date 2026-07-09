@@ -5,7 +5,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroSections from "../../components/sections/HeroSections.astro";
 
 export async function getStaticPaths() {
-  const talleres = await getCollection("talleres");
+  /* const talleres = await getCollection("talleres"); */
+  const talleres = await getCollection("talleres", ({ data }) => data.publicado);
   return talleres.map((taller) => ({
     params: { id: taller.id },
     props: taller,
