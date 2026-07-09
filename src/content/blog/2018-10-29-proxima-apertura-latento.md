@@ -1,11 +1,11 @@
 ---
-title: "Apertura Latento!!"
+title: Apertura Latento!!
 date: 2018-10-29
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/q_auto/f_auto/v1778494628/latento-blog-05-1_ebbb4u.jpg
 tags:
   - altas capacidades
   - gabinete psicoeducativo
-publicado: true
+publicado: false
 ---
 ### LATENTO ALTAS CAPACIDADES S.L. abre sus puertas el 5 de noviembre de 2018
 
