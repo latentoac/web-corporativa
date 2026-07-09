@@ -5,7 +5,7 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/q_auto/f_auto/v17784946
 tags:
   - altas capacidades
   - gabinete psicoeducativo
-publicado: false
+publicado: true
 ---
 ### LATENTO ALTAS CAPACIDADES S.L. abre sus puertas el 5 de noviembre de 2018
 
