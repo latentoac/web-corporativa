@@ -1,10 +1,10 @@
 ---
 title: Ya puedes reservar tu plaza en los talleres de Latento para el curso 2026-2027
 date: 2026-07-10
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783929972/publicacion_blog_ysmgqq.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783931119/Dise%C3%B1o_sin_t%C3%ADtulo_rgo4pu.jpg
 publicado: true
 ---
-#### Ya puedes reservar tu plaza en los talleres de Latento para el curso 2026-2027
+#### **Ya puedes reservar tu plaza en los talleres de Latento para el curso 2026-2027**
 
 Cada curso comienza para nosotras mucho antes de septiembre… en los meses que dedicamos creando con atención y mimo la propuesta de talleres del curso siguiente.
 
@@ -12,7 +12,7 @@ En Latento creemos que crecer va mucho más allá de adquirir conocimientos. Sig
 
 Por eso, un año más abrimos el plazo de reserva para nuestros talleres del curso 2026-2027, diseñados para acompañar a niños, niñas y adolescentes en las diferentes etapas de su desarrollo.
 
-##### Mucho más que actividades extraescolares
+##### **Mucho más que actividades extraescolares**
 
 Cada uno de nuestros talleres nace desde una misma idea: ofrecer experiencias de aprendizaje que conecten el desarrollo cognitivo, emocional, creativo y social.
 
@@ -20,7 +20,7 @@ No trabajamos únicamente contenidos. Creamos espacios donde cada participante p
 
 A través de metodologías activas, proyectos cooperativos, retos, creatividad, investigación y educación emocional, buscamos que cada sesión tenga sentido y deje huella.
 
-##### Un itinerario para cada etapa
+##### **Un itinerario para cada etapa**
 
 Este curso volvemos con propuestas adaptadas a diferentes edades e intereses:
 
@@ -44,17 +44,15 @@ Un espacio para adolescentes donde investigar, debatir, comunicar y comprender e
 
 Propuestas donde el arte se convierte en una herramienta para conocerse mejor, expresar emociones y fortalecer la autoestima en un entorno seguro y creativo. 
 
-##### Dos ciudades, un mismo proyecto
+##### **Dos ciudades, un mismo proyecto**
 
 Durante el curso 2026-2027 desarrollaremos talleres en A Coruña y Santiago de Compostela, con propuestas adaptadas a las distintas etapas educativas.
-
-
 
 ![](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783930325/horario_santiago_x2ipnk.png "horario curso 2026-2027 santiago de compostela")
 
 ![](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783930463/horario_a_coru%C3%B1a_t0pyez.png "horario curso 2026-2027 a coruña")
 
-##### Reserva tu plaza
+##### **Reserva tu plaza**
 
 Como cada año, las plazas son reducidas para garantizar una atención personalizada y favorecer la participación activa de todos los grupos.
 
