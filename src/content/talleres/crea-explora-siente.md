@@ -6,8 +6,8 @@ description: En este proyecto invitamos a niños y niñas a convertirse en
   decisiones en equipo y aportando ideas que harán única cada propuesta.
 date: 2026-06-29
 dirigido_a: Alumnado de 5º a 1º ESO
-precio: 85 €/sesión
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782115536/CREA_EXPLORA_SIENTE_1_q6ok1o.png
+precio: 85 €/mes
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785311596/CREA_EXPLORA_SIENTE_1_nkknca.png
 modalidad:
   - coruna
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-a-coruna-curso-2025-2026/
@@ -32,7 +32,7 @@ En este proyecto os invitamos a formar parte de un equipo creativo. A lo largo d
 
 •	Grupo de 6º y 1º ESO El **miércoles 16 de septiembre**
 
-💶 **Tarifa**: 85 €/sesión
+💶 **Tarifa**: 85 €/mes
 
 📝 **Reserva de plaza y forma de pago**
 
