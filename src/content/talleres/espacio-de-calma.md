@@ -10,7 +10,7 @@ dirigido_a: Alumnado de 5º a 6º EI
 hora_inicio: 16:15
 hora_fin: 17:15
 precio: 55 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782891081/ESPACIO_DE_CALMA_1_cye3xl.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785311832/ESPACIO_DE_CALMA_1_iwrrh2.png
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
