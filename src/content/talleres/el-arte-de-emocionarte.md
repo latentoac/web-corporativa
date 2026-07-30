@@ -9,7 +9,7 @@ dirigido_a: Chicos y chicas de 3º y 4º de la E.S.O. y Bachillerato
 hora_inicio: 19:15
 hora_fin: 21:15
 precio: 35 €/mensual
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782486118/emocionarte_fqscap.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447694/Captura_de_pantalla_2026-07-30_233919_aiflsg.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
