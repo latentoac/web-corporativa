@@ -8,7 +8,7 @@ dirigido_a: Alumnado de 2º a  4º de E.P.
 hora_inicio: 17:45
 hora_fin: 18:45
 precio: 55 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782740915/MENTES_CURIOSAS_1_tkh66y.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447347/Captura_de_pantalla_2026-07-30_233512_elmymj.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
