@@ -7,13 +7,13 @@ date: 2026-06-29
 dirigido_a: Alumnado de 3º y 4º de la E.S.O.
 hora_inicio: 19:00
 hora_fin: 20:30
-precio: 70 €/mensual
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782375183/ciudadanos_del_presente_qpbxxb.png
+precio: 70 €/mes
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447889/Captura_de_pantalla_2026-07-30_234402_y9pkcw.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
 fecha_limite_inscripcion: 2026-08-30
-publicado: true
+publicado: false
 ---
 ##### CIUDADANOS DEL PRESENTE
 
