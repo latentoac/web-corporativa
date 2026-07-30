@@ -10,7 +10,7 @@ dirigido_a: Alumnado de 2º a 4º ESO
 hora_inicio: 18:30
 hora_fin: 20:00
 precio: 110 €/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785435889/ChatGPT_Image_30_jul_2026_20_22_50_fzuhow.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447889/Captura_de_pantalla_2026-07-30_234402_y9pkcw.png
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
