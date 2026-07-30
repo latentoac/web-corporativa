@@ -7,7 +7,7 @@ description: Abrimos un espacio donde la curiosidad se convierte en motor, la
 date: 2026-06-29
 dirigido_a: Alumnado de 1º a 5º EP
 precio: 85€/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785311735/MENTES_CURIOSAS_EN_ACCION_tfgr8v.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785432806/taller-mentes-curiosas-en-acci%C3%B3n_d0absg.jpg
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
