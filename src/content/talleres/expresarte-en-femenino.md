@@ -9,8 +9,8 @@ date: 2026-06-29
 dirigido_a: Chicas de 4º ESO a 2º Bachillerato
 hora_inicio: 18:15
 hora_fin: 19:45
-precio: 35€/sesión
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782376388/EXPRESARTE_EN_FEMENINO_thnhr3.png
+precio: 70€/mes
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785432934/taller-expresarte-en-femenino_sypmfq.jpg
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
