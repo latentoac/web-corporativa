@@ -1,14 +1,14 @@
 ---
 title: CREA EXPLORA Y SIENTE
-description: Destinado a alumnado de 5º A 2º de E.S.O., este proyecto os invita
+description: Destinado a alumnado de 5º a 2º de E.S.O., este proyecto os invita
   a formar parte de un equipo creativo para idear y construir proyectos
   originales durante el curso.
 date: 2026-06-29
-dirigido_a: Alumnado de 5º y 6º de E.P.
+dirigido_a: Alumnado de 5º de E.P. a 2º ESO
 hora_inicio: 18:30
 hora_fin: 19:30
-precio: " 85 €/mensual"
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1782115536/CREA_EXPLORA_SIENTE_1_q6ok1o.png
+precio: " 85 €/mes"
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447134/Captura_de_pantalla_2026-07-30_233134_gk0uzk.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
@@ -35,7 +35,7 @@ En este proyecto os invitamos a formar parte de un equipo creativo. A lo largo d
 
 ⏰ **Horario:** de 18:30 a 19:30
 
-  💶 **Tarifa:** 85 €/mensual
+  💶 **Tarifa:** 85 €/mes
 
 📝 **Reserva de plaza y forma de pago**
 
