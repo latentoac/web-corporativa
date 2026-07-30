@@ -10,7 +10,7 @@ dirigido_a: Chicas de 4º ESO a 2º Bachillerato
 hora_inicio: 18:15
 hora_fin: 19:45
 precio: 70€/mes
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785445916/Captura_de_pantalla_2026-07-30_231105_ayvzam.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785446099/Captura_de_pantalla_2026-07-30_231402_zmazhj.png
 modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
