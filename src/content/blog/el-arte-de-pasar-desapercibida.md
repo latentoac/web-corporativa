@@ -4,7 +4,7 @@ date: 2026-08-06
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785449585/ChatGPT_Image_31_jul_2026_00_12_26_lsniyt.png
 publicado: true
 ---
-##  El arte de pasar desapercibida
+## El arte de pasar desapercibida
 
 ### Cuando encajar significa dejar de verse
 
@@ -40,10 +40,18 @@ Encontrar un grupo donde compartir intereses, inquietudes o formas de ver el mun
 
 En Latento creemos profundamente en el valor de crear esos espacios de encuentro. Espacios donde las niñas y adolescentes con altas capacidades puedan sentirse comprendidas, compartir con otras chicas que viven experiencias similares y descubrir que no necesitan esconder partes de sí mismas para ser aceptadas.
 
-Por eso desarrollamos propuestas específicas para ellas. [ExpresArte en Femenino](https://latentoac.com/talleres/expresarte-en-femenino) es un espacio dirigido a chicas adolescentes en el que la creatividad se convierte en una herramienta para conocerse mejor, expresar emociones, fortalecer la autoestima y construir vínculos desde la autenticidad. Un lugar donde hablar, crear y descubrir que ser diferente también puede ser un punto de encuentro.
+### ¿Buscas un espacio donde pueda ser ella misma?
 
-Además, las jornadas de [Talento Femenino](https://latentoac.com/talleres/jornada-talento-femenino-conectar-crear-impactar) son una una experiencia pensada para reunir a adolescentes con altas capacidades en torno a talleres, actividades y experiencias compartidas. Una oportunidad para conocer referentes, conectar con iguales y vivir una jornada en la que el talento femenino puede expresarse sin necesidad de reducirse para encajar.
+#### ExpresArte en Femenino
 
-Porque, al final, el objetivo no es que aprendan a pasar desapercibidas. Es que encuentren contextos donde descubran que no necesitan hacerlo.
+Un taller creativo para chicas adolescentes con altas capacidades donde compartir, crear, expresar emociones y conectar con otras jóvenes que viven experiencias similares.
 
-Si quieres conocer más sobre nuestros talleres y actividades para niñas y adolescentes con altas capacidades, estaremos encantados de ayudarte a encontrar la propuesta que mejor se adapte a ellas.
+👉 [ExpresArte en Femenino](https://latentoac.com/talleres/expresarte-en-femenino)
+
+#### Jornada Talento Femenino: Conectar, Crear e Impactar
+
+Una jornada diseñada para que niñas y adolescentes descubran referentes, desarrollen su potencial y encuentren un grupo donde no necesiten esconder quiénes son.
+
+👉 [Talento Femenino](https://latentoac.com/talleres/jornada-talento-femenino-conectar-crear-impactar)
+
+### Porque, al final, el objetivo no es que aprendan a pasar desapercibidas. Es que encuentren contextos donde descubran que no necesitan hacerlo.
