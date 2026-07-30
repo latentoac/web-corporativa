@@ -1,7 +1,7 @@
 ---
 title: El arte de pasar desapercibida.
 date: 2026-08-06
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785449408/Captura_de_pantalla_2026-07-31_000944_ar8q3c.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785449585/ChatGPT_Image_31_jul_2026_00_12_26_lsniyt.png
 publicado: true
 ---
 ##  El arte de pasar desapercibida
