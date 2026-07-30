@@ -8,7 +8,7 @@ dirigido_a: Alumnado de 5º de E.P. a 2º ESO
 hora_inicio: 18:30
 hora_fin: 19:30
 precio: " 85 €/mes"
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785446978/Captura_de_pantalla_2026-07-30_232838_p2fvmg.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447134/Captura_de_pantalla_2026-07-30_233134_gk0uzk.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
