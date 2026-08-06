@@ -10,7 +10,7 @@ dirigido_a: Chicas con altas capacidades de 12 a 15 años
 hora_inicio: 11:00
 hora_fin: 18:00
 precio: 50€ la jornada (incluye comida)
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1780903559/jornada_talento_femenino_1_ctul2b.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786001503/ChatGPT_Image_6_ago_2026_09_29_00_iyche0.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/talento-femenino/
