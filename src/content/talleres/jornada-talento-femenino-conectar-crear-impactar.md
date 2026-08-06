@@ -1,11 +1,11 @@
 ---
-title: "JORNADA TALENTO FEMENINO: CONECTAR,CREAR,IMPACTAR. "
+title: "SEGUNDA JORNADA TALENTO FEMENINO: CONECTAR,CREAR,IMPACTAR. "
 description: Jornada intensiva dirigida a chicas con altas capacidades, diseñada
   como punto de encuentro entre iguales y como activación de una comunidad de
   aprendizaje a largo plazo.
-date: 2026-06-08
+date: 2026-08-06
 fechasTaller:
-  - fecha: 2026-07-09
+  - fecha: 2026-09-03
 dirigido_a: Chicas con altas capacidades de 12 a 15 años
 hora_inicio: 11:00
 hora_fin: 18:00
@@ -14,7 +14,7 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1780903559/jornada_tal
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/talento-femenino/
-fecha_limite_inscripcion: 2026-06-25
+fecha_limite_inscripcion: 2026-08-30
 publicado: true
 ---
 # Jornada Talento Femenino: Conectar, Crear, Impactar
@@ -28,6 +28,6 @@ El programa incluye actividades de conexión personal, trabajo colaborativo, pre
 * **Localización**: Latento Santiago
 * **Dirigido a**: Chicas con altas capacidades de 12 a 15 años
 * Plazas limitadas para garantizar un entorno de trabajo enriquecedor.
-* **Día y hora**: jueves 9 de Julio de 2026 de 11.00 a 18.00 (comeremos juntas)
+* **Día y hora**: jueves 3 de septiembre de 2026 de 11.00 a 18.00 (comeremos juntas)
 * **Tarifa**: 50 euros la jornada (incluye comida)
-* **Fecha límite para inscripciones**: jueves 25 de junio de 2026.
+* **Fecha límite para inscripciones**: domingo 30 de agosto de 2026.
