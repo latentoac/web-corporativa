@@ -1,8 +1,7 @@
 ---
 title: MENTES CURIOSAS EN ACCIÓN
-description: Destinado a alumnado de 2º y 3º de E.P. Abrimos un espacio donde la
-  curiosidad se convierte en motor, la creatividad en herramienta y la ciencia
-  en una aventura.
+description: Abrimos un espacio donde la curiosidad se convierte en motor, la
+  creatividad en herramienta y la ciencia en una aventura.
 date: 2026-06-29
 dirigido_a: Alumnado de 2º a  4º de E.P.
 hora_inicio: 17:45
