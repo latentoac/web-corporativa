@@ -39,7 +39,7 @@ Todas las sesiones incluyen material complementario para las familias asistentes
 
 * Viernes 18 de Septiembre: **Comprender las altas capacidades .**
 * Viernes 16 de Octubre: **Emociones Intensas, comprender para acompañar**.
-* Viernes 13 de Noviembre: **Educar sin luchas de porder.**
+* Viernes 13 de Noviembre: **Educar sin luchas de poder.**
 * Viernes 11 de Diciembre: **Perfeccionismo, frustración y autoestima.**
 
 **Horarios**
