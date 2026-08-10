@@ -1,60 +1,62 @@
 ---
-title: ESCUELA DE FAMILIAS
+title: "FAMILIAS QUE INSPIRAN "
+description: Un recorrido formativo para familias que desean comprender mejor
+  las altas capacidades, acompañar las emociones intensas, fortalecer los
+  vínculos familiares y descubrir herramientas prácticas para la crianza y el
+  desarrollo integral de sus hijos e hijas.
+date: 2026-08-11
+fechasTaller:
+  - fecha: 2026-09-18
+  - fecha: 2026-10-16
+  - fecha: 2026-11-13
+  - fecha: 2026-12-11
 dirigido_a: Familias con hijos e hijas con altas capacidades
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1778498723/familias-queinspiran_kvbtku.png
+hora_inicio: 18:00
+hora_fin: 18:00
+precio: asistencia individual 45€/sesión asistencia en pareja 60€/sesión. 10% de
+  descuesto si te inscriben en las 4 sesiones del primer trimestre antes del 16
+  de septiembre.
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786399693/Captura_de_pantalla_2026-08-11_000709_a46grt.png
 modalidad:
   - santiago
+inscription_url: https://tienda.latentoac.com/producto/escuela-de-familias/
 publicado: true
 ---
 **Escuela de Familias :Fortaleciendo vínculos, potenciando talentos**
 
-Ser madre o padre de un niño o niña con altas capacidades es una aventura apasionante… y también un gran reto. Su curiosidad infinita, su sensibilidad, su perfeccionismo o su intensidad emocional pueden hacer que, en ocasiones, acompañarles no sea fácil.
+La Escuela de Familias de Latento es un espacio de encuentro, aprendizaje y reflexión dirigido a familias que desean comprender mejor a sus hijos e hijas y adquirir herramientas prácticas para acompañar su desarrollo emocional, social y educativo.
 
-La Escuela de Familias de [Latento Altas Capacidades ](https://latentoac.com/)es un espacio de encuentro, aprendizaje y apoyo donde madres y padres podrán:
+Las altas capacidades implican mucho más que un elevado potencial intelectual. Suelen venir acompañadas de una intensa vida emocional, una gran sensibilidad, necesidades educativas específicas y formas particulares de relacionarse con el mundo. Por ello, a lo largo del curso abordaremos diferentes aspectos que preocupan habitualmente a las familias: emociones intensas, perfeccionismo, frustración, relaciones sociales, autonomía, disciplina positiva, límites, doble excepcionalidad o autocuidado parental.
 
-* Comprender mejor qué significa tener altas capacidades. 
-* Descubrir cómo acompañar el desarrollo emocional y social de sus hijos e hijas. 
-* Aprender estrategias prácticas de Disciplina Positiva para educar con firmeza y respeto. 
-* Conectar con otras familias que viven experiencias similares. 
-* Reflexionar sobre sus propias emociones y aprender a gestionarlas para convertirse en un mejor apoyo familiar. 
+Cada sesión puede realizarse de forma independiente, aunque juntas conforman un recorrido coherente que permite profundizar progresivamente en los diferentes retos y oportunidades que aparecen durante la crianza.
 
-**Metodología**
-
-El programa consta de 8 talleres mensuales, de octubre a junio, con una metodología vivencial y participativa que combina:
-
-* Información clara y actualizada. 
-* Dinámicas prácticas y actividades grupales. 
-* Herramientas aplicables en casa desde el primer día. 
+Todas las sesiones incluyen material complementario para las familias asistentes.
 
 **Información general**
 
 * 📍 **Sede** Latento Santiago de Compostela
-* 👨‍👩‍👧‍👦 **Dirigido a** madres y padres con hijos e hijas con altas capacidades en etapa de primaria.
+* 👨‍👩‍👧‍👦 **Dirigido a** madres y padres con hijos e hijas con altas capacidades.
 
 **Programa de talleres**
 
-* Viernes 24 de octubre → ***Altas capacidades: comprender para acompañar*** 
-* Viernes 21 de noviembre → ***Emociones intensas: sensibilidad y madurez desigual*** 
-* Viernes 30 de enero → ***Disciplina Positiva: firmeza y respeto en casa*** 
-* Viernes 20 de febrero → ***Comunicación que conecta: escucha activa y asertividad*** 
-* Viernes 27 de marzo → ***Perfeccionismo y frustración: herramientas para crecer*** 
-* Viernes 17 de abril → ***Amistad y pertenencia: acompañando sus relaciones sociales*** 
-* Viernes 22 de mayo → ***Autonomía y límites: rutinas y acuerdos familiares*** 
-* Viernes 26 de junio → ***Cuidar(se) para cuidar: autocuidado y cohesión familiar*** 
+* Viernes 18 de Septiembre: **Comprender las altas capacidades .**
+* Viernes 16 de Octubre: **Emociones Intensas, comprender para acompañar**.
+* Viernes 13 de Noviembre: **Educar sin luchas de porder.**
+* Viernes 11 de Diciembre: **Perfeccionismo, frustración y autoestima.**
+
+
 
 **Horarios**
 
-* ✨ Nuevo horario 17:00 – 19:00 
-* 19:15 – 21:15 
+* 18:00 a 20:00
 
 **Tarifas**
 
-* 40 € por sesión (1 participante) 
-* 50 € por sesión (2 participantes de la misma familia) 
+* 45 € por sesión (1 participante) 
+* 60€ por sesión (2 participantes de la misma familia) 
+* Reserva las cuatro sesiones de septiembre a diciembre y disfruta de un 10 % de descuento. (El descuento se aplica automáticamente al añadir las cuatro sesiones al carrito).
 
-**Preinscripción**
 
-Podéis realizar vuestra preinscripción a través del siguiente [enlace](https://docs.google.com/forms/d/e/1FAIpQLSfkXBG4ZeaRwwZchS0ec4U_847w2RTPE0YGsGOOcH0BWdvNNg/viewform). Una vez realizada la preinscripción, recibiréis las instrucciones para formalizar el pago.
 
 **Más información**
 
