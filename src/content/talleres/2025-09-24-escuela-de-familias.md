@@ -12,10 +12,8 @@ fechasTaller:
   - fecha: 2026-12-11
 dirigido_a: Familias con hijos e hijas con altas capacidades
 hora_inicio: 18:00
-hora_fin: 18:00
-precio: asistencia individual 45€/sesión asistencia en pareja 60€/sesión. 10% de
-  descuesto si te inscriben en las 4 sesiones del primer trimestre antes del 16
-  de septiembre.
+hora_fin: 20:00
+precio: asistencia individual 45€/sesión- asistencia en pareja 60€/sesión.
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786399693/Captura_de_pantalla_2026-08-11_000709_a46grt.png
 modalidad:
   - santiago
@@ -44,8 +42,6 @@ Todas las sesiones incluyen material complementario para las familias asistentes
 * Viernes 13 de Noviembre: **Educar sin luchas de porder.**
 * Viernes 11 de Diciembre: **Perfeccionismo, frustración y autoestima.**
 
-
-
 **Horarios**
 
 * 18:00 a 20:00
@@ -54,9 +50,7 @@ Todas las sesiones incluyen material complementario para las familias asistentes
 
 * 45 € por sesión (1 participante) 
 * 60€ por sesión (2 participantes de la misma familia) 
-* Reserva las cuatro sesiones de septiembre a diciembre y disfruta de un 10 % de descuento. (El descuento se aplica automáticamente al añadir las cuatro sesiones al carrito).
-
-
+* Reserva las cuatro sesiones de septiembre a diciembre antes del 16 de septiembre y disfruta de un 10 % de descuento. (El descuento se aplica automáticamente al añadir las cuatro sesiones al carrito).
 
 **Más información**
 
