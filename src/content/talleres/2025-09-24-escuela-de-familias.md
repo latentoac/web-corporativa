@@ -14,7 +14,7 @@ dirigido_a: Familias con hijos e hijas con altas capacidades
 hora_inicio: 18:00
 hora_fin: 20:00
 precio: asistencia individual 45€/sesión- asistencia en pareja 60€/sesión.
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786433204/Captura_de_pantalla_2026-08-11_092532_aqzhkg.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786433309/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_2_ovwgps.jpg
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/escuela-de-familias/
