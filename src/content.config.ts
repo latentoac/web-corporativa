@@ -1,11 +1,25 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
+const safeDateString = (val: unknown) => {
+  if (typeof val === "string" && val.trim() !== "" && val !== "Invalid date") {
+    return val;
+  }
+  return undefined;
+};
+
+const safeDate = () => z.preprocess(safeDateString, z.coerce.date().optional());
+
+const safeRequiredDate = () =>
+  z.preprocess(safeDateString, z.coerce.date({
+    error: "Fecha inválida o vacía en fechasTaller",
+  }));
+
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: ({ image }) => z.object({
     title: z.string(),
-    date: z.coerce.date().optional(),
+    date: safeDate(),
     image: image().optional(),
     tags: z.array(z.string()).optional(),
     publicado: z.boolean().default(true),
@@ -18,9 +32,9 @@ const talleres = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     dirigido_a: z.string().optional(),
-    date: z.coerce.date().optional(),
+    date: safeDate(),
     fechasTaller: z.array(z.object({
-      fecha: z.coerce.date(),
+      fecha: safeRequiredDate(),
     })).optional(),
     hora_inicio: z.string().optional(),
     hora_fin: z.string().optional(),
@@ -35,7 +49,7 @@ const talleres = defineCollection({
       z.array(z.enum(['santiago', 'coruna', 'online']))
     ),
     inscription_url: z.string().url().optional(),
-    fecha_limite_inscripcion: z.coerce.date().optional(),
+    fecha_limite_inscripcion: safeDate(),
     publicado: z.boolean().default(true),
   }),
 });
