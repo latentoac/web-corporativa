@@ -7,10 +7,24 @@ import { Image } from 'astro:assets';
 // Solo publicados, todos — el filtro lo hace el cliente
 const allTalleres = await getCollection("talleres", ({ data }) => data.publicado);
 
-const sorted = allTalleres.sort((a, b) => {
-  const dateA = a.data.date ? a.data.date.valueOf() : 0;
-  const dateB = b.data.date ? b.data.date.valueOf() : 0;
-  return dateB - dateA;
+const getFecha = (taller: (typeof allTalleres)[number]): number | null => {
+  const fechas = taller.data.fechasTaller ?? [];
+  const candidata =
+    taller.data.date ??
+    fechas.map((f) => f.fecha).sort((x, y) => y.valueOf() - x.valueOf())[0];
+  if (!candidata) return null;
+  const value = candidata.valueOf();
+  return Number.isNaN(value) ? null : value;
+};
+
+// Últimas publicaciones primero; los talleres sin fecha válida van al final.
+const sorted = [...allTalleres].sort((a, b) => {
+  const fa = getFecha(a);
+  const fb = getFecha(b);
+  if (fa === null && fb === null) return a.data.title.localeCompare(b.data.title, "es");
+  if (fa === null) return 1;
+  if (fb === null) return -1;
+  return fb - fa;
 });
 
 const filtros = [

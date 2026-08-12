@@ -1,19 +1,18 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-const safeDateField = () =>
-  z.preprocess(
-    (val) => (typeof val === "string" ? val : undefined),
-    z.coerce.date().optional()
-  );
+const toDateInput = (val: unknown) => {
+  if (val instanceof Date) return Number.isNaN(val.valueOf()) ? undefined : val;
+  if (typeof val === "string" && val.trim() !== "") return val.trim();
+  return undefined;
+};
 
-// Filtra del array cualquier elemento cuya "fecha" no sea válida,
-// en vez de dejar `undefined` sueltos que romperían el renderizado.
+const safeDateField = () => z.preprocess(toDateInput, z.coerce.date().optional());
+
+// Filtra del array cualquier elemento cuya "fecha" no sea válida,
+// en vez de dejar `undefined` sueltos que romperían el renderizado.
 const fechaTallerItem = z.object({
-  fecha: z.preprocess(
-    (val) => (typeof val === "string" ? val : undefined),
-    z.coerce.date()
-  ),
+  fecha: z.preprocess(toDateInput, z.coerce.date()),
 });
 
 const fechasTallerFiltrado = z.preprocess((val) => {

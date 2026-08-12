@@ -71,6 +71,8 @@
   },
   "required": [
     "title",
-    "modalidad"
+    "date",
+    "modalidad",
+    "fecha_limite_inscripcion"
   ]
 }
