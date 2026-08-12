@@ -13,7 +13,7 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786485945/Captura_de_
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/emociones-en-familia-sentir-regular-ser-copia/
-fecha_limite_inscripcion: 2026-08-31
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ### **🌈 Emociones en familia: sentir, regular y ser**
