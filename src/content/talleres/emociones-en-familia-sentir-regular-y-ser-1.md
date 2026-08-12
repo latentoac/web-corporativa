@@ -59,7 +59,7 @@ Exploraremos cómo nos sentimos cuando estamos con otras personas: la sensación
 
 **🟣BLOQUE 4 · AUTOCONOCIMIENTO Y RETOS EMOCIONALES: Construir una imagen positiva de nosotros mismos y afrontar situaciones complejas**
 
-*  Miércoles 7 de abril · Autoestima e identidad
+* Miércoles 7 de abril · Autoestima e identidad
 * Miércoles 21 de abril · Aburrimiento y desmotivación
 * Miércoles 5 de mayo · Mentiras
 * Miércoles 19 de mayo · Afrontamiento de la muerte
@@ -70,11 +70,11 @@ Un último bloque para abordar cuestiones relacionadas con quiénes somos, cómo
 
 Las familias pueden elegir entre sesiones individuales o la inscripción a un bloque completo.
 
-* **Sesión individual:** 35 € por familia.Incluye la participación de un niño/a y un adulto acompañante. (límite de inscrpción hasta agotar plazas).
-* **Bloque 1 · Base emocional:** 5 sesiones · 160 € (fecha límite de inscrición hasta el 9 de septiembre de 2026 o agotar plazas).
-* **Bloque 2 · Gestionar lo que sentimos:** 5 sesiones · 160 € (fecha límite de inscrición hasta el 18 de noviembre de 2026 o agotar plazas).
-* **Bloque 3 · Emociones en relación:** 4 sesiones · 130 €  (fecha límite de inscrición hasta el 27 de enero de 2027 o agotar plazas).
-* **Bloque 4 · Autoconocimiento y retos emocionales:** 4 sesiones · 130 €  (fecha límite de inscrición hasta el 31 de marzo de 2027 o agotar plazas).
+* **Sesión individual:** 35 € por familia.Incluye la participación de un niño/a y un adulto acompañante. (límite de inscripción hasta agotar plazas).
+* **Bloque 1 · Base emocional:** 5 sesiones · 160 € (período de inscripción del 12 agosto al 9 septiembre 2026, o agotar plazas).
+* **Bloque 2 · Gestionar lo que sentimos:** 5 sesiones · 160 € (período de  inscripción del  12 de noviembre al 18 noviembre 2026, o agotar plazas).
+* **Bloque 3 · Emociones en relación:** 4 sesiones · 130 €  (periodo de inscripción del 12  de enero al 27 enero 2027 ,  o agotar plazas).
+* **Bloque 4 · Autoconocimiento y retos emocionales:** 4 sesiones · 130 €  (periodo de inscripción del 18 de marzo al 31 marzo 2027, o agotar plazas).
 
 Los bloques ofrecen un precio reducido respecto a la inscripción sesión a sesión y permiten favorecer la continuidad del proceso.
 
