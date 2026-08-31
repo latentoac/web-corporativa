@@ -4,7 +4,7 @@ description: En este proyecto invitamos a niños y niñas a convertirse en
   protagonistas de un proceso de creación compartida. A lo largo del curso,
   imaginaremos, diseñaremos y desarrollaremos proyectos propios, tomando
   decisiones en equipo y aportando ideas que harán única cada propuesta.
-date: ""
+date: 2026-07-01
 dirigido_a: Alumnado de 5º a 1º ESO
 precio: 85 €/mes
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447134/Captura_de_pantalla_2026-07-30_233134_gk0uzk.png
