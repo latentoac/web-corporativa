@@ -13,7 +13,7 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447694/Captura_de_
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
-fecha_limite_inscripcion: 2026-08-30
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ##### EL ARTE DE EMOCIONARTE
@@ -26,14 +26,11 @@ Además de fomentar la expresión artística, este taller busca fortalecer la co
 
 📍 **Localización:**  Santiago de Compostela
 
-🎓 **Destinatarios:** chicos y chicas de  E.S.O. (grupo viernes)  y Bachillerato (grupo lunes)
+🎓 **Destinatarios:** chicos y chicas de 3º-4º E.S.O. y 1º Bachillerato 
 
-📅 Fechas:
+⏰ **Horario y Fechas:** Viernes de 19:15-21:15
 
-* Grupo lunes ( BACHILLERATO) : 21/09, 19/10, 16/11, 14/12, 18/01, 15/02, 15/03 y 12/04.
-* Grupo viernes (ESO): 18/09, 16/10, 13/11, 11/12, 15/01, 12/02, 12/03 y 09/04.
-
-⏰ **Horario:** 19:15-21:15
+ 18/09, 16/10, 13/11, 11/12, 15/01, 12/02, 12/03 y 09/04.
 
  💶 **Tarifa:** 35 €/mensual
 
