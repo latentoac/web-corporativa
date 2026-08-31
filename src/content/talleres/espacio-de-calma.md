@@ -15,7 +15,7 @@ modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
   na-curso-2025-2026/ "
-fecha_limite_inscripcion: 2026-08-30
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ##### ESPACIO DE CALMA
