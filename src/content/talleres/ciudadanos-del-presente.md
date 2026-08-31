@@ -15,7 +15,7 @@ modalidad:
   - coruna
 inscription_url: "https://tienda.latentoac.com/producto/reserva-talleres-a-coru\
   na-curso-2025-2026/ "
-fecha_limite_inscripcion: 2026-08-30
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ##### CIUDADANOS DEL PRESENTE
@@ -26,13 +26,11 @@ En este proyecto creativo os invitamos a convertiros en comunicadores activos. A
 
 🎓 **Destinatarios:**
 
-* Miércoles de 18:30 a 20:00  **alumnado de 3º y 4º de ESO**
-* Jueves de 18:30 a 20:00  **alumnado de 2º y 3º de ESO**
+* Miércoles de 18:30 a 20:00  **alumnado de 2º a 4º de ESO**
 
 📅 **Inicio** de los talleres:
 
-* Grupo de 3º y 4º de ESO: **miércoles 16 de septiembre**
-* Grupo de 2º y 3º de ESO: **jueves 10 de septiembre**
+*  **Miércoles 16 de septiembre**
 
 💶 **Tarifa:** 110 €/mes
 
