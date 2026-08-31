@@ -6,10 +6,10 @@ description: Un recorrido formativo para familias que desean comprender mejor
   desarrollo integral de sus hijos e hijas.
 date: 2026-08-11
 fechasTaller:
-  - fecha: 2026-09-18
   - fecha: 2026-10-16
   - fecha: 2026-11-13
   - fecha: 2026-12-11
+  - fecha: 2027-01-22
 dirigido_a: Familias con hijos e hijas con altas capacidades
 hora_inicio: 18:00
 hora_fin: 20:00
@@ -37,10 +37,10 @@ Todas las sesiones incluyen material complementario para las familias asistentes
 
 **Programa de talleres**
 
-* Viernes 18 de Septiembre: **Comprender las altas capacidades .**
-* Viernes 16 de Octubre: **Emociones Intensas, comprender para acompañar**.
-* Viernes 13 de Noviembre: **Educar sin luchas de poder.**
-* Viernes 11 de Diciembre: **Perfeccionismo, frustración y autoestima.**
+* Viernes 16 de Octubre: **Comprender las altas capacidades .**
+* Viernes 13 de Noviembre: **Emociones Intensas, comprender para acompañar**.
+* Viernes 11 de Diciembre: **Educar sin luchas de poder.**
+* Viernes 22 de Enero: **Perfeccionismo, frustración y autoestima.**
 
 **Horarios**
 
