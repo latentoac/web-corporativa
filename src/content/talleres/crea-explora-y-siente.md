@@ -12,7 +12,7 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447134/Captura_de_
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
-fecha_limite_inscripcion: 2026-08-30
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ##### CREA, EXPLORA SIENTE
@@ -30,7 +30,7 @@ En este proyecto os invitamos a formar parte de un equipo creativo. A lo largo d
 
 🚀**Fecha de inicio**
 
-* Alumnado de 5º y 6º inicio **el lunes 15 de septiembre**
+* Alumnado de 5º y 6º inicio **el martes 15 de septiembre**
 * Alumnado de 1º y 2º ESO inicio **el jueves 10 de septiembre**
 
 ⏰ **Horario:** de 18:30 a 19:30
