@@ -1,7 +1,7 @@
 ---
 title: Ya puedes reservar tu plaza en los talleres de Latento para el curso 2026-2027
 date: 2026-07-10
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783931119/Dise%C3%B1o_sin_t%C3%ADtulo_rgo4pu.jpg
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1788176252/Dise%C3%B1o_sin_t%C3%ADtulo_3_zsudul.png
 publicado: true
 ---
 #### **Ya puedes reservar tu plaza en los talleres de Latento para el curso 2026-2027**
