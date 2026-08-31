@@ -40,17 +40,17 @@ Un laboratorio de proyectos donde la creatividad, el pensamiento crítico y el t
 
 Un espacio para adolescentes donde investigar, debatir, comunicar y comprender el mundo desde una mirada crítica y comprometida. 
 
-**🎨 El Arte de Emocionarte y Expresarte en Femenino**
+**🎨 El Arte de Emocionarte** 
 
-Propuestas donde el arte se convierte en una herramienta para conocerse mejor, expresar emociones y fortalecer la autoestima en un entorno seguro y creativo. 
+Una propuesta donde el arte se convierte en una herramienta para conocerse mejor, expresar emociones y fortalecer la autoestima en un entorno seguro y creativo. 
 
 ##### **Dos ciudades, un mismo proyecto**
 
 Durante el curso 2026-2027 desarrollaremos talleres en A Coruña y Santiago de Compostela, con propuestas adaptadas a las distintas etapas educativas.
 
-![](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783930325/horario_santiago_x2ipnk.png "horario curso 2026-2027 santiago de compostela")
+![](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1788175989/Copia_de_Dise%C3%B1o_sin_t%C3%ADtulo_cayk5b.png "horario curso 2026-2027 santiago de compostela")
 
-![](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1783930463/horario_a_coru%C3%B1a_t0pyez.png "horario curso 2026-2027 a coruña")
+![](https://res.cloudinary.com/dmvpxkp5m/image/upload/v1788176065/Dise%C3%B1o_sin_t%C3%ADtulo_2_mlvwvv.png "horario curso 2026-2027 a coruña")
 
 ##### **Reserva tu plaza**
 
