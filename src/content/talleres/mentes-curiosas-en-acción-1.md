@@ -11,7 +11,7 @@ image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447347/Captura_de_
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-santiago-curso-2025-2026/
-fecha_limite_inscripcion: 2026-08-30
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ##### MENTES CURIOSAS EN ACCIÓN
@@ -26,10 +26,10 @@ Abrimos un espacio donde la curiosidad se convierte en motor, la creatividad en 
 
 * **Alumnado de 2º a 3º de E.P.** **Miércoles con carácter quincenal**. 
 
-  Fecha del primer trimestre: 16/09, 23/09, 07/10, 21/10, 04/11, 18/11, 02/12 y 16/12
-* **Alumnado de 4º E.P. Lunes con carácter quincenal.** Fechas del primer trimestre: 
+  * Fecha del primer trimestre: 16/09, 23/09, 07/10, 21/10, 04/11, 18/11, 02/12 y 16/12
+* **Alumnado de 4º E.P. Lunes con carácter quincenal.** 
 
-  21/09, 05/10, 19/10, 02/11, 16/11, 30/11 y 14/12.
+  * Fechas del primer trimestre: 21/09, 05/10, 19/10, 02/11, 16/11, 30/11 y 14/12.
 
 ⏰ **Horario:** 17:45 a 18:45
 
