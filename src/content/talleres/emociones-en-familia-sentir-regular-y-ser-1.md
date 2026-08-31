@@ -30,8 +30,7 @@ El ciclo está organizado en cuatro bloques temáticos, que permiten avanzar pro
 
 **🟡 BLOQUE 1 · BASE EMOCIONAL: Reconocer y comprender lo que sentimos**
 
-* Miércoles 16 de septiembre · Conciencia emocional
-* Miércoles 30 de septiembre · Intensidad emocional
+* Miércoles 30 de septiembre · Conciencia emocional
 * Miércoles 14 de octubre · Regulación emocional
 * Miércoles 28 de octubre · Miedos 👻
 * Miércoles 11 de noviembre · Rabia
@@ -71,7 +70,7 @@ Un último bloque para abordar cuestiones relacionadas con quiénes somos, cómo
 Las familias pueden elegir entre sesiones individuales o la inscripción a un bloque completo.
 
 * **Sesión individual:** 35 € por familia.Incluye la participación de un niño/a y un adulto acompañante. (límite de inscripción hasta agotar plazas).
-* **Bloque 1 · Base emocional:** 5 sesiones · 160 € (período de inscripción del 12 agosto al 9 septiembre 2026, o agotar plazas).
+* **Bloque 1 · Base emocional:** 4 sesiones · 130 € (período de inscripción del 12 agosto al 9 septiembre 2026, o agotar plazas).
 * **Bloque 2 · Gestionar lo que sentimos:** 5 sesiones · 160 € (período de  inscripción del  12 de noviembre al 18 noviembre 2026, o agotar plazas).
 * **Bloque 3 · Emociones en relación:** 4 sesiones · 130 €  (periodo de inscripción del 12  de enero al 27 enero 2027 ,  o agotar plazas).
 * **Bloque 4 · Autoconocimiento y retos emocionales:** 4 sesiones · 130 €  (periodo de inscripción del 18 de marzo al 31 marzo 2027, o agotar plazas).
