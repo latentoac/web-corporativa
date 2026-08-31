@@ -4,14 +4,14 @@ description: En este proyecto invitamos a niños y niñas a convertirse en
   protagonistas de un proceso de creación compartida. A lo largo del curso,
   imaginaremos, diseñaremos y desarrollaremos proyectos propios, tomando
   decisiones en equipo y aportando ideas que harán única cada propuesta.
-date: 2026-06-29
+date: ""
 dirigido_a: Alumnado de 5º a 1º ESO
 precio: 85 €/mes
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1785447134/Captura_de_pantalla_2026-07-30_233134_gk0uzk.png
 modalidad:
   - coruna
 inscription_url: https://tienda.latentoac.com/producto/reserva-talleres-a-coruna-curso-2025-2026/
-fecha_limite_inscripcion: 2026-08-30
+fecha_limite_inscripcion: ""
 publicado: true
 ---
 ##### CREA, EXPLORA, SIENTE
