@@ -16,7 +16,7 @@ hora_inicio: "11.00"
 hora_fin: "14.00"
 precio: 45 €/sesión  *código de 10% de descuento para evaluados en los curso
   2024-2025 o 2025-2026 en Latento.
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1788953537/agora_s2zb9l.jpg
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1789025436/agora_decap_a9rhxm.jpg
 modalidad:
   - santiago
 fecha_limite_inscripcion: 2026-09-23
