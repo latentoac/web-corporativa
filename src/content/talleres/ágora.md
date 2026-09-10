@@ -26,14 +26,19 @@ publicado: true
 
 Espacio mensual de encuentro dirigido a alumnado universitario con altas capacidades, diseñado para favorecer la creación de vínculos entre iguales, el intercambio de inquietudes, intereses y experiencias, y el desarrollo de una red social enriquecedora. A través de propuestas dinámicas, que se irán publicando mensualmente a través de las redes sociales, los participantes tendrán la oportunidad de conocerse, compartir tiempo de calidad, conversar sobre temas de interés común y disfrutar de actividades que faciliten la interacción y la convivencia. Las experiencias socioculturales servirán como punto de partida para fomentar la comunicación, el sentimiento de pertenencia al grupo y la construcción de relaciones significativas en un ambiente distendido y participativo.
 
-📍 Localización: Santiago de Compostela
+📍 Localización: Santiago de Compostela.
 
 🎓 Destinatarios: Estudiantes Universitarios o FP Superiores.
 
-📅 Fechas: 08/10 5/11 03/12 04/02 11/03 29/04 
+⏰ Horario: 11:00 – 14:00.
 
-⏰ Horario: 11:00 – 14:00
+📅📝Sesiones y fechas límites de inscripción.
 
- 💶 Tarifa  45 €/sesión  *código de 10% de descuento para evaluados en los curso 2024-2025 o 2025-2026 en Latento ( solicítalo en info@latentoac.com) 
+* jueves 08/10/2026	, fecha límite de inscripción hasta el 01/10/2026.
+* jueves  05/11/2026, fecha límite de inscripción hasta  Hasta el 29/10/2026.
+* jueves  03/12/2026, fecha límite de inscripción hasta  Hasta el 26/11/2026.
+* jueves  04/02/2027, fecha límite de inscripción hasta Hasta el 28/01/2027.
+* jueves  11/03/2027, fecha límite de inscripción hasta  Hasta el 04/03/2027.
+* jueves  29/04/2027, fecha límite de inscripción hasta  Hasta el 22/04/2027.
 
-📝 Inscripción o reserva de plaza.
+ 💶 Tarifa  45 €/sesión  *código de 10% de descuento para evaluados en los curso 2024-2025 o 2025-2026 en Latento ( solicítalo en info@latentoac.com) .
