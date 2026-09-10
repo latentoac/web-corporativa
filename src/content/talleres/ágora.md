@@ -12,13 +12,14 @@ fechasTaller:
   - fecha: 2027-03-11
   - fecha: 2027-04-29
 dirigido_a: Estudiantes Universitarios o FP Superiores.
-hora_inicio: "11.00"
-hora_fin: "14.00"
+hora_inicio: 10:30
+hora_fin: 13:30
 precio: 45 €/sesión  *código de 10% de descuento para evaluados en los curso
   2024-2025 o 2025-2026 en Latento.
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1789025436/agora_decap_a9rhxm.jpg
 modalidad:
   - santiago
+inscription_url: https://tienda.latentoac.com/producto/agora/
 fecha_limite_inscripcion: 2026-09-23
 publicado: true
 ---
@@ -30,7 +31,7 @@ Espacio mensual de encuentro dirigido a alumnado universitario con altas capacid
 
 🎓 Destinatarios: Estudiantes Universitarios o FP Superiores.
 
-⏰ Horario: 11:00 – 14:00.
+⏰ Horario: 10:30 – 13:30.
 
 📅📝Sesiones y fechas límites de inscripción.
 
