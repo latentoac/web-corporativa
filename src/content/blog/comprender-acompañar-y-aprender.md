@@ -1,7 +1,7 @@
 ---
 title: COMPRENDER, ACOMPAÑAR Y APRENDER
 date: 2026-09-15
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1789458690/BLOG_COMPRENDER_ACOMPA%C3%91AR_Y_APRENDER_r51heu.jpg
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1789473156/BLOG_COMPRENDER_ACOMPA%C3%91AR_Y_APRENDER_kcdhmx.jpg
 tags:
   - Altas capacidades
   - "Familias "
