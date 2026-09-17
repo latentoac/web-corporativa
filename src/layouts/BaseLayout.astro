@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer.astro";
 import NewsletterModal from '../components/sections/NewsletterModal.astro';
 import CookieConsent from "~/components/features/CookieConsent.astro";
 import GoToUp from "../components/ui/GoToUp.astro";
+import PwaInstallPrompt from "~/components/features/PwaInstallPrompt.astro";
 
 interface Props {
   title?: string;
@@ -124,6 +125,7 @@ const {
   }
 </script>
 <GoToUp/>
+<PwaInstallPrompt/>
 <CookieConsent/>
   </body>
 </html>

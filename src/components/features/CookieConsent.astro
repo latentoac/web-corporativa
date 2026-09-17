@@ -172,8 +172,12 @@ const { cookiePolicyPath = '/politica-de-cookies' } = Astro.props;
 </style>
 
 <script>
-  // ── Clave en localStorage para recordar la respuesta del usuario ──────────
   const CONSENT_KEY = 'latento_cookies_noticed';
+
+  function emitirCookiesListas() {
+    // Lanzamos un evento global avisando que las cookies ya no estorban
+    window.dispatchEvent(new CustomEvent('cookies-ready'));
+  }
 
   function initCookieBanner() {
     const banner = document.getElementById('cookie-banner');
@@ -181,24 +185,24 @@ const { cookiePolicyPath = '/politica-de-cookies' } = Astro.props;
 
     if (!banner || !btnAccept) return;
 
-    // Si el usuario ya aceptó en una visita anterior, no mostramos nada.
+    // SI YA ACEPTÓ: Avisamos de inmediato a la PWA para que pueda mostrarse
     if (localStorage.getItem(CONSENT_KEY) === 'true') {
+      emitirCookiesListas();
       return;
     }
 
-    // Pequeño delay para que el banner no compita con el primer render
-    // (mejora la experiencia sin afectar al cumplimiento legal).
     setTimeout(() => {
       banner.setAttribute('aria-hidden', 'false');
       banner.classList.add('is-visible');
     }, 800);
 
-    // Clic en "Entendido": guarda preferencia y oculta el banner.
     btnAccept.addEventListener('click', () => {
       localStorage.setItem(CONSENT_KEY, 'true');
       banner.classList.remove('is-visible');
 
-      // Después de la transición, lo quitamos del flujo de accesibilidad.
+      // CUANDO SE OCULTA: Avisamos a la PWA en este preciso momento
+      emitirCookiesListas();
+
       banner.addEventListener(
         'transitionend',
         () => {
@@ -210,17 +214,14 @@ const { cookiePolicyPath = '/politica-de-cookies' } = Astro.props;
   }
 
   function setup() {
-  initCookieBanner();
-}
+    initCookieBanner();
+  }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', setup);
-} else {
-  setup();
-}
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setup);
+  } else {
+    setup();
+  }
 
-  // Compatible con View Transitions de Astro.
-  // 'astro:page-load' se dispara tanto en la carga inicial
-  // como tras cada navegación con transiciones activadas.
   document.addEventListener('astro:page-load', initCookieBanner);
 </script>

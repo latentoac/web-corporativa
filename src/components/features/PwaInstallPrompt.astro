@@ -1,0 +1,319 @@
+---
+// src/components/PwaInstallPrompt.astro
+
+import compartir from "../../assets/images/ui/compartir.webp";
+---
+
+<div id="pwa-install-banner" class="pwa-install" hidden>
+  <div class="pwa-install__content">
+    <img src="/icons/icon-192.png" alt="" class="pwa-install__icon" />
+    <div class="pwa-install__text">
+      <p class="pwa-install__title">Instala Latento AC</p>
+      <p class="pwa-install__desc" id="pwa-install-desc">
+        Accede más rápido y recibe avisos de talleres y becas.
+      </p>
+    </div>
+    <div class="pwa-install__actions">
+      <button
+        id="pwa-install-cta"
+        class="pwa-install__btn pwa-install__btn--primary"
+      >
+        Instalar
+      </button>
+      <button
+        id="pwa-install-dismiss"
+        class="pwa-install__btn pwa-install__btn--ghost"
+        aria-label="Cerrar"
+      >
+        &times;
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  id="pwa-ios-modal"
+  class="pwa-ios-modal"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="pwa-ios-modal__panel">
+    <button
+      id="pwa-ios-close"
+      class="pwa-install__btn pwa-install__btn--ghost pwa-ios-modal__close"
+      aria-label="Cerrar">&times;</button
+    >
+    <p class="pwa-install__title">Añade Latento AC a tu pantalla de inicio</p>
+    <p class="pwa-install__desc">
+      Así podrás abrirla directamente y recibir avisos de talleres y becas, como
+      una app más.
+    </p>
+    <ol class="pwa-ios-modal__steps">
+      <li>
+        Pulsa el icono <strong>Compartir</strong>
+        <img
+          src={compartir.src}
+          alt="Icono de compartir"
+          aria-hidden="true"
+          width="20"
+          height="20"
+          class="pwa-install__icon--share"
+        /> en la barra de Safari
+      </li>
+      <li>Selecciona <strong>«Añadir a pantalla de inicio»</strong></li>
+      <li>Confirma pulsando <strong>«Añadir»</strong></li>
+    </ol>
+  </div>
+</div>
+
+<style>
+  .pwa-install {
+    position: fixed;
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: var(--space-4);
+    z-index: 200;
+    max-width: 480px;
+    margin-inline: auto;
+    background: var(--color-light);
+    border: 1px solid
+      color-mix(in srgb, var(--color-marino) 12%, var(--color-light) 88%);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    padding: var(--space-4);
+    transform: translateY(16px);
+    opacity: 0;
+    transition:
+      transform var(--transition-interactive),
+      opacity var(--transition-interactive);
+  }
+
+  .pwa-install.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .pwa-install__content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .pwa-install__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+  }
+
+  .pwa-install__icon--share {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pwa-install__text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .pwa-install__title {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--text-sm);
+    color: var(--color-texto-dark);
+    margin: 0;
+  }
+
+  .pwa-install__desc {
+    font-size: 0.8125rem;
+    color: var(--color-gray);
+    margin: 0.15rem 0 0;
+  }
+
+  .pwa-install__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+  }
+
+  .pwa-install__btn {
+    border: none;
+    border-radius: var(--radius-full);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.8125rem;
+    padding: 0.55rem 1rem;
+    transition: filter var(--transition-interactive);
+  }
+
+  .pwa-install__btn--primary {
+    background: var(--color-magenta);
+    color: var(--color-light);
+  }
+
+  .pwa-install__btn--primary:hover {
+    filter: brightness(1.08);
+  }
+
+  .pwa-install__btn--ghost {
+    background: transparent;
+    color: var(--color-gray);
+    padding: 0.4rem 0.6rem;
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .pwa-ios-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    background: rgba(35, 42, 52, 0.55);
+  }
+
+  .pwa-ios-modal.is-open {
+  display: flex;
+    }
+
+  .pwa-ios-modal__panel {
+    position: relative;
+    background: var(--color-light);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: var(--space-6) var(--space-5) var(--space-8);
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .pwa-ios-modal__close {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+  }
+
+  .pwa-ios-modal__steps {
+    margin: var(--space-4) 0 0;
+    padding-left: 1.25rem;
+    color: var(--color-texto-dark);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+  }
+
+  .pwa-ios-modal__steps li + li {
+    margin-top: var(--space-2);
+  }
+
+  @media (min-width: 641px) {
+    .pwa-install {
+      left: auto;
+      right: var(--space-6);
+      bottom: var(--space-6);
+    }
+  }
+</style>
+
+<script>
+  const STORAGE_KEY = "pwa-install-dismissed-at";
+  const DISMISS_DAYS = 14;
+
+  function isStandalone() {
+    return (
+      window.matchMedia("(display-mode: standalone)").matches ||
+      (window.navigator as any).standalone === true
+    );
+  }
+
+  function isIos() {
+    return /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+  }
+
+  function isDismissedRecently() {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return false;
+    const days = (Date.now() - Number(raw)) / (1000 * 60 * 60 * 24);
+    return days < DISMISS_DAYS;
+  }
+
+  function markDismissed() {
+    localStorage.setItem(STORAGE_KEY, String(Date.now()));
+  }
+
+  const banner = document.getElementById("pwa-install-banner");
+  const ctaBtn = document.getElementById("pwa-install-cta");
+  const dismissBtn = document.getElementById("pwa-install-dismiss");
+  const iosModal = document.getElementById("pwa-ios-modal");
+  const iosCloseBtn = document.getElementById("pwa-ios-close");
+
+  let deferredPrompt: any = null;
+  let cookiesEstanListas = false; // Nueva variable de control
+
+  function showBanner() {
+    // Si las cookies aún están visibles en pantalla, bloqueamos el banner temporalmente
+    if (!cookiesEstanListas) return; 
+    
+    if (!banner || isStandalone() || isDismissedRecently()) return;
+    banner.hidden = false;
+    requestAnimationFrame(() => banner.classList.add("is-visible"));
+  }
+
+  function hideBanner() {
+    if (!banner) return;
+    banner.classList.remove("is-visible");
+    setTimeout(() => (banner.hidden = true), 200);
+  }
+
+  // Captura el disparo en Android, pero SOLO se mostrará si pasó el filtro de cookies
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    showBanner();
+  });
+
+  // Escuchamos el evento personalizado del banner de cookies
+  window.addEventListener("cookies-ready", () => {
+    cookiesEstanListas = true;
+
+    // 1. Si Android ya lanzó el beforeinstallprompt antes de aceptar cookies, lo pintamos ahora
+    if (deferredPrompt) {
+      showBanner();
+    }
+
+    // 2. Si es iOS, disparamos su respectivo banner con un pequeño delay limpio
+    if (isIos() && !isStandalone() && !isDismissedRecently()) {
+      setTimeout(showBanner, 1000);
+    }
+  });
+
+  ctaBtn?.addEventListener("click", async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      hideBanner();
+      if (outcome === "accepted") markDismissed();
+      return;
+    }
+
+    if (isIos()) {
+      hideBanner();
+      if (iosModal) iosModal.classList.add('is-open'); // Bug CSS Corregido
+    }
+  });
+
+  dismissBtn?.addEventListener("click", () => {
+    markDismissed();
+    hideBanner();
+  });
+
+  iosCloseBtn?.addEventListener("click", () => {
+    if (iosModal) iosModal.classList.remove('is-open'); // Bug CSS Corregido
+    markDismissed();
+  });
+
+  window.addEventListener("appinstalled", () => {
+    markDismissed();
+    hideBanner();
+  });
+</script>
