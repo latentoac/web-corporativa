@@ -21,7 +21,7 @@ modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/agora/
 fecha_limite_inscripcion: 2026-09-23
-publicado: true
+publicado: false
 ---
 ## ÁGORA
 
