@@ -5,6 +5,10 @@ date: 2026-10-05
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1791192381/Imagen_de_ChatGPT_30_sept_2026_23_27_07_zlnaqi.png
 publicado: true
 ---
+## ¿Por qué puede con lo difícil y no con lo cotidiano? 
+
+## Altas capacidades y funciones ejecutivas
+
 Estamos seguras de que en algún momento habréis pensado: **¿¡cómo es posible que mi hijo o mi hija sea capaz de resolver los ejercicios más complejos e interesarse por los hobbies más demandantes, y no de preparar su mochila o hacer todos los deberes a tiempo!?**
 
 La explicación a esta cuestión tan recurrente podemos encontrarla en las diferencias entre el desarrollo cognitivo y el desarrollo ejecutivo. Y es que a pesar de que las personas con altas capacidades tengan grandes competencias intelectuales, el colegio y especialmente las tareas del día a día requieren mucho más que la inteligencia.
