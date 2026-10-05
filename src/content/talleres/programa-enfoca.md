@@ -47,10 +47,10 @@ Una vez formado el grupo, contactaremos con las familias para informarles de la 
 
 ⏰ **Horario:** consultar las opciones disponibles en el cuestionario
 
-💶 **Tarifa:** 40 €/sesión (sesiones quincenales), 30€/sesión (sesiones quincenales) Las sesiones se abonan por anticipado de forma mensual.
+💶 **Tarifa:** frecuencia semanal (30 euros sesión); frecuencia quincenal (40 euros sesión).  Las sesiones se abonan por anticipado de forma mensual.
 
 La tarifa incluye una entrevista familiar inicial, una valoración cuantitativa del desarrollo ejecutivo de cada participante mediante cuestionarios cumplimentados por la familia y/o el centro educativo, y una entrevista familiar final.
 
-🚀 **Inicio:** al conformarse el grupo.
+🚀 **Inicio:** al conformarse el grupo, **finalización** junio 2027
 
 👉 [Quiero inscribirme en Enfoca](https://forms.gle/HppzGY83JaFJVzNt5)
