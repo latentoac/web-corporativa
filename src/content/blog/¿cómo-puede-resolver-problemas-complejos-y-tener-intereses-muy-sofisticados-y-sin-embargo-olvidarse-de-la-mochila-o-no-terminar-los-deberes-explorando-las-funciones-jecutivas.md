@@ -2,7 +2,7 @@
 title: ¿Cómo puede resolver problemas complejos y tener intereses muy
   sofisticados y, sin embargo, olvidarse de la mochila o no terminar los
   deberes? Explorando las funciones jecutivas
-date: 2026-10-02
+date: 2026-10-05
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1791192381/Imagen_de_ChatGPT_30_sept_2026_23_27_07_zlnaqi.png
 publicado: true
 ---
@@ -34,8 +34,6 @@ Con esta dinamización, sencilla y que requiere poco tiempo de planificación, t
 
 Los tres mismos principios se pueden trabajar con videojuegos o juegos tradicionales, los cuales han demostrado generar efectos de transferencia positivos en el desarrollo de las capacidades ejecutivas durante la infancia \[5]. El único requerimiento es que cuenten con normas específicas, que exista un objetivo claro y que requieran de la repetición y la continuidad de la tarea. 
 
-
-
 ### 🧠 En Latento también trabajamos las funciones ejecutivas
 
 Comprender las funciones ejecutivas es el primer paso. En Latento, las acompañamos desde diferentes espacios.
@@ -48,9 +46,7 @@ Porque potenciar el talento también significa desarrollar las herramientas nece
 
 👉 \[Conoce Enfoca]
 
-👉 [\[Conoce nuestra Escuela de Familias]](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
-
-
+👉[\[Conoce nuestra Escuela de Familias]](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
 
 **Fuentes y lecturas recomendadas**
 
