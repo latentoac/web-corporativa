@@ -6,8 +6,11 @@ description: Enfoca es un programa para alumnado de Primaria con altas
   aprendizaje más autónomo.
 date: 2026-10-05
 dirigido_a: Alumnado de Educación Primaria
+precio: 40€/sesión
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1791198225/Aprendiendo_con_bloques_de_colores_auvunu.png
 modalidad:
   - santiago
+inscription_url: https://forms.gle/AnACydtz1P4tK1HKA
 publicado: true
 ---
 ### Enriquecimiento extracurricular para alumnado con altas capacidades
