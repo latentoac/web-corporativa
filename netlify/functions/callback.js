@@ -1,4 +1,4 @@
-exports.handler = async (event) => {
+export async function handler(event) {
   const { code, state } = event.queryStringParameters || {};
   const {
     GITHUB_CLIENT_ID,
