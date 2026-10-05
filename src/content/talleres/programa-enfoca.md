@@ -4,7 +4,7 @@ description: Enfoca es un programa para alumnado de Primaria con altas
   capacidades que trabaja las funciones ejecutivas a través de retos cognitivos
   y actividades adaptadas, favoreciendo la autorregulación, la organización y un
   aprendizaje más autónomo.
-date: 2026-10-02
+date: 2026-10-05
 dirigido_a: Alumnado de Educación Primaria
 modalidad:
   - santiago
@@ -28,7 +28,26 @@ Estas habilidades son especialmente relevantes en alumnado con altas capacidades
 
 El programa aborda de forma estructurada áreas como la planificación y organización de tareas, la atención sostenida, la memoria de trabajo, el control inhibitorio y la flexibilidad cognitiva. Mediante retos cognitivos y actividades adaptadas, los participantes aprenden a enfocar su pensamiento, tomar decisiones más ajustadas y transformar su potencial en acciones eficaces, tanto en el ámbito escolar como en su vida cotidiana.
 
-### Dos tipos de PACKS disponibles
+### 🧠 ¿Cómo funciona Enfoca?
 
-*  PACK BÁSICO, que ofrece una serie de actividades grupales de entrenamiento de la Función Ejecutiva, diseñadas y personalizadas para adecuarse a las necesidades de los niños y niñas participantes. 
-*  PACK COMPLETO ofrece el desarrollo de las mismas actividades que el PACK BÁSICO con el añadido de dos sesiones de asesoramiento y la aplicación del test psicométrico sobre la función ejecutiva BRIEF-2. La primera sesión de asesoramiento tendrá lugar antes del inicio del Taller, consistiendo en una entrevista con la familia para identificar las necesidades del niño/a antes del comienzo de las actividades, ofreciendo asesoramiento profesional en el proceso. La segunda sesión de asesoramiento complementará a la primera y se llevará acabo como última sesión del taller, en el que se entregarán los resultados del test psicométrico BRIEF-2 (que se aplicará en las sesiones intermedias) y se asesorará a las familias en función de los resultados del propio BRIEF-2 y de las obversaciones profesionales durante el taller.
+Enfoca se desarrolla en grupos reducidos, creando un espacio de trabajo compartido en el que el alumnado puede desarrollar y poner en práctica diferentes funciones ejecutivas a través de retos cognitivos y actividades adaptadas.
+
+Para participar, las familias deben cumplimentar el cuestionario de inscripción. A partir de las solicitudes recibidas, iremos conformando los grupos teniendo en cuenta las características y necesidades del alumnado.
+
+Una vez formado el grupo, contactaremos con las familias para informarles de la fecha de comienzo y concretar el horario.
+
+📍 **Localización:** Santiago de Compostela
+
+🎓 **Dirigido a:** alumnado de 1.º a 5.º de Educación Primaria
+
+📅 **Periodicidad:** 2 sesiones al mes
+
+⏰ **Horario:** consultar las opciones disponibles en el cuestionario
+
+💶 **Tarifa:** 40 € por sesión. Las sesiones se abonan por anticipado de forma mensual.
+
+La tarifa incluye una entrevista familiar inicial, una valoración cuantitativa del desarrollo ejecutivo de cada participante mediante cuestionarios cumplimentados por la familia y/o el centro educativo, y una entrevista familiar final.
+
+🚀 **Inicio:** al conformarse el grupo.
+
+👉 [Quiero inscribirme en Enfoca](https://forms.gle/HppzGY83JaFJVzNt5)
