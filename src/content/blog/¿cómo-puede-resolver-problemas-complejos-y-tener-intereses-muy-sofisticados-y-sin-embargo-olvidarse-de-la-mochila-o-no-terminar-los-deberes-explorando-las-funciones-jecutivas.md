@@ -63,17 +63,3 @@ Porque potenciar el talento también significa desarrollar las herramientas nece
 **\[4] Diamond, A. & Lee, K. (2011). Interventions shown to aid executive function development in children 4 to 12 years old. Estudio publicado en Science sobre el impacto de juegos, rutinas y ejercicios con pautas claras.**
 
 **\[5] Thorell, L. B. et al. (2009). Training and transfer effects of executive functions in preschool children. Investigación sobre los efectos positivos y de transferencia del juego en el entrenamiento ejecutivo.**
-
-
-
-**Fuentes y lecturas recomendadas**
-
-**\[1] Diamond, A. (2013). Executive functions. Revisión clave que detalla cómo funcionan el control inhibitorio y la memoria de trabajo.**
-
-**\[2] Dawson, P. & Guare, R. (2009). Smart but scattered. Guía sobre cómo acompañar el desarrollo de habilidades ejecutivas en la infancia.**
-
-**\[3] Webb, J. T. et al. (2016). Misdiagnosis and dual diagnoses of gifted children. Análisis de la disincronía evolutiva y los desafíos cotidianos en altas capacidades.**
-
-**\[4] Diamond, A. & Lee, K. (2011). Interventions shown to aid executive function development in children 4 to 12 years old. Estudio publicado en Science sobre el impacto de juegos, rutinas y ejercicios con pautas claras.**
-
-**\[5] Thorell, L. B. et al. (2009). Training and transfer effects of executive functions in preschool children. Investigación sobre los efectos positivos y de transferencia del juego en el entrenamiento ejecutivo.**
