@@ -43,9 +43,9 @@ Y desde nuestra **Escuela de Familias**, acompañamos a madres y padres para com
 
 Porque potenciar el talento también significa desarrollar las herramientas necesarias para utilizarlo.
 
-👉[ \[Conoce Enfoca]](https://latentoac.com/talleres/programa-enfoca)
+👉 [Conoce Enfoca](https://latentoac.com/talleres/programa-enfoca)
 
-👉[\[Conoce nuestra Escuela de Familias]]((https://latentoac.com/talleres/2025-09-24-escuela-de-familias))
+👉[Conoce nuestra Escuela de Familias](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
 
 **Fuentes y lecturas recomendadas**
 
