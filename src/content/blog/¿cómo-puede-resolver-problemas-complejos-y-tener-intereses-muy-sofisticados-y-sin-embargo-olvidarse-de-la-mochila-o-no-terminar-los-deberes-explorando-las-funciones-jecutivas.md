@@ -3,6 +3,7 @@ title: ¿Cómo puede resolver problemas complejos y tener intereses muy
   sofisticados y, sin embargo, olvidarse de la mochila o no terminar los
   deberes? Explorando las funciones jecutivas
 date: 2026-10-02
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1791192381/Imagen_de_ChatGPT_30_sept_2026_23_27_07_zlnaqi.png
 publicado: true
 ---
 Estamos seguras de que en algún momento habréis pensado: **¿¡cómo es posible que mi hijo o mi hija sea capaz de resolver los ejercicios más complejos e interesarse por los hobbies más demandantes, y no de preparar su mochila o hacer todos los deberes a tiempo!?**
@@ -32,6 +33,38 @@ Para poder trabajar la función ejecutiva y dotar a nuestros niños y niñas de 
 Con esta dinamización, sencilla y que requiere poco tiempo de planificación, trabajamos hasta tres dimensiones recomendadas por la ciencia: e**l seguimiento de pautas y normas específicas, la existencia de un elemento motivador que facilite la tarea, y el entrenamiento continuado de la función ejecutiva** \[4]. Estos tres principios aseguran la patronización de la actividad, su seguimiento, y la capacidad para seguir pautas y normas de forma crítica y reflexiva.
 
 Los tres mismos principios se pueden trabajar con videojuegos o juegos tradicionales, los cuales han demostrado generar efectos de transferencia positivos en el desarrollo de las capacidades ejecutivas durante la infancia \[5]. El único requerimiento es que cuenten con normas específicas, que exista un objetivo claro y que requieran de la repetición y la continuidad de la tarea. 
+
+
+
+### 🧠 En Latento también trabajamos las funciones ejecutivas
+
+Comprender las funciones ejecutivas es el primer paso. En Latento, las acompañamos desde diferentes espacios.
+
+**Enfoca** es un programa para alumnado de Primaria con altas capacidades que trabaja las funciones ejecutivas a través de retos cognitivos y actividades adaptadas, favoreciendo la autorregulación, la organización y un aprendizaje más autónomo.
+
+Y desde nuestra **Escuela de Familias**, acompañamos a madres y padres para comprender estas dificultades y encontrar estrategias que puedan incorporarse a las situaciones cotidianas.
+
+Porque potenciar el talento también significa desarrollar las herramientas necesarias para utilizarlo.
+
+👉 \[Conoce Enfoca]
+
+👉 [\[Conoce nuestra Escuela de Familias]](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
+
+
+
+**Fuentes y lecturas recomendadas**
+
+**\[1] Diamond, A. (2013). Executive functions. Revisión clave que detalla cómo funcionan el control inhibitorio y la memoria de trabajo.**
+
+**\[2] Dawson, P. & Guare, R. (2009). Smart but scattered. Guía sobre cómo acompañar el desarrollo de habilidades ejecutivas en la infancia.**
+
+**\[3] Webb, J. T. et al. (2016). Misdiagnosis and dual diagnoses of gifted children. Análisis de la disincronía evolutiva y los desafíos cotidianos en altas capacidades.**
+
+**\[4] Diamond, A. & Lee, K. (2011). Interventions shown to aid executive function development in children 4 to 12 years old. Estudio publicado en Science sobre el impacto de juegos, rutinas y ejercicios con pautas claras.**
+
+**\[5] Thorell, L. B. et al. (2009). Training and transfer effects of executive functions in preschool children. Investigación sobre los efectos positivos y de transferencia del juego en el entrenamiento ejecutivo.**
+
+
 
 **Fuentes y lecturas recomendadas**
 
