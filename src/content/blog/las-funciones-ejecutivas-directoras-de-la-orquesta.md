@@ -1,5 +1,5 @@
 ---
-title: LAS FUNCIONES EJECUTIVAS. DIRECTORAS DE LA ORQUESTA
+title: LAS FUNCIONES EJECUTIVAS. DIRECTORAS DE ORQUESTA
 date: 2026-10-13
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1791561391/Imagen_de_ChatGPT_9_oct_2026_17_55_22_lkl7d4.png
 publicado: true
@@ -12,11 +12,11 @@ Concretamente, en un artículo anterior hemos tratado la **Memoria de Trabajo** 
 
 Mientras la memoria de trabajo y la inhibición cumplen una función fundamental en la realización de tareas, procesos específicos o ejercicios mecánicos, necesitan de la complementariedad de las demás funciones para ser realmente efectivas. Esto se debe a que las funciones ejecutivas no se comprenden de forma individual e independiente. De esta forma, tomamos en consideración tres grandes grupos ejecutivos: l**a Regulación Conductual, la Regulación Emocional y la Regulación Cognitiva** \[2].
 
-En conjunto, las tres componen la F**unción Ejecutiva como un todo**. Cada una de ellas se encarga de tareas específicas, dibujando el proceso general de ejecución de acuerdo con las necesidades del contexto y de la situación concreta a la que nos enfrentamos.
+En conjunto, las tres componen la **Función Ejecutiva como un todo**. Cada una de ellas se encarga de tareas específicas, dibujando el proceso general de ejecución de acuerdo con las necesidades del contexto y de la situación concreta a la que nos enfrentamos.
 
 **La regulación conductual favorece la concentración y la regulación de la conducta**. Esto se logra gracias a la supervisión de la conducta (la capacidad para analizar y comprender qué comportamiento y acción son necesarios para cumplirla) y a la capacidad para inhibir distracciones e impulsos momentáneos de acuerdo a este primer criterio.
 
-T**oda regulación conductual está profundamente conectada con el estado emocional en el que nos encontramos**, siendo un factor sumamente influyente en la activación de las funciones ejecutivas. En este sentido, **la regulación emocional hace referencia a la capacidad de flexibilizar situaciones y comportamientos en función de las demandas situacionales, manteniendo el control de nuestras emociones en niveles adecuados.** Esta función, por tanto, no trata de inhibir las emociones o desactivarlas, sino de comprenderlas y lograr gestionarlas adecuadamente.
+**Toda regulación conductual está profundamente conectada con el estado emocional en el que nos encontramos**, siendo un factor sumamente influyente en la activación de las funciones ejecutivas. En este sentido, **la regulación emocional hace referencia a la capacidad de flexibilizar situaciones y comportamientos en función de las demandas situacionales, manteniendo el control de nuestras emociones en niveles adecuados.** Esta función, por tanto, no trata de inhibir las emociones o desactivarlas, sino de comprenderlas y lograr gestionarlas adecuadamente.
 
 **Por último, la regulación cognitiva, que engloba el mayor número de funciones ejecutivas, recoge la capacidad de la persona para controlar y activar sus procesos cognitivos en la resolución de problemas y la consecución de objetivos**. En este grupo ejecutivo, la memoria de trabajo actúa como base cognitiva para las consiguientes, de modo que permite la retención de información a corto plazo, con una gran orientación a la resolución de tareas. Un nivel de regulación cognitiva adecuado ofrecerá la posibilidad de disponer y saber utilizar las herramientas adecuadas según las necesidades previstas, así como aumentar la efectividad en la resolución de las mismas.
 
@@ -55,8 +55,6 @@ Porque potenciar el talento también significa desarrollar las herramientas nece
 👉 [Conoce Enfoca.](https://latentoac.com/talleres/programa-enfoca)
 
 👉[Conoce nuestra Escuela de Familias.](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
-
-
 
 **Fuentes y lecturas recomendadas**
 
