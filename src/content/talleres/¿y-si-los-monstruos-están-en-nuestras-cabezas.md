@@ -10,7 +10,7 @@ dirigido_a: "Alumnado  de 2º a 6º EP. "
 hora_inicio: 18:00
 hora_fin: 20:00
 precio: "30"
-image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1792401920/ok_l2m0ih.png
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1792402193/samain_santiago_banner_cm5oro.png
 modalidad:
   - santiago
 inscription_url: https://tienda.latentoac.com/producto/samain2026/
