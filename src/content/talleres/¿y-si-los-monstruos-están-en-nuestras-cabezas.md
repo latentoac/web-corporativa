@@ -10,8 +10,11 @@ dirigido_a: "Alumnado  de 2º a 6º EP. "
 hora_inicio: 18:00
 hora_fin: 20:00
 precio: "30"
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1792401651/samain_santiago_banner_r6zgdw.png
 modalidad:
   - santiago
+inscription_url: https://tienda.latentoac.com/producto/samain2026/
+fecha_limite_inscripcion: 2026-10-28
 publicado: true
 ---
 ###  ¿Qué da más miedo, un monstruo… o un pensamiento ?
