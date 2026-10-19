@@ -4,6 +4,7 @@ description: Este Samaín, las historias más terroríficas todavía están por
   inventar… ¡y queremos que les des vida!
 date: 2026-10-19
 precio: GRATUITO
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1792399256/SAMAIN_CORU%C3%91A_ehtxo4.png
 modalidad:
   - coruna
 publicado: true
