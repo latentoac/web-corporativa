@@ -2,9 +2,15 @@
 title: LA MÁQUINA DEL TIEMPO
 description: "¿Alguna vez te has preguntado cómo era el pasado? ¿Te inquieta no
   conocer el futuro? "
-date: 2026-11-02
+date: 2026-11-03
 fechasTaller:
   - fecha: 2026-11-18
+  - fecha: 2026-12-02
+  - fecha: 2026-12-16
+  - fecha: 2027-01-13
+  - fecha: 2027-01-27
+  - fecha: 2027-02-03
+  - fecha: 2027-02-17
 dirigido_a: alumnado de 6º EP a 2º ESO
 hora_inicio: 19:00
 hora_fin: 20:30
@@ -39,7 +45,7 @@ Primer cuatrimestre:
 
 ⏰ Horario: 19.00- 20.30
 
- 💶 Tarifa: 70euros/mes
+ 💶 Tarifa: 70 euros/mes
 
 📝 Inscripción o reserva de plaza: Para formalizar la matrícula en los talleres será necesario abonar una reserva de plaza de 15 €.
 
