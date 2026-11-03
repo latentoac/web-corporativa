@@ -14,7 +14,7 @@ fechasTaller:
 dirigido_a: alumnado de 6º EP a 2º ESO
 hora_inicio: 19:00
 hora_fin: 20:30
-precio: 70 €/mes
+precio: 70 mes
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1793623573/Imagen_base_mgillc.png
 modalidad:
   - santiago
