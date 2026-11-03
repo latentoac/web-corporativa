@@ -46,7 +46,7 @@ Primer cuatrimestre:
 
 ⏰ Horario: 19.00- 20.30
 
- 💶 Tarifa: 70 euros/mes
+ 💶 Tarifa: 70 €/mes
 
 📝 Inscripción o reserva de plaza: Para formalizar la matrícula en los talleres será necesario abonar una reserva de plaza de 15 €.
 
