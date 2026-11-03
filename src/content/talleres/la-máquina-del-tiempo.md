@@ -18,6 +18,7 @@ precio: 70 €/mes
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1793623573/Imagen_base_mgillc.png
 modalidad:
   - santiago
+inscription_url: "https://tienda.latentoac.com/?post_type=product&p=3238&preview=true "
 fecha_limite_inscripcion: 2026-11-16
 publicado: true
 ---
