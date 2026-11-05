@@ -8,7 +8,7 @@ dirigido_a: Niños y niñas con altas capacidades (4–6 años, Educación Infan
   acompañados por un familiar.
 hora_inicio: 17:00
 hora_fin: 18:30
-precio: 35€/sesión
+precio: 130/BLOQUE
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786485945/Captura_de_pantalla_2026-08-12_000449_owbwi4.png
 modalidad:
   - santiago
