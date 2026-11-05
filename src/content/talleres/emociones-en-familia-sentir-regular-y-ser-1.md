@@ -8,7 +8,7 @@ dirigido_a: Niños y niñas con altas capacidades (4–6 años, Educación Infan
   acompañados por un familiar.
 hora_inicio: 17:00
 hora_fin: 18:30
-precio: 35€/sesión
+precio: 130/BLOQUE
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1786485945/Captura_de_pantalla_2026-08-12_000449_owbwi4.png
 modalidad:
   - santiago
@@ -33,14 +33,13 @@ El ciclo está organizado en cuatro bloques temáticos, que permiten avanzar pro
 * Miércoles 30 de septiembre · Conciencia emocional
 * Miércoles 14 de octubre · Regulación emocional
 * Miércoles 28 de octubre · Miedos 👻
-* Miércoles 11 de noviembre · Rabia
+* Miércoles 25 de noviembre · Rabia
 
 Una primera aproximación al mundo emocional: aprender a identificar lo que sentimos, reconocer la intensidad de nuestras emociones y comenzar a descubrir estrategias para regularlas.
 
 **🟠 BLOQUE 2 · GESTIONAR LO QUE SENTIMOS: Aprender a afrontar emociones difíciles y situaciones que nos ponen a prueba**
 
-* Miércoles 25 de noviembre · Frustración
-* Miércoles 2 de diciembre · Tolerancia al error
+* Miércoles 2 de diciembre · Frustración y tolerancia al error
 * Miércoles 16 de diciembre · Agradecimiento y satisfacción
 * Miércoles 13 de enero · Preocupación y anticipación
 * Miércoles 27 de enero · Necesidad de control y rigidez
@@ -69,9 +68,8 @@ Un último bloque para abordar cuestiones relacionadas con quiénes somos, cómo
 
 Las familias pueden elegir entre sesiones individuales o la inscripción a un bloque completo.
 
-* **Sesión individual:** 35 € por familia.Incluye la participación de un niño/a y un adulto acompañante. (límite de inscripción hasta agotar plazas).
 * **Bloque 1 · Base emocional:** 4 sesiones · 130 € (período de inscripción del 12 agosto al 9 septiembre 2026, o agotar plazas).
-* **Bloque 2 · Gestionar lo que sentimos:** 5 sesiones · 160 € (período de  inscripción del  12 de noviembre al 18 noviembre 2026, o agotar plazas).
+* **Bloque 2 · Gestionar lo que sentimos:** 4 sesiones · 130 € (período de  inscripción del  12 de noviembre al 18 noviembre 2026, o agotar plazas).
 * **Bloque 3 · Emociones en relación:** 4 sesiones · 130 €  (periodo de inscripción del 12  de enero al 27 enero 2027 ,  o agotar plazas).
 * **Bloque 4 · Autoconocimiento y retos emocionales:** 4 sesiones · 130 €  (periodo de inscripción del 18 de marzo al 31 marzo 2027, o agotar plazas).
 
