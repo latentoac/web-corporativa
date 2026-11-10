@@ -7,6 +7,8 @@ import phone from '../../assets/images/ui/phone.svg';
 import instagram from '../../assets/brand/social/instagram-icon.svg';
 import facebook from '../../assets/brand/social/facebook-icon.svg';
 
+const tiendaUrl = "https://tienda.latentoac.com"
+
 ---
 
 <header class="site-header" data-header>
@@ -21,10 +23,41 @@ import facebook from '../../assets/brand/social/facebook-icon.svg';
         Servicio Integral Altas Capacidades
         </p>  
     </div>
-    <div class="site-header__top-social">
-        <a class="site-header__top-social-a" href="https://www.instagram.com/latentoac/" target="_blank" rel="noopener noreferrer"><img src={instagram.src} alt="Icono de Instagram"></a>
-        <a class="site-header__top-social-a" href="https://www.facebook.com/latentoac/" target="_blank" rel="noopener noreferrer"><img src={facebook.src} alt="Icono de Facebook"></a>
-    </div>
+<div class="site-header__top-links">
+  <a
+    class="site-header__shop-link"
+    href={tiendaUrl}
+  >
+    Tienda
+  </a>
+
+  <span
+    class="site-header__top-divider"
+    aria-hidden="true"
+  ></span>
+
+  <div class="site-header__top-social">
+    <a
+      class="site-header__top-social-a"
+      href="https://www.instagram.com/latentoac/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram de Latento"
+    >
+      <img src={instagram.src} alt="" />
+    </a>
+
+    <a
+      class="site-header__top-social-a"
+      href="https://www.facebook.com/latentoac/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook de Latento"
+    >
+      <img src={facebook.src} alt="" />
+    </a>
+  </div>
+</div>
 
     </div>
   </div>
@@ -122,16 +155,16 @@ import facebook from '../../assets/brand/social/facebook-icon.svg';
     </div>
   </div>
 
-  <div
-    id="mobile-navigation"
-    class="site-header__mobile-panel"
-    hidden
-    data-menu-panel
-  >
-    <div class="site-header__mobile-panel-inner">
-      <Navigation isMobile={true} />
-    </div>
+<div
+  id="mobile-navigation"
+  class="site-header__mobile-panel"
+  hidden
+  data-menu-panel
+>
+  <div class="site-header__mobile-panel-inner">
+    <Navigation isMobile={true} />
   </div>
+</div>
 </header>
 
 <!-- Styles en global.css -->

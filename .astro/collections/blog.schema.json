@@ -27,7 +27,6 @@
     }
   },
   "required": [
-    "title",
-    "date"
+    "title"
   ]
 }
