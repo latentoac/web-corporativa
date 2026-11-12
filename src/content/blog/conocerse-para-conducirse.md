@@ -1,6 +1,7 @@
 ---
 title: CONOCERSE PARA CONDUCIRSE
 date: 2026-11-06
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1794473065/Construyendo_sue%C3%B1os_sobre_ruedas_otqefo.png
 publicado: true
 ---
 ### CONOCERSE PARA CONDUCIRSE
@@ -65,10 +66,10 @@ El autoconocimiento no aparece de forma espontánea ni se consigue con una únic
 
 Una propuesta sencilla para las familias es reservar unos minutos para conversar sobre alguna situación del día. No hace falta que haya ocurrido un conflicto: también podemos aprovechar una experiencia agradable, un reto superado o un momento en el que algo no haya salido como esperábamos.Podemos empezar con cuatro preguntas:
 
-1.  **¿Qué ha pasado?** Intentamos reconstruir la situación sin juzgar. ¿Qué ha ocurrido? ¿Qué ha dicho o hecho cada persona? ¿Qué sabemos realmente?
+1. **¿Qué ha pasado?** Intentamos reconstruir la situación sin juzgar. ¿Qué ha ocurrido? ¿Qué ha dicho o hecho cada persona? ¿Qué sabemos realmente?
 2. **¿Cómo me he sentido?** Identificamos las emociones que han aparecido. ¿Me he enfadado? ¿Me he frustrado? ¿Me he sentido incomprendido, nervioso o decepcionado?
 3. **¿Cómo he reaccionado?** Observamos nuestra respuesta. ¿He gritado? ¿He interrumpido? ¿Me he retirado? ¿He conseguido explicar lo que necesitaba?
-4.  **¿Qué podría probar la próxima vez?** Buscamos alternativas realistas. ¿Puedo pedir ayuda, esperar un momento, explicar lo que me molesta o buscar otra solución?
+4. **¿Qué podría probar la próxima vez?** Buscamos alternativas realistas. ¿Puedo pedir ayuda, esperar un momento, explicar lo que me molesta o buscar otra solución?
 
 No es necesario responder a todas las preguntas ni encontrar siempre una solución. Lo importante es ir construyendo una rutina de reflexión que permita al niño o la niña reconocer sus propias reacciones y descubrir otras maneras de actuar.
 
@@ -102,8 +103,6 @@ Porque potenciar el talento también significa desarrollar las herramientas nece
 👉 [Conoce Enfoca.](https://latentoac.com/talleres/programa-enfoca)
 
 👉[Conoce nuestra Escuela de Familias.](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
-
-
 
 **Fuentes y lecturas recomendadas**
 
