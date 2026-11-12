@@ -474,7 +474,6 @@ button {
 /* Tienda en el panel móvil */
 
 .site-header__mobile-secondary {
-  margin-top: var(--space-6);
   padding-top: var(--space-4);
   border-top: 1px solid var(--header-border-strong);
 }
@@ -482,14 +481,14 @@ button {
 .site-header__mobile-shop {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
-  padding-block: 0.5rem;
-  color: var(--header-text);
-  font-family: var(--font-family-body);
-  font-size: 1.125rem;
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.4;
-  text-decoration: none;
+  padding: var(--space-4) 0;
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-texto-dark);
+    line-height: 1.15;
+    text-transform: none;
+    letter-spacing: 0;
+    text-decoration: none;
 }
 
 .site-header__mobile-shop:hover {

@@ -163,8 +163,18 @@ const tiendaUrl = "https://tienda.latentoac.com"
 >
   <div class="site-header__mobile-panel-inner">
     <Navigation isMobile={true} />
+
+    <div class="site-header__mobile-secondary">
+      <a
+        class="site-header__mobile-shop"
+        href={tiendaUrl}
+      >
+        Tienda
+      </a>
+    </div>
   </div>
 </div>
+
 </header>
 
 <!-- Styles en global.css -->
@@ -213,8 +223,8 @@ const tiendaUrl = "https://tienda.latentoac.com"
     });
 
     panel.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        closeMenu();
+  link.addEventListener("click", () => {
+    closeMenu();
       });
     });
   }

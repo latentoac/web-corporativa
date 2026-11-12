@@ -14,14 +14,18 @@ const navItems = [
   { href: "/#contact", label: "Infórmate" },
   { href: "/recursos-humanos", label: "RR.HH." },
   { href: "/blog", label: "Blog" },
-  { href: "https://tienda.latentoac.com", label: "Tienda" },
 ];
 
 const currentPath = Astro.url.pathname;
 ---
 
 <nav aria-label={isMobile ? "Principal móvil" : "Principal"}>
-  <ul class:list={["site-header__nav-list", isMobile && "site-header__nav-list--mobile"]}>
+  <ul
+    class:list={[
+      "site-header__nav-list",
+      isMobile && "site-header__nav-list--mobile",
+    ]}
+  >
     {
       navItems.map((item) => (
         <li>
