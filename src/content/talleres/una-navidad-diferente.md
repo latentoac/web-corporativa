@@ -3,11 +3,8 @@ title: UNA NAVIDAD DIFERENTE
 description: ¿Y si reinventamos la Navidad? Una experiencia para imaginar,
   experimentar y crear sin límites.
 date: 2026-11-20
-fechasTaller:
-  - fecha: 2026-12-22
-  - fecha: 2026-12-23
-dirigido_a: Alumnado de 5º infantil a 2º Ed. Primaria (22 de diciembre) y
-  Alumnado de 3º a 6º de Ed. Primaria (23 de diciembre).
+fechasTaller: []
+dirigido_a: Alumnado de 5ºEd. Infantil a 6º Ed.Primaria
 hora_inicio: 10:30h.
 hora_fin: 13:30h.
 precio: 40€/sesión
