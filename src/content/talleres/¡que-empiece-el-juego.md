@@ -1,5 +1,5 @@
 ---
-title: ¡QUE EMPIECE  EL JUEGO!
+title: "ESPECIAL FAMILIAS NAVIDAD: ¡Qué empiece el juego!"
 description: "Esta Navidad cambiamos los villancicos por desafíos, pruebas
   sorpresa y mucha diversión. "
 date: 2026-11-20
