@@ -13,7 +13,7 @@ modalidad:
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
-UNA NAVIDAD DIFERENTE
+# UNA NAVIDAD DIFERENTE
 
 ¿Cómo será la Navidad en otros planetas? ¿Cómo serán las Navidades del futuro? ¿Y si la Navidad pudiera ser distinta a como la conocemos? 
 
@@ -25,9 +25,10 @@ Una mañana para pensar, crear, probar y sorprendernos, donde no habrá una úni
 
 📍 Localización: A Coruña
 
-🎓 Destinatarios: Alumnado de 5ºEI a 2ºEP y Alumnado de 3º a 6ºEP.
+🎓 Fechas y destinatarios:
 
-📅 Fechas: 22/12/2026 (alumnado de 5ºEI a 2ºEP); 23/12/2026 (alumnado de 3º a 6ºEP). 
+* 22 de diciembre alumnado de 5º Ed. Infantil a 2º Ed. Primaria
+* 23 de diceimbre alumnado de 3º Ed. Primaria a 6º Ed. Primaria
 
 ⏰ Horario: 10:30 - 13:30hs
 
