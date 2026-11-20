@@ -1,5 +1,5 @@
 ---
-title: "ESPECIAL FAMILIAS NAVIDAD: ¡Qué empiece el juego!"
+title: ARANEUM ADOLESCENTES NAVIDAD
 description: "Esta Navidad cambiamos los villancicos por desafíos, pruebas
   sorpresa y mucha diversión. "
 date: 2026-11-20
@@ -12,7 +12,7 @@ precio: "35 "
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795184517/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_4_zf9yww.png
 modalidad:
   - coruna
-inscription_url: https://tienda.latentoac.com/producto/especialfamiliasnavidad/
+inscription_url: "https://tienda.latentoac.com/?post_type=product&p=3275&preview=true "
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
