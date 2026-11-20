@@ -8,6 +8,7 @@ dirigido_a: Alumnado de 5ºEd. Infantil a 6º Ed.Primaria
 hora_inicio: 10:30h.
 hora_fin: 13:30h.
 precio: 40€/sesión
+image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795170437/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_ixv1tb.png
 modalidad:
   - coruna
 fecha_limite_inscripcion: 2026-12-18
