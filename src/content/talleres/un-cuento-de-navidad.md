@@ -1,5 +1,5 @@
 ---
-title: UN CUENTO DE NAVIDAD
+title: ESPECIAL CUENTOS PEQUES NAVIDAD
 description: "Una experiencia para que los más pequeños vivan la Navidad a
   través de los cuentos. "
 date: 2026-11-20
@@ -12,6 +12,7 @@ precio: "35"
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795184214/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_3_muazoi.png
 modalidad:
   - coruna
+inscription_url: https://tienda.latentoac.com/?post_type=product&p=3274&preview=true
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
