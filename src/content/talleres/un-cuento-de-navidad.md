@@ -5,7 +5,7 @@ description: "Una experiencia para que los más pequeños vivan la Navidad a
 date: 2026-11-20
 fechasTaller:
   - fecha: 2026-12-30
-dirigido_a: Alumnado de 5º Ed. Infantil a  a 1º Ed. Primaria
+dirigido_a: Alumnado de 5º Ed. Infantil a 1º Ed. Primaria
 hora_inicio: 11:30
 hora_fin: 13:30
 precio: "35"
