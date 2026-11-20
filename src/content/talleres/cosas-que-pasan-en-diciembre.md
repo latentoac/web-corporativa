@@ -1,5 +1,5 @@
 ---
-title: "ESPECIAL FAMILIAS NAVIDAD: Cosas que pasan en diciembre"
+title: ESPECIAL FAMILIAS NAVIDAD
 description: Una experiencia familiar para descubrir juntos todo lo que hace que
   estas fechas sean únicas
 date: 2026-11-20
