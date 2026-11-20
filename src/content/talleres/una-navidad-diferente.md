@@ -11,7 +11,7 @@ precio: 40€/sesión
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795170437/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_ixv1tb.png
 modalidad:
   - coruna
-inscription_url: https://tienda.latentoac.com/producto/una-navidad-diferente-araneum-coruna/
+inscription_url: "https://tienda.latentoac.com/producto/una-navidad-diferente-araneum-coruna/ "
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
