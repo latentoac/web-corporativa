@@ -29,6 +29,6 @@ A través de estas historias descubriremos mundos nuevos, personajes entrañable
 
 📅 Fecha: 30/12/2026
 
-⏰ Horario: 11:30 - 13:30hs
+⏰ Horario: 11:30 - 13:30
 
  💶 Tarifa: 35 €
