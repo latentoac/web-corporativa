@@ -26,7 +26,7 @@ Una mañana para pensar, crear, probar y sorprendernos, donde no habrá una úni
 
 📍 Localización: A Coruña
 
-🎓 Fechas y destinatarios:
+🎓 **Fechas y destinatarios:**
 
 * 22 de diciembre alumnado de 5º Ed. Infantil a 2º Ed. Primaria
 * 23 de diceimbre alumnado de 3º Ed. Primaria a 6º Ed. Primaria
