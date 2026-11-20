@@ -4,7 +4,7 @@ description: ¿Y si reinventamos la Navidad? Una experiencia para imaginar,
   experimentar y crear sin límites.
 date: 2026-11-20
 fechasTaller: []
-dirigido_a: Alumnado de 5ºEd. Infantil a 6º Ed.Primaria
+dirigido_a: Alumnado de 5º Ed. Infantil a 6º Ed.Primaria
 hora_inicio: 10:30h.
 hora_fin: 13:30h.
 precio: 40€/sesión
