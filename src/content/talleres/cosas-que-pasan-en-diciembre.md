@@ -12,6 +12,7 @@ precio: "35 "
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795174262/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_2_pxcjfe.png
 modalidad:
   - coruna
+inscription_url: https://tienda.latentoac.com/producto/especialfamiliasnavidad/
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
