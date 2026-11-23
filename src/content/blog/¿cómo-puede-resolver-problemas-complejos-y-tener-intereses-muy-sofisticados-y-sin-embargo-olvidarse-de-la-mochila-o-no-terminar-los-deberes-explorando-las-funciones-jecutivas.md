@@ -5,7 +5,7 @@ date: 2026-10-05
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1791192381/Imagen_de_ChatGPT_30_sept_2026_23_27_07_zlnaqi.png
 publicado: true
 ---
-## ¿Por qué puede con lo difícil y no con lo cotidiano? 
+## ¿Por qué puede con lo difícil y no con lo cotidiano?
 
 ## Altas capacidades y funciones ejecutivas
 
@@ -50,6 +50,8 @@ Porque potenciar el talento también significa desarrollar las herramientas nece
 👉 [Conoce Enfoca](https://latentoac.com/talleres/programa-enfoca)
 
 👉[Conoce nuestra Escuela de Familias](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
+
+[](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)[](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)👉[Dossier de descarga gratuíta: JUGAR PARA PENSAR](https://tienda.latentoac.com/producto/jugar-para-pensar-actividades-y-juegos-para-favorecer-las-funciones-ejecutivas/)
 
 **Fuentes y lecturas recomendadas**
 
