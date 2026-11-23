@@ -1,5 +1,5 @@
 ---
-title: UNA NAVIDAD DIFERENTE
+title: "UNA NAVIDAD DIFERENTE: ARANEUM "
 description: ¿Y si reinventamos la Navidad? Una experiencia para imaginar,
   experimentar y crear sin límites.
 date: 2026-11-20
@@ -32,6 +32,6 @@ Una mañana para pensar, crear, probar y sorprendernos, donde no habrá una úni
 * 22 de diciembre alumnado de 5º Ed. Infantil a 2º Ed. Primaria
 * 23 de diceimbre alumnado de 3º Ed. Primaria a 6º Ed. Primaria
 
-⏰ Horario: 10:30 - 13:30hs
+⏰ Horario: 10:30 - 13:30
 
  💶 Tarifa: 40€/sesión
