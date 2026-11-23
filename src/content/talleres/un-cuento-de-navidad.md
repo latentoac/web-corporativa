@@ -1,5 +1,5 @@
 ---
-title: ESPECIAL CUENTOS PEQUES NAVIDAD
+title: "UN CUENTO DE NAVIDAD: ESPECIAL CUENTOS"
 description: "Una experiencia para que los más pequeños vivan la Navidad a
   través de los cuentos. "
 date: 2026-11-20
