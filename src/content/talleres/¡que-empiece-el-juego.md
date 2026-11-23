@@ -1,5 +1,5 @@
 ---
-title: "¡QUE EMPIECE EL JUEGO!: ARANEUM ADOLESCENTES"
+title: ¡QUE EMPIECE EL JUEGO! ARANEUM ADOLESCENTES
 description: "Esta Navidad cambiamos los villancicos por desafíos, pruebas
   sorpresa y mucha diversión. "
 date: 2026-11-20
