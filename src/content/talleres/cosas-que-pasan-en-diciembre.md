@@ -6,8 +6,8 @@ date: 2026-11-20
 fechasTaller:
   - fecha: 2026-12-28
 dirigido_a: "Alumnado de 5º Ed. Infantil a 2º Ed. Primaria con 1 acompañante. "
-hora_inicio: 18:00
-hora_fin: 20:00
+hora_inicio: 17:15
+hora_fin: 18:45
 precio: "35 "
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795174262/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_2_pxcjfe.png
 modalidad:
@@ -28,6 +28,6 @@ Os invitamos a compartir una tarde llena de juegos, música y creatividad. Quere
 
 📅 Fechas: 28/12/2026
 
-⏰ Horario: 18:00 – 20:00
+⏰ Horario: 17:15 – 18:45
 
- 💶 Tarifa: 35 €
+ 💶 Tarifa: 30 €
