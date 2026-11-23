@@ -56,6 +56,8 @@ Porque potenciar el talento también significa desarrollar las herramientas nece
 
 👉[Conoce nuestra Escuela de Familias.](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)
 
+[](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)[](https://latentoac.com/talleres/2025-09-24-escuela-de-familias)👉[Dossier de descarga gratuíta: JUGAR PARA PENSAR](https://tienda.latentoac.com/producto/jugar-para-pensar-actividades-y-juegos-para-favorecer-las-funciones-ejecutivas/)
+
 **Fuentes y lecturas recomendadas**
 
 **•\[1] Capri, T., Catalano, A., & Fabio, R. A. (2026). Estudio que analiza la relación directa entre la memoria de trabajo, el control inhibitorio y el rendimiento escolar en la infancia.**
