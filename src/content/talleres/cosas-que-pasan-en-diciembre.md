@@ -1,5 +1,5 @@
 ---
-title: ESPECIAL FAMILIAS NAVIDAD
+title: "COSAS QUE PASAN EN DICIMEBRE: ESPECIAL FAMILIAS"
 description: Una experiencia familiar para descubrir juntos todo lo que hace que
   estas fechas sean únicas
 date: 2026-11-20
