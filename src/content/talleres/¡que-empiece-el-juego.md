@@ -1,5 +1,5 @@
 ---
-title: ARANEUM ADOLESCENTES NAVIDAD
+title: "¡QUE EMPIECE EL JUEGO!: ARANEUM ADOLESCENTES"
 description: "Esta Navidad cambiamos los villancicos por desafíos, pruebas
   sorpresa y mucha diversión. "
 date: 2026-11-20
@@ -16,7 +16,7 @@ inscription_url: "https://tienda.latentoac.com/?post_type=product&p=3275&preview
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
-### ¡Qué empiece el juego!
+### ¡Que empiece el juego!
 
 Esta Navidad, dejamos a un lado los planes de siempre y la cotidianidad. Nos adentraremos en el universo de los grandes concursos televisivos, donde cada prueba puede cambiarlo todo. Viviremos una experiencia llena de desafíos, pruebas contrarreloj, preguntas inesperadas, competición y cooperación.
 
