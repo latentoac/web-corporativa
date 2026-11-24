@@ -8,7 +8,7 @@ fechasTaller:
 dirigido_a: "Alumnado de 5º Ed. Infantil a 2º Ed. Primaria con 1 acompañante. "
 hora_inicio: 17:15
 hora_fin: 18:45
-precio: "35 "
+precio: "30"
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795174262/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_2_pxcjfe.png
 modalidad:
   - coruna
