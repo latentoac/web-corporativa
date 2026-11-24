@@ -28,7 +28,7 @@ Una tarde para divertirse  y pasarlo en grande.  ¿Preparados/as? ¡Que empiece 
 
 🎓 Destinatarios: Alumnado de 1º a 4º de la E.S.O.
 
-📅 Fechas: 22/12/2026.
+📅 Fechas: 22/12/2026
 
 ⏰ Horario: 17:00 - 19:00
 
