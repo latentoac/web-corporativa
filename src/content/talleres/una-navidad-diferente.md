@@ -5,8 +5,8 @@ description: ¿Y si reinventamos la Navidad? Una experiencia para imaginar,
 date: 2026-11-20
 fechasTaller: []
 dirigido_a: Alumnado de 5º Ed. Infantil a 6º Ed.Primaria
-hora_inicio: 10:30h.
-hora_fin: 13:30h.
+hora_inicio: 10:30
+hora_fin: 13:30
 precio: 40 sesión
 image: https://res.cloudinary.com/dmvpxkp5m/image/upload/v1795170437/EJEMPLO_CON_%C3%81REA_DE_SEGURIDAD_ixv1tb.png
 modalidad:
@@ -15,7 +15,7 @@ inscription_url: "https://tienda.latentoac.com/producto/una-navidad-diferente-ar
 fecha_limite_inscripcion: 2026-12-18
 publicado: true
 ---
-# UNA NAVIDAD DIFERENTE
+### UNA NAVIDAD DIFERENTE
 
 ¿Cómo será la Navidad en otros planetas? ¿Cómo serán las Navidades del futuro? ¿Y si la Navidad pudiera ser distinta a como la conocemos? 
 
