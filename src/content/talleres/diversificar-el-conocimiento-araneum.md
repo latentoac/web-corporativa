@@ -30,4 +30,4 @@ Después de una larga espera… ¡La Navidad ha llegado a Latento! Nos ha llegad
 
 ⏰ Horario: 10:30 - 13:30
 
- 💶 Tarifa: 40 euros/sesión
+ 💶 Tarifa: 40 euros
