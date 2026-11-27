@@ -2,7 +2,7 @@
 title: "DIVERSIFICAR EL CONOCIMIENTO: ARANEUM"
 description: ¡La Navidad ha llegado a Latento! Nos ha llegado un aviso y
   necesitamos vuestra ayuda.
-date: 2026-11-23
+date: 2026-11-27
 fechasTaller:
   - fecha: 2026-12-22
 dirigido_a: Alumnado de 2º a 6º de Ed. Primaria
