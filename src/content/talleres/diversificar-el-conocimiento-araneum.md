@@ -4,7 +4,7 @@ description: ¡La Navidad ha llegado a Latento! Nos ha llegado un aviso y
   necesitamos vuestra ayuda.
 date: 2026-11-23
 fechasTaller:
-  - fecha: 2026-12-23
+  - fecha: 2026-12-22
 dirigido_a: Alumnado de 2º a 6º de Ed. Primaria
 hora_inicio: 10:30
 hora_fin: 13:30
@@ -26,7 +26,7 @@ Después de una larga espera… ¡La Navidad ha llegado a Latento! Nos ha llegad
 
 🎓 Destinatarios: Alumnado de 2º a 6º de Ed. Primaria.
 
-📅 Fechas: 23/12/2026
+📅 Fechas: 22/12/2026
 
 ⏰ Horario: 10:30 - 13:30
 
